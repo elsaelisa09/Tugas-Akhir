@@ -1,21 +1,9 @@
 # Research Logbook
 
-## August
 
-### 2024-08-30
-- Developing the new feature
-- Fixing the bug
-    ```
-    def test():
-        pass
-    ```
+## Juny
 
-## July
+### 2025-06-24
+- Conducted a literature review related to the thesis topic.
+- Brainstormed the thesis topic using an LLM. [Discussion link](https://chatgpt.com/share/6866b777-cfbc-8004-893b-af2df79358cb)
 
-### 2024-07-15
-- Researching the new feature
-- Updating the documentation
-    ```
-    def test():
-        pass
-    ```
