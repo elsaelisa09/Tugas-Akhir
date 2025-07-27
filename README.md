@@ -1,2 +1,2 @@
-# Project Title
-This is the short explanation about the title of the project.
+# Identifikasi Konten Meme dengan Indikasi Self-Harm pada Remaja Menggunakan Pemodelan Deep Learning Multimodal Berbasis Gambar dan Teks
+
