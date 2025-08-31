@@ -15,3 +15,9 @@
 ### 2025-08-13
 - Researched OCR
 - Researched dataset labeling
+
+### 2025-08-27
+- Researched about pre-trained models for object detection
+
+### 2025-08-31
+- Researched papers related to labeling
