@@ -21,3 +21,11 @@
 
 ### 2025-08-31
 - Researched papers related to labeling
+
+## Sept
+
+### 2025-09-08
+- Researched about HOD Dataset link: https://github.com/poori-nuna/HOD-Benchmark-Dataset
+
+### 2025-09-13
+- Researched papers about labeling dataset
