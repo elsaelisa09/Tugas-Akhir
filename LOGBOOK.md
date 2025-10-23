@@ -29,3 +29,12 @@
 
 ### 2025-09-13
 - Researched papers about labeling dataset
+
+## Oct
+
+### 2025-10-05
+- Researched about dataset
+
+### 2025-10-22
+- Researched about dataset
+- Researched about models for classification text "self-harm/suicidal"
