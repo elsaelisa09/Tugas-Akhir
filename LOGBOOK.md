@@ -35,6 +35,13 @@
 ### 2025-10-05
 - Researched about dataset
 
+### 2025-10-16
+- Analyzed the Suicidal Ideation Detection Reddit Dataset [(Mendeley Data)](https://data.mendeley.com/datasets/z8s6w86tr3/2) and the Advanced Suicidality Classifier Model (sentinet/suicidality) (https://huggingface.co/sentinet/suicidality)
+
 ### 2025-10-22
 - Researched about dataset
 - Researched about models for classification text "self-harm/suicidal"
+
+### 2025-10-27
+- Completed a custom dataset of 500 manually created self-harm meme images.
+- Documented all creation steps in detail at Dataset Creation Steps, link : https://docs.google.com/document/d/1pu5-z9e2Z7jReTNNzgr4IkCdkAnztd5jIgAaJ9hAEGQ/edit?usp=sharing
