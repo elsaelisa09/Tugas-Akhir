@@ -44,4 +44,4 @@
 
 ### 2025-10-27
 - Completed a custom dataset of 500 manually created self-harm meme images.
-- Documented all creation steps in detail at Dataset Creation Steps, link : https://docs.google.com/document/d/1pu5-z9e2Z7jReTNNzgr4IkCdkAnztd5jIgAaJ9hAEGQ/edit?usp=sharing
+- Documented all creation steps in detail at Dataset Creation Steps, link : [(Link Google Docs)](https://docs.google.com/document/d/1pu5-z9e2Z7jReTNNzgr4IkCdkAnztd5jIgAaJ9hAEGQ/edit?usp=sharing) 
