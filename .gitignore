@@ -153,6 +153,9 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+# Ignore folder Dataset dan sample dataset
+Dataset/
+sample dataset ob_det/
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
