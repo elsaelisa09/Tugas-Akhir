@@ -1,2 +1,0 @@
-total_samples,features,missing_values,duplicates,label_distribution,confidence_mean,confidence_std,avg_text_length_chars,avg_text_length_words,low_confidence_samples,imbalance_ratio
-1508,9,0,0,"{'Non Self-harm': 852, 'Self-harm': 656}",0.9036936339522544,0.05920467383049186,63.47347480106101,12.095490716180372,0,1.298780487804878

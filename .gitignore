@@ -142,3 +142,16 @@ code/checkpoints/
 code/LateFusion/
 code/Intermediate Fusion/
 
+# Ignore checkpoints
+code/checkpoints/
+code/checkpoints/*
+
+# Ignore Intermediate Fusion
+code/Intermediate Fusion/
+code/Intermediate Fusion/*
+
+# Ignore LateFusion
+code/LateFusion/
+code/LateFusion/*
+
+
