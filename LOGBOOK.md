@@ -49,3 +49,6 @@
 ## November
 ### 2025-11-11
 - Exploratory Data Analysis (EDA)
+
+### 2025-11-14
+- Experiment with Late Fusion and Intermediate Fusion
