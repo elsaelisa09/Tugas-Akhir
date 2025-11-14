@@ -133,10 +133,12 @@ cython_debug/
 Dataset/
 sample dataset ob_det/
 
-code/results
+code/results/
 code/kaggle.ipynb
 code/eda_summary.csv
 code/README_MULTIMODAL.md
 code/inference.py
-code/checkpoints
-code/requirements.txt
+code/checkpoints/
+code/LateFusion/
+code/Intermediate Fusion/
+
