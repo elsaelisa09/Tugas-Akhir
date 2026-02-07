@@ -1,0 +1,10 @@
+\contentsline {myequations}{\numberline {Rumus~2.1} Scaled Dot-Product Attention }{14}{equation.2.1}%
+\contentsline {myequations}{\numberline {Rumus~2.2}Contrastive Loss (InfoNCE) pada CLIP}{15}{equation.2.2}%
+\contentsline {myequations}{\numberline {Rumus~2.3}Replaced Token Detection (RTD) Loss pada ELECTRA}{17}{equation.2.3}%
+\contentsline {myequations}{\numberline {Rumus~2.4} Perhitungan Faktor Skala }{22}{equation.2.4}%
+\contentsline {myequations}{\numberline {Rumus~2.5} Normalisasi Input Gambar }{23}{equation.2.5}%
+\contentsline {myequations}{\numberline {Rumus~2.6} Normalisasi Vektor }{23}{equation.2.6}%
+\contentsline {myequations}{\numberline {Rumus~2.7} Perhitungan \textit {Accuracy} }{25}{equation.2.7}%
+\contentsline {myequations}{\numberline {Rumus~2.8} Perhitungan \textit {Precision} }{25}{equation.2.8}%
+\contentsline {myequations}{\numberline {Rumus~2.9} Perhitungan \textit {Recall} }{25}{equation.2.9}%
+\contentsline {myequations}{\numberline {Rumus~2.10} Perhitungan \textit {F1-Score} }{25}{equation.2.10}%

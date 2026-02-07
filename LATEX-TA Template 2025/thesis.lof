@@ -1,0 +1,21 @@
+\babel@toc {bahasa}{}\relax 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Contoh Meme dengan Makna Tersirat \blx@tocontentsinit {0}\cite {kiela2020hateful}}}{3}{figure.caption.19}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Arsitektur Transformer dengan Encoder \blx@tocontentsinit {0}\cite {vaswani2017attention}}}{14}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Arsitektur CLIP \blx@tocontentsinit {0}\cite {Pan2022ContrastiveKCLIP}}}{16}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Arsitektur ELECTRA \blx@tocontentsinit {0}\cite {clark2020electra}}}{17}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Contoh Early Fusion \blx@tocontentsinit {0}\cite {jiao2024comprehensive}}}{18}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Contoh Intermediate Fusion \blx@tocontentsinit {0}\cite {jiao2024comprehensive}}}{19}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Contoh Late Fusion \blx@tocontentsinit {0}\cite {jiao2024comprehensive}}}{19}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Contoh Hybrid Fusion \blx@tocontentsinit {0}\cite {jiao2024comprehensive}}}{20}{figure.caption.26}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Alur Penelitian}}{26}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Perbandingan gambar asli dan hasil augmentasi \textit {flip horizontal}}}{35}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Perbandingan gambar asli dan hasil augmentasi \textit {rotasi acak}}}{35}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Perbandingan gambar asli dan hasil augmentasi \textit {color jitter}}}{36}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Alur Pengembangan Model}}{37}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Rancangan Fusion Model Varian 1}}{39}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Rancangan Fusion Model Varian 2}}{40}{figure.caption.33}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }

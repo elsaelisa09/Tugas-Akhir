@@ -1,0 +1,21 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[1] Config.pm:331> INFO - Logfile is 'thesis.blg'
+[124] biber-MSWIN64:342> INFO - === 
+[168] Biber.pm:421> INFO - Reading 'thesis.bcf'
+[306] Biber.pm:1002> INFO - Found 48 citekeys in bib section 0
+[322] Biber.pm:4487> INFO - Processing section 0
+[335] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
+[422] bibtex.pm:1713> INFO - LaTeX decoding ...
+[517] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[841] UCollate.pm:68> INFO - Overriding locale 'id-ID' defaults 'variable = shifted' with 'variable = non-ignorable'
+[841] UCollate.pm:68> INFO - Overriding locale 'id-ID' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[841] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'id-ID'
+[841] Biber.pm:4313> INFO - No sort tailoring available for locale 'id-ID'
+[875] bbl.pm:676> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[906] bbl.pm:779> INFO - Output to thesis.bbl
+[907] Biber.pm:132> WARN - legacy month field 'Dec' in entry 'SyakhraniWidijatmoko2024' is not an integer - this will probably not sort properly.
+[907] Biber.pm:132> WARN - legacy year field 'n.d.' in entry 'sciencedirect_computer_vision_overview' is not an integer - this will probably not sort properly.
+[907] Biber.pm:132> WARN - legacy month field 'Jul' in entry 'IBM2024multimodal' is not an integer - this will probably not sort properly.
+[907] Biber.pm:132> WARN - legacy month field 'February' in entry 'MoraledaEsteban2025SelfHarm' is not an integer - this will probably not sort properly.
+[907] Biber.pm:132> WARN - I didn't find a database entry for 'ibm_nlp' (section 0)
+[907] Biber.pm:134> INFO - WARNINGS: 5

@@ -1,0 +1,85 @@
+\newpage
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\chapter{PENDAHULUAN} \label{Bab I}
+
+\section{Latar Belakang} \label{I.Latar Belakang}
+Transformasi dunia digital dalam satu dekade terakhir telah membawa dampak besar pada berbagai aspek kehidupan manusia, mulai dari pendidikan, kesehatan, industri kreatif, hingga kesejahteraan sosial. Perubahan ini ditandai oleh munculnya ruang interaksi baru di platform daring, yang memungkinkan masyarakat berbagi informasi, emosi, dan pengalaman hidup dalam berbagai bentuk konten. Perkembangan pesat teknologi informasi dan komunikasi telah mengubah cara manusia berinteraksi, berkomunikasi, dan memproduksi informasi dalam skala global yang menciptakan struktur sosial dan budaya baru serta cara baru dalam berbagi pengetahuan dan pengalaman kolektif. Dalam ranah komunikasi sosial dan interaksi interpersonal, media digital memungkinkan terbentuknya jaringan sosial luas tanpa batas geografis, serta mempercepat penyebaran informasi dan gagasan pada khalayak global \cite{SyakhraniWidijatmoko2024}. 
+
+Media sosial kini menjadi infrastruktur komunikasi utama dunia. Menurut laporan DataReportal, sebuah platform global yang menyajikan analisis digital berbasis data dari mitra riset internasional seperti Kepios, We Are Social, dan Meltwater mencatat bahwa terdapat sekitar 5,04 miliar pengguna media sosial aktif pada awal 2024, atau 62,3\% populasi dunia, dengan pertumbuhan tahunan sebesar +5,6\%, setara dengan 266 juta pengguna baru sepanjang 2023. Rata-rata waktu penggunaan mencapai 2 jam 23 menit per hari \cite{datareportal2024_global} \cite {datareportal2024_5billion}, menunjukkan bahwa platform digital kini menjadi ruang publik yang sangat aktif sebagai tempat berbagai bentuk ekspresi diri, termasuk teks, gambar, dan format multimodal seperti meme. Besarnya intensitas penggunaan media sosial ini berkaitan langsung dengan meningkatnya fenomena kesehatan mental di ruang digital. \par
+
+Platform seperti Instagram, Twitter, dan TikTok sering menjadi ruang bagi remaja dan dewasa muda untuk mengekspresikan emosi dan membagikan pengalaman personal, termasuk konten terkait \emph{self-harm}. Studi terbaru menemukan bahwa paparan konten \emph{self-harm} di media sosial berhubungan dengan meningkatnya risiko dorongan serta perilaku \emph{nonsuicidal self-injury} (NSSI) pada remaja \cite{Hamilton2025SelfHarmSocialMedia}. Sebuah survei berskala besar yang dilakukan oleh Samaritans bersama Swansea University menunjukkan bahwa sebanyak 83\% pengguna media sosial pernah direkomendasikan konten bernuansa \emph{self-harm} oleh algoritma \emph{feed}. Rekomendasi tersebut muncul, misalnya, pada halaman \emph{Explore} di Instagram atau \emph{For You} di TikTok, meskipun pengguna tidak secara aktif mencarinya \cite{samaritans2022social}. Menurut \emph{World Health Organization}, secara global bunuh diri merupakan penyebab kematian tertinggi ketiga di kalangan remaja akhir dan dewasa muda berusia 15--29 tahun. Temuan ini menunjukkan bahwa isu kesehatan mental pada kelompok usia tersebut merupakan tantangan kesehatan masyarakat yang serius \cite{WHO2025AdolescentMentalHealth}.
+
+Pada tahun 2024, sebuah meta-analisis terhadap remaja usia 10--19 tahun menemukan bahwa 17.7\% remaja pernah melakukan NSSI, dengan prevalensi sebesar 21.4\% pada remaja perempuan dan 13.7\% pada remaja laki-laki. Data tersebut berasal dari 17 negara yang mencakup wilayah Amerika Utara, Australia, Eropa, dan Asia \cite{denton2024global}. Sementara itu, berdasarkan data \emph{Global Burden of Disease} (GBD) 2021, jumlah kematian akibat \emph{self-harm} secara global mencapai sekitar 746{,}400 kasus pada tahun 2021 \cite{an2025global}. Hal ini menegaskan bahwa \emph{self-harm} masih merupakan isu kesehatan masyarakat yang signifikan di berbagai wilayah dunia. Paparan konten \emph{self-harm} di media sosial bahkan terbukti dapat memprediksi perilaku menyakiti diri dalam satu bulan berikutnya pada populasi muda \cite{arendt2019effects}.
+
+
+Pada konteks meme, pesan sering kali disampaikan secara implisit melalui perpaduan visual dan teks, sehingga pemahamannya bergantung pada hubungan antar-keduanya dan tidak dapat ditafsirkan hanya dari salah satu modalitas saja. Dalam penelitian yang dibahas dalam \textit{"The Hateful Memes Challenge: Detecting Hate Speech in Multimodal Memes"} oleh Kiela et al. , meme seringkali menyembunyikan makna yang lebih mendalam yang hanya bisa dipahami dengan menggabungkan konteks visual dan tekstual. Gambar \ref{fig:contohmeme} di bawah ini menggambarkan kalimat \textit{"Look how many people love you"} bisa terlihat tidak berbahaya jika dipisahkan, namun jika dipasangkan dengan gambar padang gurun, maknanya bisa berubah menjadi sesuatu yang lebih negatif. . Fenomena ini menggambarkan bagaimana model berbasis unimodal sering kali kesulitan untuk mendeteksi nuansa yang hanya bisa dipahami melalui pemahaman multimodal, yakni gabungan antara teks dan gambar \cite{kiela2020hateful}. 
+\begin{figure}[H] % Kalau menggunakan H, posisi gambar akan tepat dibawah teks
+    \centering
+    \includegraphics[width=0.9\textwidth]{figure/contohmeme.png}
+    \caption{Contoh Meme dengan Makna Tersirat \cite{kiela2020hateful}}
+    \label{fig:contohmeme}
+\end{figure}
+Shah et al. menegaskan bahwa gambar yang memuat teks membutuhkan pemahaman multimodal mendalam untuk menafsirkan makna tersirat tersebut \cite{shah2024memeclip}. Tantangan ini semakin diperjelas oleh Sharma et al. \cite{Sharma2022HarmfulMemes}, yang menunjukkan bahwa sebagian besar penelitian masih berfokus pada deteksi \textit{hate speech}, sementara jenis konten berbahaya lainnya seperti \textit{self-harm} dan ekstremisme masih sangat kurang dieksplorasi akibat keterbatasan dataset publik. Untuk mengatasi keterbatasan dataset berlabel, pendekatan \textit{pseudo-labeling} digunakan. \textit{Pseudo-labeling} adalah teknik dimana model yang sudah dilatih digunakan untuk memberi label pada data yang tidak berlabel \cite{lee_pseudo2013} sehingga memperluas dataset tanpa memerlukan anotasi manual. Teknik ini memungkinkan pelatihan model dengan data tambahan meskipun dengan label yang lemah, yang mengatasi keterbatasan annotator dan menggarisbawahi adanya kesenjangan riset yang signifikan terkait deteksi meme dengan nuansa \textit{self-harm.}
+
+Berdasarkan kompleksitas tersebut, pendekatan multimodal semakin relevan untuk analisis konten digital. Teknologi kecerdasan buatan kini memungkinkan pemrosesan informasi visual dan tekstual secara bersamaan, sehingga memberikan pemahaman konteks yang lebih komprehensif dibandingkan pendekatan unimodal, khususnya untuk konten bermakna implisit seperti meme.
+
+\section{Rumusan Masalah} \label{I.Rumusan Masalah}
+
+Berdasarkan latar belakang yang telah diuraikan di atas, maka permasalahan penelitian dirumuskan sebagai berikut: \par
+\begin{enumerate}
+    \item Bagaimana membangun model klasifikasi biner untuk mengidentifikasi \textit{self-harm} pada meme secara multimodal?
+    \item Bagaimana menyusun dataset meme multimodal melalui pengumpulan manual, pembuatan data tambahan, dan proses \textit{pseudo-labeling} berbasis \textit{Large Language Model} (LLM) untuk pelatihan model klasifikasi?
+    \item Bagaimana mengevaluasi kinerja model klasifikasi menggunakan metrik \textit{accuracy, precision, recall, F1-score, confusion matrix,} pada data uji?
+\end{enumerate}
+
+
+\section{Tujuan Penelitian} \label{I.Tujuan}
+Berdasarkan rumusan masalah yang telah diuraikan di atas, maka tujuan dari penelitian ini adalah: \par
+
+\begin{enumerate}
+    \item Untuk membangun model klasifikasi biner yang dapat mengidentifikasi \textit{self-harm} pada meme secara multimodal.
+    \item Untuk menyusun dataset meme multimodal melalui pengumpulan manual, pembuatan data tambahan, dan proses \textit{pseudo-labeling} berbasis LLM untuk pelatihan model klasifikasi.
+    \item Untuk mengevaluasi kinerja model klasifikasi menggunakan metrik \textit{accuracy, precision, recall, F1-score, confusion matrix,} pada data uji.
+\end{enumerate}
+
+
+\section{Batasan Masalah} \label{I.Batasan}
+Adapun batasan masalah dari penelitian ini agar sesuai dengan yang diharapkan adalah sebagai berikut: \par
+
+Berikut adalah batasan masalah dalam penelitian ini:
+\begin{enumerate}
+    \item Penelitian ini hanya menggunakan meme yang terdiri dari gambar dan teks, dengan fokus teks dalam bahasa Inggris. Pemilihan bahasa Inggris sebagai fokus teks didasarkan pada pada permasalahan yang diangkat secara global, serta kemudahan akses terhadap model pra-latih yang telah dilatih dengan teks bahasa Inggris sebelumnya. Konten dalam bentuk video, audio, GIF, atau format multimodal lainnya tidak termasuk dalam ruang lingkup penelitian.
+    
+    \item Penelitian ini dibatasi pada skema klasifikasi biner, yaitu kategori \textit{self-harm} dan \textit{non-self-harm}. Penelitian tidak mencakup klasifikasi multi-kelas, kategorisasi tingkat keparahan, atau analisis mendalam terkait karakteristik konten \textit{self-harm}.
+    
+    \item Dataset disusun melalui pengumpulan manual,  pembuatan data tambahan yang dilabeli menggunakan metode \textit{pseudo-labeling} berbasis \textit{Large Language Model} (LLM) tanpa validasi oleh manusia, sehingga menghasilkan \textit{weak labels} dan model yang bersifat \textit{weakly supervised}. Selain itu, dataset juga diperoleh dari sumber terbuka di Kaggle sebagai data tambahan untuk memperluas variasi dan jumlah dataset yang digunakan dalam penelitian ini.
+\end{enumerate}
+
+\section{Manfaat Penelitian} \label{I.Manfaat}
+Berikut adalah manfaat dari penelitian ini:
+\begin{enumerate}
+    \item Menyediakan model klasifikasi khusus untuk meme dengan tema  \textit{self-harm} menggunakan multimodal untuk menganalisis gambar dan teks secara kontekstual.
+    \item Menjadi referensi untuk pengembangan model klasifikasi serupa yang dapat diterapkan pada jenis meme berisiko lainnya.
+    \item Mengisi kesenjangan riset terkait kurangnya dataset publik yang berfokus pada meme \textit{self-harm,} serta memberikan kontribusi terhadap pembuatan dataset multimodal yang relevan untuk penelitian selanjutnya.
+    \item Menyediakan dataset meme \textit{self-harm} dengan pelabelan \textit{pseudo-labeling} yang dapat menjadi referensi bagi peneliti lain dalam mengembangkan penelitian lebih lanjut.
+\end{enumerate}
+
+
+\section{Sistematika Penulisan} \label{I.Sistematika}
+Sistematika penulisan berisi pembahasan apa yang akan ditulis disetiap Bab. Sistematika pada umumnya berupa paragraf yang setiap paragraf mencerminkan bahasan setiap Bab. \par
+\subsection{Bab I: Pendahuluan}
+Bab ini memuat penjelasan mengenai latar belakang yang menjadi dasar penelitian ini. Latar belakang tersebut menjelaskan tentang konteks permasalahan yang dihadapi dan urgensi penelitian yang dilakukan. Selanjutnya, disajikan rumusan masalah yang merupakan identifikasi masalah yang ingin diselesaikan melalui penelitian ini. Peneliti juga menguraikan tujuan dari penelitian, batasan ruang lingkup penelitian agar fokus, serta manfaat yang diharapkan dari penelitian ini baik untuk pengembangan ilmu pengetahuan maupun untuk praktik di lapangan. Pada bagian ini juga dijelaskan sistematika penulisan yang memuat susunan dan isi tiap bab yang ada dalam tugas akhir ini.
+
+\subsection{Bab II: Tinjauan Pustaka}
+Bab ini menyajikan kajian teori yang relevan dengan topik penelitian. Tinjauan pustaka mencakup penelitian terdahulu yang memiliki hubungan dengan penelitian ini, serta teori-teori yang mendasari pokok bahasan penelitian. Dalam bagian ini, peneliti akan mengkaji berbagai literatur yang dapat memberikan pemahaman lebih mendalam terkait topik yang diteliti.
+
+\subsection{Bab III: Metodologi Penelitian}
+Bab ini berisi penjelasan rinci mengenai metode yang digunakan dalam penelitian ini. Selanjutnya, dijelaskan pula rancangan pengujian yang akan dilakukan untuk mengukur dan menganalisis hasil penelitian.
+
+\subsection{Bab IV: Hasil dan Pembahasan}
+Bab ini memaparkan hasil yang diperoleh dari implementasi dan pengujian yang telah dilakukan dalam penelitian. Peneliti juga menganalisis dan mengevaluasi hasil yang diperoleh untuk memberikan gambaran yang jelas tentang pencapaian tujuan penelitian.
+
+\subsection{Bab V: Kesimpulan dan Saran}
+Bab ini memaparkan kesimpulan yang diambil berdasarkan hasil analisis dan pembahasan yang telah dilakukan. Peneliti merangkum temuan utama dari penelitian ini dan memberikan saran untuk penelitian lebih lanjut. Saran tersebut bisa mencakup perbaikan atau pengembangan lebih lanjut dari penelitian yang dilakukan, serta rekomendasi yang dapat diambil untuk implementasi di masa depan.

@@ -132,6 +132,8 @@ cython_debug/
 # Ignore folder Dataset dan sample dataset
 Dataset/
 sample dataset ob_det/
+Dokumen TA/
+Latex-TA-IF-ITERA-main/
 
 code/results/
 code/kaggle.ipynb
@@ -141,6 +143,7 @@ code/inference.py
 code/checkpoints/
 code/LateFusion/
 code/Intermediate Fusion/
+code/wandb/
 
 # Ignore checkpoints
 code/checkpoints/

@@ -1,0 +1,303 @@
+\newpage
+\chapter{TINJAUAN PUSTAKA} \label{Bab II}
+
+\section{Tinjauan Pustaka} \label{II.Tinjauan}
+Tinjauan pustaka ini memaparkan penelitian terdahulu yang memiliki relevansi topik dan menjadi landasan utama penyusunan tugas akhir. Adapun penelitian yang dijadikan acuan diuraikan sebagai berikut.
+
+Gilardi et al. pada tahun 2023 membandingkan kinerja \textit{Large Language Models} (LLM) dengan pelabel manusia (\textit{crowd-workers}) dalam tugas anotasi teks untuk penelitian \textit{social computing}. Melalui percobaan pada empat dataset berisi berita dan tweet dengan berbagai skema pelabelan, penelitian tersebut menunjukkan bahwa ChatGPT mencapai akurasi sekitar 25\% lebih tinggi dibandingkan manusia dalam skenario \textit{zero-shot}. Selain itu, biaya pelabelan menggunakan ChatGPT hanya kurang dari \$0.003 per label. Temuan ini mengindikasikan bahwa LLM mampu menghasilkan label yang konsisten, cepat, dan valid sebagai alternatif tenaga anotasi manusia untuk mengatasi tantangan biaya tinggi dan inkonsistensi dalam proses pelabelan manual \cite{gilardi2023chatgpt}. Namun demikian, studi ini hanya berfokus pada data berbasis teks.
+
+Lian et al. pada tahun 2023 menguji kemampuan GPT-4V dalam tugas pengenalan emosi yang disebut \textit{Generalized Emotion Recognition} (GER), yang mencakup berbagai modalitas input seperti gambar tunggal, video, dan kombinasi teks-gambar. Studi ini menggunakan 21 dataset \textit{benchmark} yang beragam untuk mengevaluasi apakah model mampu memahami sentimen visual, ekspresi wajah, hingga emosi dalam konteks multimodal. Hasil pengujian menunjukkan bahwa GPT-4V mampu menggabungkan informasi dari berbagai modalitas secara efektif untuk mengenali konteks emosi dengan akurat, bahkan tanpa memerlukan pelatihan tambahan atau \textit{fine-tuning}. Penelitian ini memberikan bukti bahwa \textit{Large Multimodal Models} (LMM) dapat digunakan sebagai \textit{zero-shot automatic annotators} untuk berbagai tugas multimodal, sehingga berpotensi mengurangi ketergantungan pada pelabelan manual yang mahal dan memakan waktu~\cite{lian2023gpt4v}. Namun, model ini masih kurang optimal dalam mendeteksi ekspresi mikro (\textit{micro-expressions}) yang memerlukan detail visual yang sangat halus dan spesifik, serta memiliki keterbatasan dalam menangani gambar dengan kuat.
+
+Pramanick et al. pada tahun 2021 memperkenalkan MOMENTA (\textit{Multimodal Framework for Detecting Harmful Memes}), sebuah \textit{framework} multimodal yang menggabungkan representasi global dan lokal untuk menganalisis meme berbahaya dengan konteks visual dan teks. Fitur visual diperoleh dari \textit{Contrastive Language–Image Pretraining} (CLIP), deteksi objek dan \textit{fine-grained feature} melalui Google Vision API dan VGG-19, sedangkan fitur teks menggunakan DistilBERT. Arsitektur MOMENTA menonjol karena penggabungan fitur pada tahap menengah (\textit{intermediate fusion}) melalui \textit{Cross-Modality Attention Fusion} (CMAF), yang memodelkan interaksi antar-modalitas secara mendalam sebelum tahap klasifikasi. Evaluasi pada dua dataset menunjukkan MOMENTA mengungguli sepuluh baseline dengan peningkatan akurasi absolut 1.3–2.6 poin untuk kedua tugas \cite{pramanick2021momenta}. Namun, model ini  memiliki kompleksitas arsitektur tinggi, serta ketergantungan pada layanan eksternal (\textit{Application Programming Interface} pihak ketiga) yang dapat memengaruhi efisiensi pemrosesan dan biaya operasional.
+
+Kumar dan Nandakumarpada tahun 2022 mengusulkan \textit{Hate-CLIPper}, sebuah arsitektur yang dirancang untuk mengoptimalkan klasifikasi meme kebencian melalui interaksi fitur multimodal yang dihasilkan oleh model CLIP \textit{pre-trained}. Inovasi utama penelitian ini terletak pada penerapan \textit{Feature Interaction Matrix} (FIM) berbasis \textit{outer-product}, yang berfungsi memetakan hubungan semantik lintas-modalitas melalui operasi perkalian \textit{tensor} antara representasi visual dan tekstual. FIM menghasilkan matriks berukuran $d_v \times d_t$ (dimensi visual $\times$ dimensi tekstual) yang mampu menangkap pola interaksi halus antara elemen-elemen semantik dari kedua modalitas. Berdasarkan pengujian pada beberapa dataset benchmark, model ini mencatat nilai AUROC sebesar 85.8. Penelitian ini memberikan kontribusi dengan menunjukkan bahwa penyelarasan fitur visual-tekstual melalui \textit{interaction modeling} dapat meningkatkan akurasi klasifikasi secara signifikan, terutama untuk kasus meme yang mengandung ironi atau konten tersirat \cite{kumar2022hateclipper}. Namun, pendekatan ini memiliki keterbatasan yaitu tingginya komputasi akibat dimensi matriks FIM yang besar dan waktu inferensi yang relatif lambat (~2.5 detik per meme).
+
+
+Shah et al. pada tahun 2024 mengusulkan MemeCLIP, sebuah kerangka kerja yang dirancang untuk mengatasi tantangan kompleksitas gambar dengan teks tersemat melalui pemahaman berbagai aspek ekspresi di dalamnya. Berbeda dengan penelitian sebelumnya yang lebih berfokus pada aspek tunggal seperti ujaran kebencian dan subkelasnya, penelitian ini memperluas cakupan ke beberapa aspek linguistik, yaitu kebencian, target kebencian, sikap, dan humor. Dalam penelitian ini, mereka juga memperkenalkan dataset baru bernama PrideMM yang terdiri dari 5.063 gambar dengan teks tersemat terkait gerakan Pride LGBTQ+, sehingga mengisi kekurangan sumber daya yang ada. Hasil eksperimen menunjukkan bahwa MemeCLIP mencapai kinerja lebih baik dibandingkan kerangka kerja sebelumnya pada dua dataset dunia nyata. Penulis juga membandingkan kinerja MemeCLIP dengan GPT-4 dalam tugas klasifikasi kebencian serta membahas kekurangan model ini melalui analisis kualitatif terhadap sampel yang salah diklasifikasikan \cite{shah2024memeclip}. Namun, penelitian ini juga mencatat bahwa model masih memiliki keterbatasan dalam mengenali simbol visual berukuran kecil (\textit{fine-grained}) seperti logo atau ikon beresolusi rendah, serta memahami konteks budaya spesifik yang tidak tercakup dalam data pelatihan CLIP, terutama untuk meme berbahasa non-Inggris atau yang mengandung referensi lokal.
+
+Penulis  melakukan  pencarian  referensi  terkait beberapa penelitian serupa yang pernah dilakukan sebagai dasar penelitian. Penelitian-penelitian yang menjadi referensi penulis dijabarkan pada Tabel \ref{table:2.literasi}. \par
+\renewcommand{\arraystretch}{1.0} % Mengatur spasi antar baris menjadi 1
+\begin{longtable}{|c|p{0.25\textwidth}|p{0.21\textwidth}|p{0.145\textwidth}|p{0.2\textwidth}|}
+  \caption{Literasi Penelitian Terdahulu}\label{table:2.literasi}\\
+  \hline
+  \textbf{No} 
+    & \textbf{Penulis [Tahun] [Judul]} 
+    & \textbf{Permasalahan} 
+    & \textbf{Metode} 
+    & \textbf{Hasil} \\ % ← you must end the row here
+  \hline
+\endfirsthead
+  \hline
+  \textbf{No} 
+    & \textbf{Penulis [Tahun] [Judul]} 
+    & \textbf{Permasalahan} 
+    & \textbf{Metode} 
+    & \textbf{Hasil} \\ % ← and here too
+  \hline
+\endhead
+  \hline
+\endfoot
+  \hline
+\endlastfoot
+    1. & Weibo Wang, Zongkai Wei, Jin Yuan, Yu Fang, dan Yongkang Zheng [2022] [Non-contact heart rate estimation based on singular spectrum component reconstruction using low-rank matrix and autocorrelation] & akaoapaoaj & ak & \\ 
+    \hline
+    2. & Riza Agung Firmansyah, Yuliyanto Agung Prabowo, Titiek Suheta, dan Syahri &  &  & \\
+    \hline
+    & [2023] [Implementation of 1D convolutional neural network for improvement remote photoplethys-mography] & & & \\ 
+\end{longtable}
+
+
+
+
+\section{Dasar Teori} \label{II.Teori}
+Berikut ini merupakan dasar teori yang digunakan pada penelitian ini: \par
+
+\subsection{\textit{Deep Learning}} \label{II.Teori1}
+\textit{Deep learning} merupakan pendekatan dalam \textit{machine learning} yang menggunakan jaringan saraf tiruan berlapis banyak \textit{(deep neural networks)} untuk mempelajari pola dan representasi data secara otomatis melalui proses hierarkis. Berbeda dari metode pembelajaran tradisional \textit{(traditional machine learning)} yang mengandalkan rekayasa fitur manual, \textit{deep learning} memungkinkan ekstraksi fitur kompleks secara langsung dari data mentah menggunakan transformasi non-linear yang dioptimalkan melalui algoritma \textit{backpropagation} \cite{lecun2015deep}. Konsep representasi berlapis inilah yang membuat \textit{deep learning} unggul dalam menangani data dengan skala besar dengan struktur yang beragam seperti teks dan gambar karena model dapat mempelajari fitur tingkat rendah hingga abstraksi tingkat tinggi secara bertahap \cite{schmidhuber2015deep}. Dengan fleksibilitas dan kemampuan generalisasi yang kuat, \textit{deep learning} telah menjadi fondasi utama pengembangan berbagai arsitektur modern dalam bidang \textit{computer vision} dan pemrosesan bahasa alami. \par
+
+\subsection{\textit{Computer Vision}} \label{II.teori2}
+\textit{Computer vision} merupakan bidang dalam kecerdasan buatan yang berfokus pada bagaimana mesin dapat memahami dan menafsirkan informasi visual dari gambar maupun video melalui representasi numerik yang terstruktur \cite{sciencedirect_computer_vision_overview}. Proses komputasional ini mencakup tahapan seperti ekstraksi fitur, deteksi pola, dan pemahaman objek melalui algoritma yang mempelajari hubungan spasial maupun semantik di dalam citra. Pendekatan modern dalam \textit{computer vision} didominasi oleh \textit{deep learning}, khususnya \textit{Convolutional Neural Networks} (CNN), yang mampu mempelajari fitur visual secara hierarkis mulai dari tepi (\textit{low-level features}) hingga representasi abstrak (\textit{high-level features}) melalui pembelajaran berbasis data \cite{lecun2015deep}. Perkembangan lebih lanjut melahirkan \textit{Vision Transformer} (ViT), arsitektur berbasis mekanisme \textit{self-attention} yang memecah gambar dalam bentuk \textit{patch} dan memprosesnya seperti token dalam NLP, sehingga menghasilkan performa kompetitif pada skala data besar \cite{dosovitskiy2020image}. Dengan kemampuan menghasilkan \textit{embedding} visual yang kaya semantik, \textit{computer vision}  menjadi fondasi penting dalam berbagai aplikasi, termasuk klasifikasi gambar, deteksi objek, dan pemahaman multimodal seperti pada model \textit{vision-language}.
+
+\subsection{\textit{Natural Language Processing} (NLP)} \label{II.teori3}
+NLP merupakan cabang kecerdasan buatan yang berfokus pada bagaimana mesin dapat memahami, memproses, dan menghasilkan bahasa manusia melalui representasi matematis yang terstruktur \cite{ibm_nlp}. NLP modern bertumpu pada pembelajaran representasi \textit{(representation learning)}, dimana teks diubah menjadi \textit{embedding} yang mampu menangkap konteks semantik maupun sintaksis. Pergeseran besar dalam NLP terjadi dengan hadirnya pendekatan berbasis \textit{deep learning}, yang dimulai dengan penggunaan \textit{recurrent neural networks} (RNN) dan \textit{Long Short-Term Memory} (LSTM), sebelum akhirnya banyak digantikan oleh arsitektur Transformer yang memungkinkan pemodelan konteks panjang melalui mekanisme \textit{self-attention} \cite{young2017recent}. Transformer kemudian menjadi fondasi model-model pra-latih (\textit{pre-trained models}) seperti BERT, GPT, dan ELECTRA yang memanfaatkan \textit{pre-training} berskala besar untuk mempelajari pola bahasa secara mendalam, sehingga meningkatkan performa berbagai tugas seperti klasifikasi teks, analisis sentimen, dan pemahaman multimodal \cite{devlin2018bert}. Dengan kemampuan menghasilkan representasi linguistik yang kaya konteks, NLP menjadi komponen penting dalam pemrosesan modalitas teks pada sistem multimodal modern. \par
+
+\subsection{Transformer} \label{II.teori4}
+Transformer adalah arsitektur model deep learning yang diperkenalkan oleh Vaswani et al. pada tahun 2017 dan menjadi dasar bagi berbagai model bahasa dan multimodal modern. Keunggulan utama dari Transformer terletak pada mekanisme \textit{self-attention}, yang memungkinkan model untuk menilai hubungan antar-token dalam sebuah urutan tanpa bergantung pada struktur sekuensial. 
+
+Salah satu komponen penting dalam Transformer adalah \textit{multi-head attention}, yang memungkinkan model untuk memproses informasi dari berbagai subruang representasi secara paralel. Setiap token direpresentasikan sebagai vektor, kemudian dihitung nilai \textit{attention} berdasarkan interaksi antara \textit{query (Q)}, \textit{key (K)}, dan \textit{value (V)}. Proses ini menggunakan rumus \textit{Scaled Dot-Product Attention} yang dihitung sebagai berikut:
+
+\begin{equationcaptioned}[eq:scaled-attention]{
+	\text{Attention}(Q, K, V) = \text{softmax}\left( \frac{QK^{T}}{\sqrt{d_k}} \right) V
+}{
+	Scaled Dot-Product Attention
+}
+\end{equationcaptioned}
+
+Dimana \(d_k\) adalah dimensi dari \textit{key} yang digunakan untuk menstabilkan nilai \textit{dot-product}. Mekanisme ini memungkinkan model untuk menangkap dependensi jangka panjang secara efisien. Selain itu, \textit{multi-head attention} memungkinkan model untuk memproses informasi dari berbagai subruang representasi, yang mendukung pengolahan informasi dalam skala besar dan memungkinkan penanganan konteks yang lebih kompleks.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.35\textwidth]{figure/Arsitektur Transformer.png}
+	\caption{Arsitektur Transformer dengan Encoder \cite{vaswani2017attention}}
+	\label{fig:2.transformer}
+	% {\footnotesize Sumber: Vaswani et al., 2017}
+\end{figure}
+
+Gambar \ref{fig:2.transformer} menunjukkan arsitektur Transformer dengan encoder yang fokus pada bagian \textit{input embedding}. Proses dimulai dengan input yang berupa urutan token, yang kemudian diproses menjadi \textit{input embedding}. \textit{Input embedding} mengubah token-token dalam urutan menjadi vektor representasi yang dapat diproses oleh model. Vektor-vektor ini kemudian diperkaya dengan \textit{positional encoding} untuk mempertahankan informasi urutan input, yang sangat penting dalam model Transformer yang tidak bergantung pada urutan sekuensial.
+Gambar ini menggambarkan bagaimana \textit{input embedding} berfungsi sebagai representasi awal bagi setiap token yang masuk, dan bagaimana \textit{embedding} ini bekerja bersama dengan komponen lain seperti \textit{multi-head attention} untuk menghasilkan representasi yang lebih kompleks dalam proses pemodelan \cite{vaswani2017attention}. \par
+
+\subsection{\textit{Contrastive Language-Image Pre-training} (CLIP)} \label{II.teori5}
+CLIP (\textit{Contrastive Language--Image Pre-training}) adalah model vision--language yang dikembangkan oleh OpenAI untuk mempelajari keterkaitan semantik antara gambar dan teks melalui pembelajaran kontrasif berskala besar. CLIP terdiri atas dua \textit{encoder} terpisah, yaitu \textit{image encoder} berbasis Vision Transformer (ViT), serta \textit{text encoder} berbasis Transformer yang keduanya memetakan gambar dan teks ke dalam ruang \textit{embedding} yang sama. Selama pelatihan, CLIP memanfaatkan jutaan pasangan gambar--teks dari internet untuk mempelajari \textit{alignment} antar-modalitas dengan menempatkan pasangan yang cocok semakin dekat dan pasangan tidak cocok semakin jauh dalam ruang vektor. Mekanisme pembelajaran ini diformalkan menggunakan \textit{contrastive loss} (InfoNCE), yang dirumuskan sebagai:
+\begin{equationcaptioned}[eq:clip-infoNCE]{
+\begin{split}
+\mathcal{L} = -\frac{1}{2N} \sum_{i=1}^{N} \Bigg[
+    &\log \frac{\exp(\cos(f_I(L_i), f_T(T_i))/\tau)}{\sum_{j=1}^{N} \exp(\cos(f_I(L_i), f_T(T_j))/\tau)} \\
+    + &\log \frac{\exp(\cos(f_T(T_i), f_I(L_i))/\tau)}{\sum_{j=1}^{N} \exp(\cos(f_T(T_i), f_I(L_j))/\tau)}
+\Bigg]
+\end{split}
+}{Contrastive Loss (InfoNCE) pada CLIP}
+\end{equationcaptioned}
+
+Di mana $f_I$ dan $f_T$ adalah encoder gambar dan teks, $\cos$ adalah fungsi kesamaan kosinus, dan $\tau$ adalah parameter temperatur. Melalui pendekatan ini, CLIP mampu menghasilkan representasi multimodal yang kaya konteks dan sangat efektif untuk berbagai tugas \textit{downstream} tanpa perlu \textit{fine-tuning}, termasuk klasifikasi multimodal, analisis meme, serta deteksi konten berisiko.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/CLIP.png}
+	\caption{Arsitektur CLIP \cite{Pan2022ContrastiveKCLIP}}
+	\label{fig:3.clip}
+	% {\footnotesize Sumber: Vaswani et al., 2017}
+\end{figure}
+
+Gambar \ref{fig:3.clip} di atas mengilustrasikan arsitektur model CLIP yang menerapkan mekanisme dual-encoder untuk mempelajari representasi visual dan tekstual secara bersamaan. Dalam proses ini, \textit{text encoder} dan \textit{image encoder} bekerja secara paralel mengubah sekumpulan input gambar dan teks menjadi vektor fitur \textit{(embedding)} dalam ruang dimensi yang sama. Setiap pasangan gambar-teks yang sesuai dipetakan ke vektor yang berdekatan, sementara pasangan yang tidak sesuai dipisahkan lebih jauh, melalui optimasi fungsi InfoNCE yang memaksimalkan kesamaan kosinus antar \textit{embedding} \cite{Pan2022ContrastiveKCLIP}\par
+
+\subsection{\textit{Efficiently Learning an Encoder that Classifies Token Replacements Accurately} (ELECTRA)} \label{II.teori6}
+
+ELECTRA adalah model pra-latih berbasis Transformer yang diperkenalkan sebagai alternatif yang lebih efisien daripada BERT melalui mekanisme \textit{Replaced Token Detection} (RTD), yaitu tugas diskriminatif di mana model belajar membedakan token asli dan token yang telah diganti oleh model \textit{generator} kecil. Tidak seperti pendekatan \textit{Masked Language Modeling} (MLM) pada BERT yang hanya memperbarui representasi untuk token yang di \textit{masking,} ELECTRA memperbarui seluruh token dalam urutan, sehingga menghasilkan pembelajaran yang lebih stabil dan \textit{sample-efficient}. Arsitektur ELECTRA terdiri dari dua komponen, yaitu \textit{generator} yang memprediksi token pengganti menggunakan MLM kecil, dan \textit{discriminator} yang menilai apakah setiap token adalah asli atau hasil substitusi. Secara formal, RTD meminimalkan fungsi \textit{loss} biner berikut:
+
+\begin{equationcaptioned}[eq:rtd-loss]{
+\mathcal{L}_{\text{RTD}} = - \sum_{i=1}^{n} \left[ y_i \log D(x_i) + (1 - y_i)\log \left(1 - D(x_i)\right) \right]
+}{Replaced Token Detection (RTD) Loss pada ELECTRA}
+\end{equationcaptioned}
+
+dengan $y_i = 1$ jika token asli dan $y_i = 0$ jika token hasil generator, serta $D(x_i)$ adalah probabilitas bahwa token tersebut asli. Pendekatan ini menghasilkan representasi linguistik yang lebih informatif dengan biaya komputasi lebih rendah dibanding model sejenis, menjadikan ELECTRA sangat efektif untuk tugas klasifikasi teks dan integrasi dalam sistem multimodal.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figure/ELECTRA.png}
+	\caption{Arsitektur ELECTRA \cite{clark2020electra}}
+	\label{fig:3.electra}
+	% {\footnotesize Sumber: Vaswani et al., 2017}
+\end{figure}
+Gambar \ref{fig:3.electra} di atas mengilustrasikan arsitektur model ELECTRA yang terdiri dari \textit{generator} dan \textit{discriminator}. Proses pelatihan dengan \textit{generator} dan \textit{discriminator} ini diformalkan melalui fungsi \textit{Replaced Token Detection} (RTD) \textit{loss}, yang memaksimalkan kemampuan \textit{discriminator} dalam mengidentifikasi token asli berdasarkan konteks sekitarnya \cite{clark2020electra}. Pendekatan ini memungkinkan ELECTRA untuk menghasilkan representasi linguistik yang lebih kaya dan efisien dibandingkan metode pra-latih tradisional seperti BERT.
+
+\subsection{\textit{Multimodal Deep learning}} \label{II.teori7}
+Multimodal \textit{deep learning} adalah pendekatan pembelajaran mesin yang memanfaatkan \textit{deep neural networks} untuk mengintegrasikan berbagai modalitas data, seperti teks, gambar, audio, atau video, sehingga model mampu memahami informasi secara lebih kontekstual \cite{ngiam2011multimodal}. Modalitas merujuk pada jenis data yang berbeda, gambar membawa informasi visual spasial, teks membawa informasi semantik dan linguistik, sedangkan audio atau video menangkap informasi temporal \cite{IBM2024multimodal}. Dalam multimodal \textit{deep learning}, setiap modalitas diproses oleh \textit{encoder} neural network tersendiri untuk menghasilkan representasi (\textit{embedding}) yang memodelkan karakteristik modalitas tersebut secara mendalam. \textit{Embedding} dari berbagai modalitas kemudian digabung melalui mekanisme \textit{fusion} agar model dapat menangkap hubungan lintas-modal (\textit{cross-modal relationships}) yang kompleks, sehingga memungkinkan penggabungan keunggulan tiap modalitas dan mengatasi keterbatasan ketika hanya menggunakan satu modalitas. Pendekatan ini pertama kali distandardisasi oleh Ngiam et al. pada tahun, yang menunjukkan bahwa jaringan neural yang dilatih dengan data multimodal mampu mempelajari representasi bersama yang lebih kuat dibandingkan representasi unimodal \cite{ngiam2011multimodal}. \par
+
+\subsection{Klasifikasi \textit{Fusion} dalam \textit{Multimodal Deep learning}} \label{II.teori8}
+Salah satu aspek kunci dari \textit{multimodal deep learning} adalah bagaimana modalitas berbeda digabung, yaitu melalui proses \textit{fusion}. Berdasarkan kapan dan bagaimana penggabungan dilakukan, teknik \textit{fusion} secara umum dapat diklasifikasikan menjadi empat kategori utama, yaitu \textit{early fusion}, \textit{intermediate fusion}, \textit{late fusion}, dan \textit{hybrid fusion}. Berikut penjelasannya:
+\subsubsection{\textit{Early Fusion}} \label{II.teori8.1}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{figure/earlyfusion.png}
+\caption{Contoh Early Fusion \cite{jiao2024comprehensive}}
+\label{fig:4.earlyfusion}
+\end{figure}
+Pada pendekatan ini, modalitas digabungkan pada tingkat input sebelum proses \textit{encoding}. Contohnya pada Gambar \ref{fig:4.earlyfusion}, data gambar dan audio digabung menjadi satu representasi gabungan yang kemudian diberikan ke neural network. Early fusion memungkinkan model mempelajari interaksi antar-modalitas dari tahap awal, tetapi menghadapi tantangan signifikan karena heterogenitas struktur data (misalnya perbedaan dimensi, skala, dan format) yang dapat menyulitkan integrasi langsung \cite{baltrusaitis2019multimodal}. \par
+
+\subsubsection{\textit{Intermediate Fusion}} \label{II.teori8.2}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{figure/intermediate.png}
+\caption{Contoh Intermediate Fusion \cite{jiao2024comprehensive}}
+\label{fig:5.intermediatefusion}
+\end{figure}  
+Pada Gambar \ref{fig:5.intermediatefusion}, setiap modalitas terlebih dahulu diproses oleh \textit{encoder} masing-masing untuk menghasilkan \textit{embedding} atau fitur spesifik modalitas. Setelah itu, embedding dari berbagai modalitas digabung misalnya melalui \textit{concatenation}, \textit{projection}, \textit{pooling}, atau mekanisme \textit{fusion} lanjutan sebelum diteruskan ke lapisan prediksi. Pendekatan ini menawarkan keseimbangan antara kemampuan merepresentasikan keunikan tiap modalitas dan mempelajari hubungan lintas-modalitas, sehingga banyak digunakan pada model modern, termasuk sistem vision language \cite{jiao2024comprehensive}. \par
+
+\subsubsection{\textit{Late Fusion}} \label{II.teori8.3}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{figure/late.png}
+\caption{Contoh Late Fusion \cite{jiao2024comprehensive}}
+\label{fig:6.latefusion}
+\end{figure} 
+Pada Gambar \ref{fig:6.latefusion} setiap modalitas diproses secara independen hingga menghasilkan prediksi masing-masing, seperti probabilitas atau skor klasifikasi. Prediksi tersebut kemudian digabung menggunakan metode seperti \textit{weighted sum}, \textit{voting}, atau \textit{averaging} untuk memperoleh prediksi akhir. Late fusion efektif ketika modalitas relatif independen dan prediksi masing-masing sudah cukup kuat, namun kurang mampu menangkap interaksi semantik yang mendalam antar-modalitas \cite{jiao2024comprehensive}. \par
+
+\subsubsection{\textit{Hybrid Fusion}} \label{II.teori8.4}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{figure/hybrid.png}
+\caption{Contoh Hybrid Fusion \cite{jiao2024comprehensive}}
+\label{fig:7.hybridfusion}
+\end{figure}
+Hybrid fusion menggabungkan dua atau lebih strategi fusion, misalnya mengombinasikan \textit{feature-level fusion} dan \textit{decision-level fusion}, atau menggabungkan embedding dengan mekanisme \textit{attention} sekaligus memanfaatkan penggabungan skor prediksi. Pada Gambar \ref{fig:7.hybridfusion}, hybrid fusion banyak digunakan pada aplikasi multimodal yang kompleks karena mampu memanfaatkan kelebihan beragam strategi sekaligus mengatasi keterbatasan masing-masing \cite{jiao2024comprehensive}. \par
+
+Dalam praktiknya, pemilihan teknik \textit{fusion} sangat bergantung pada karakteristik data, tujuan aplikasi, serta kompleksitas model yang diinginkan. Pendekatan \textit{intermediate fusion} sering kali menjadi pilihan populer karena fleksibilitas dan kemampuannya dalam menangkap hubungan lintas-modalitas secara efektif. \par
+
+\subsection{Meme} \label{II.teori9}
+Meme adalah bentuk pesan digital yang menyebar secara cepat melalui internet dan media sosial, dan biasanya terdiri atas kombinasi elemen visual (gambar) serta teks yang membentuk makna tertentu dalam konteks budaya. Secara etimologis, istilah \textit{meme} pertama kali diperkenalkan oleh Richard Dawkins (1976) sebagai “unit budaya yang menyebar melalui imitasi,” namun dalam konteks modern, meme berkembang menjadi fenomena visual linguistik yang merepresentasikan humor, kritik sosial, opini, atau emosi melalui struktur multimodal yang ringkas. Penelitian dalam bidang komunikasi digital menunjukkan bahwa makna meme tidak hanya berasal dari gambar atau teks secara terpisah, tetapi dari hubungan interaktif antara keduanya, termasuk elemen seperti ironi, metafora visual, sarkasme, dan referensi budaya (\textit{cultural references}) yang bersifat kontekstual \cite{shifman2013memes}. Kompleksitas ini menjadikan meme sebagai bentuk komunikasi multimodal yang sulit dipahami oleh model berbasis unimodal, karena penafsirannya sering bergantung pada kemampuan untuk menangkap keterkaitan antara modalitas visual dan linguistik. Oleh sebab itu, dalam deteksi meme berbahaya seperti \textit{self-harm} atau \textit{hate speech} diperlukan pendekatan \textit{multimodal deep learning} yang mampu memahami hubungan lintas-modal (\textit{cross-modal semantics}) antara teks dan gambar.
+
+\subsection{\textit{Self-Harm}} \label{II.teori10}
+Self-harm atau perilaku menyakiti diri sendiri merupakan tindakan yang dilakukan seseorang untuk melukai tubuhnya secara sengaja, baik dengan maupun tanpa niat untuk mengakhiri hidup. Organisasi Kesehatan Dunia (WHO) mendefinisikan \textit{self-harm} sebagai \textit{ ``intentional self-inflicted injury, with or without suicidal intent''} \cite{WHO2014PreventingSuicide}. Dalam ranah psikiatri, \textit{Diagnostic and Statistical Manual of Mental Disorders} edisi kelima (DSM-5) membedakan antara \textit{non-suicidal self-injury} (NSSI), yaitu perilaku menyakiti diri tanpa niat bunuh diri yang setidaknya terjadi selama lima hari dalam setahun, dengan \textit{suicidal behavior} yang berorientasi pada keinginan mengakhiri hidup \cite{APA2022_DSM5TR}. Self-harm banyak dikaitkan dengan kondisi psikologis seperti depresi, kecemasan, dan kesulitan regulasi emosi.
+
+Perkembangan media sosial memperluas cara individu mengekspresikan pikiran atau perasaan terkait self-harm. Penelitian menunjukkan bahwa konten \textit{self-harm} di platform digital seperti Instagram, TikTok, dan Reddit sering muncul dalam bentuk teks, gambar, atau kombinasi keduanya, dan dapat menjadi indikator risiko ideasi bunuh diri maupun NSSI pada remaja dan dewasa muda \cite{arendt2019effects}. Paparan konten tersebut dapat meningkatkan risiko perilaku, normalisasi self-harm, serta perburukan kondisi mental pengguna yang rentan. Bentuk ekspresi self-harm di media sosial sering kali bersifat implisit melalui humor gelap, metafora visual, atau ungkapan ironi, sehingga sulit diidentifikasi oleh sistem deteksi sederhana \cite{Sharma2022HarmfulMemes}.
+Meme self-harm biasanya memadukan elemen visual dan teks secara multimodal sehingga maknanya muncul dari hubungan antara kedua modalitas tersebut, bukan dari salah satu modalitas secara terpisah. Penelitian menunjukkan bahwa meme bertema self-harm sering mengandung humor gelap, sarkasme, atau representasi simbolik dari rasa sakit emosional, yang membuatnya menantang untuk ditangkap oleh model berbasis unimodal \cite{kiela2020hateful}. Oleh karena itu, pendekatan \textit{multimodal deep learning} diperlukan untuk memahami interaksi visual-linguistik pada meme dan mengidentifikasi konten \textit{self-harm} secara lebih akurat.
+
+\subsection{Prapemrosesan Data} \label{II.teori11}
+Prapemrosesan data adalah tahap penting dalam pipeline analisis data yang bertujuan untuk menyiapkan data mentah agar siap digunakan dalam model. Prapemrosesan data terdiri dari berbagai teknik yang masing-masing dirancang untuk mempersiapkan data dalam bentuk yang sesuai untuk analisis lebih lanjut. Berikut adalah teknik-teknik utama dalam prapemrosesan data.
+\subsubsection{\textit{Resize} Gambar} \label{II.teori11.1}
+Resize gambar adalah proses mengubah ukuran gambar untuk memenuhi kebutuhan model yang digunakan. Secara matematis, proses ini melibatkan perhitungan rasio antara dimensi gambar awal dan ukuran target. Jika ukuran gambar asli adalah $(W, H)$ dan gambar yang diinginkan berukuran $(W', H')$, maka rasio skala untuk lebar dan tinggi adalah sebagai berikut:
+
+\begin{equationcaptioned}[eq:scale-factor]{
+	\text{Scale Factor} = \left( \frac{W'}{W} \right) \left( \frac{H'}{H} \right)
+}{
+Perhitungan Faktor Skala
+}
+\end{equationcaptioned}
+
+Resize gambar akan mengubah ukuran citra asli berdasarkan skala ini, yang dapat memperkecil atau memperbesar citra sesuai dengan ukuran yang diinginkan. Dengan memperkecil ukuran gambar, kita dapat mengurangi jumlah parameter yang perlu diproses, meningkatkan efisiensi, dan mengurangi waktu komputasi \cite{Xu2023ImageAugmentationSurvey}.
+
+\subsubsection{Normalisasi Gambar} \label{II.teori11.2}
+CLIP (\textit{Contrastive Language--Image Pretraining}) menerapkan normalisasi pada dua tahapan krusial dalam arsitekturnya. Pertama, normalisasi input gambar dilakukan dengan menstandarisasi nilai piksel menggunakan \textit{mean} ($\mu$) dan standar deviasi ($\sigma$) spesifik agar distribusi data selaras dengan \textit{backbone encoder} visual (seperti ResNet atau ViT). Secara matematis, transformasi ini dapat dituliskan sebagai:
+
+\begin{equationcaptioned}[eq:input_norm]{
+	x_{norm} = \frac{x - \mu}{\sigma}
+}{
+Normalisasi Input Gambar
+}
+\end{equationcaptioned}
+
+dimana $x$ adalah nilai piksel asli dan $x_{norm}$ adalah input yang diteruskan ke jaringan. 
+
+Kedua, setelah citra dan teks diproses menjadi \textit{embedding}, CLIP menerapkan \textit{L2-normalization} pada vektor tersebut agar diproyeksikan ke dalam \textit{unit hypersphere}. Jika $v$ adalah vektor fitur keluaran dari \textit{encoder}, maka normalisasi didefinisikan sebagai:
+
+\begin{equationcaptioned}[eq:l2_norm]{
+	v_{norm} = \frac{v}{\|v\|_2} = \frac{v}{\sqrt{\sum_{i=1}^{d} v_i^2}} + h
+}{
+Normalisasi Vektor
+}
+\end{equationcaptioned}
+
+Normalisasi vektor pada persamaan \ref{eq:l2_norm} ini krusial karena menjadikan operasi \textit{dot product} setara dengan \textit{cosine similarity} dalam perhitungan \textit{loss} kontrastif, sehingga model dapat mempelajari penyelarasan semantik antara teks dan gambar dengan lebih stabil dan konsisten \cite{Pan2022ContrastiveKCLIP}.
+
+
+\subsubsection{\textit{Flip}} \label{II.teori11.3}
+\textit{Flip} adalah teknik augmentasi gambar yang digunakan untuk memperbesar variasi data dengan membalik gambar secara horizontal atau vertikal. Ini membantu model menjadi lebih robust terhadap variasi dalam data, seperti orientasi objek \cite{Xu2023ImageAugmentationSurvey}.
+
+\subsubsection{\textit{Rotation}} \label{II.teori11.4}
+Rotasi merupakan teknik augmentasi yang dilakukan dengan memutar gambar ke kanan atau kiri pada suatu sumbu dengan sudut tertentu, biasanya berada pada rentang 1° hingga 359°. Tingkat keamanan \textit{(safety)} dari augmentasi ini sangat ditentukan oleh besar sudut rotasi, karena rotasi yang terlalu ekstrem dapat menyebabkan hilangnya informasi penting pada citra, seperti tepi objek atau struktur yang relevan \cite{Shorten2019ImageDataAugmentation}.
+
+\subsubsection{\textit{Color Jitter}} \label{II.teori11.5}
+\textit{Color Jitter} merupakan teknik augmentasi data fotometrik yang berfungsi memodifikasi atribut visual citra meliputi kecerahan, kontras, saturasi, dan rona secara stokastik tanpa mengubah struktur geometris objek di dalamnya. Penerapan teknik ini bertujuan untuk mensimulasikan variabilitas pencahayaan yang alami terjadi di dunia nyata, sehingga memaksa model untuk mempelajari fitur struktural yang invarian alih-alih bergantung pada bias warna atau intensitas piksel absolut. Mekanisme distorsi warna ini terbukti efektif dalam meningkatkan kemampuan generalisasi model serta memitigasi risiko \textit{overfitting} akibat keterbatasan variasi visual pada data latih \cite{Shorten2019ImageDataAugmentation}.
+
+\subsection{Evaluasi} \label{II.teori12}
+Evaluasi merupakan tahap penting dalam menilai performa model klasifikasi, terutama pada tugas sensitif seperti deteksi konten self-harm dalam meme. Evaluasi umumnya dilakukan menggunakan \textit{confusion matrix} yang menggambarkan hubungan antara prediksi model dan kondisi sebenarnya. Matriks ini terdiri dari empat komponen, yaitu \textit{True Positive} (TP), \textit{True Negative} (TN), \textit{False Positive} (FP), dan \textit{False Negative} (FN) \cite{fawcett2006introduction}. Struktur \textit{confusion matrix} dapat dilihat pada Tabel~\ref{table:confmatrix}.
+
+\begin{longtable}{|c|c|c|}
+\caption{\textit{Confusion Matrix}}
+\label{table:confmatrix}\\
+\hline
+\textbf{\textit{Actual $\backslash$ Predicted}} & \textbf{\textit{Positive}} & \textbf{\textit{Negative}} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{\textit{Actual \textbackslash Predicted}} & \textbf{\textit{Positive}} & \textbf{\textit{Negative}} \\
+\hline
+\endhead
+
+\textit{Positive} & TP & FN \\
+\hline
+\textit{Negative} & FP & TN \\
+\hline
+\end{longtable}
+
+Berdasarkan elemen-elemen tersebut, beberapa metrik evaluasi dapat dihitung. 
+\textit{Accuracy} mengukur proporsi prediksi benar terhadap seluruh sampel, 
+namun sering tidak cukup representatif ketika data tidak seimbang 
+(\textit{imbalanced}) seperti pada deteksi self-harm meme \cite{sokolova2009systematic}. \textit{Precision} mengukur tingkat ketepatan prediksi kelas positif, sedangkan 
+\textit{Recall} mengukur kemampuan model dalam menangkap seluruh sampel positif. 
+Keduanya penting karena kesalahan \textit{False Negative} (FN) pada deteksi 
+konten self-harm berpotensi membahayakan pengguna. 
+Untuk menyeimbangkan precision dan recall digunakan \textit{F1-score}, yaitu 
+rata-rata harmonik keduanya, yang efektif untuk dataset tidak seimbang 
+\cite{powers2020evaluationprecisionrecallfmeasure}.
+
+Secara matematis, metrik-metrik evaluasi dirumuskan sebagai berikut:
+
+\begin{equationcaptioned}[eq:accuracy]{
+\textit{Accuracy} = 
+\frac{TP + TN}{TP + TN + FP + FN}
+}{
+Perhitungan \textit{Accuracy}
+}
+\end{equationcaptioned}
+
+\begin{equationcaptioned}[eq:precision]{
+\textit{Precision} = 
+\frac{TP}{TP + FP}
+}{
+Perhitungan \textit{Precision}
+}
+\end{equationcaptioned}
+
+\begin{equationcaptioned}[eq:recall]{
+\textit{Recall} = 
+\frac{TP}{TP + FN}
+}{
+Perhitungan \textit{Recall}
+}
+\end{equationcaptioned}
+
+\begin{equationcaptioned}[eq:f1]{
+\textit{F1} = 
+2 \times 
+\frac{
+	\textit{Precision} \times \textit{Recall}
+}{
+	\textit{Precision} + \textit{Recall}
+}
+}{
+Perhitungan \textit{F1-Score}
+}
+\end{equationcaptioned}
+
+Kombinasi dari seluruh metrik tersebut memberikan gambaran evaluasi yang lebih komprehensif dibandingkan hanya menggunakan Accuracy saja, terutama karena model untuk deteksi self-harm harus sensitif terhadap kesalahan pada kelas positif. Evaluasi yang menyeluruh ini penting untuk memastikan model tidak hanya akurat secara keseluruhan, tetapi juga efektif dalam mengidentifikasi konten berisiko tinggi. \par

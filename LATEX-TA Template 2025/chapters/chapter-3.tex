@@ -1,0 +1,418 @@
+\newpage
+\chapter{METODE PENELITIAN} \label{Bab III}
+\section{Alur Penelitian} \label{III.Alur}
+Tahapan penelitian ini diawali dengan proses identifikasi masalah dan studi literatur untuk membangun landasan teori yang kuat. Selanjutnya, dilakukan pengumpulan data, anotasi data dan \textit{pre-processing}. Setelah data siap, penelitian berfokus pada pengembangan model arsitektur multimodal, yang kemudian diuji melalui tahap evaluasi model. Rangkaian penelitian ini ditutup dengan analisis hasil dan pembahasan untuk menarik kesimpulan. Adapun ilustrasi lebih rinci mengenai alur penelitian ini dapat dilihat pada Gambar \ref{fig:3.alur}. \par
+
+\begin{figure}[H] % Kalau menggunakan H, posisi gambar akan tepat dibawah teks
+    \centering
+    \includegraphics[width=0.64\textwidth]{figure/Alur Penelitian.png}
+    \caption{Alur Penelitian}
+    \label{fig:3.alur}
+\end{figure}
+
+\section{Penjabaran Langkah Penelitian} \label{III.Jabar Alur}
+Pada alur penelitian yang telah digambarkan dalam \textit{flowchart} pada subbab \ref{III.Alur}, penjelasan berikut menggambarkan secara rinci langkah-langkah penelitian yang akan dilakukan. \par
+
+\subsection{Identifikasi Masalah} \label{III.Langkah 1}
+Tahap pertama dalam penelitian ini adalah identifikasi masalah mellaui studi literatur, yang berfokus pada urgensi memahami meme dengan tema \textit{self-harm} sebagai konten digital dengan makna yang tersirat. Meme jenis ini sering menggunakan ironi, sarkasme, humor gelap, atau metafora visual, sehingga indikasi  \textit{self-harm}  tidak selalu tampak secara eksplisit dan hanya dapat dipahami jika teks dan gambar dianalisis secara kontekstual. Hingga saat ini, belum ditemukan penelitian yang secara spesifik mengembangkan model klasifikasi untuk meme  \textit{self-harm} , sehingga belum ada acuan metodologis yang benar-benar fokus pada konteks tersebut. Selain itu, belum tersedia dataset publik yang secara khusus menyajikan kumpulan meme  \textit{self-harm} , karena sebagian besar dataset multimodal yang ada lebih banyak berfokus pada kategori lain seperti ujaran kebencian atau propaganda \cite{Sharma2022HarmfulMemes}. Ketiadaan model klasifikasi yang khusus, terbatasnya dataset yang relevan, dan sifat makna meme yang implisit, membentuk kesenjangan riset yang jelas, yang menegaskan perlunya pengembangan model multimodal dalam penelitian ini.\par
+
+\subsection{Studi Literatur} \label{III.Langkah 2}
+Tahap kedua dalam penelitian ini adalah studi literatur, yang mencakup kajian mendalam terhadap berbagai sumber ilmiah yang relevan dengan topik penelitian. Studi literatur ini bertujuan untuk memahami konsep, metode, dan temuan terkini terkait pemanfaatan \textit{Large Language Models} (LLM) untuk anotasi data, kemampuan model multimodal modern dalam mengenali emosi dan konten berisiko, serta perkembangan arsitektur yang digunakan untuk menganalisis meme berbahaya. Pada tahap ini, ditinjau penelitian yang membahas penggunaan LLM sebagai \textit{automatic annotator} untuk mengatasi keterbatasan anotasi manual, model multimodal untuk pengenalan emosi dan pemahaman konteks visual dan tekstual, serta berbagai kerangka kerja untuk deteksi \textit{harmful, toxic,} dan \textit{hateful memes} yang banyak memanfaatkan representasi CLIP. Hasil studi literatur tersebut menjadi landasan teoritis untuk merumuskan celah riset pada domain meme  \textit{self-harm} dan menyusun rancangan model multimodal yang akan dikembangkan dalam penelitian ini. \par
+
+\subsection{Pengumpulan Data} \label{III.Langkah 3}
+Berikut pengumpulan data yang dilakukan dalam penelitian ini.
+
+\subsubsection{Pengumpulan Data dari Media Sosial} \label{III.Langkah 3.1}
+Pada penelitian ini, data meme dikumpulkan secara manual dari beberapa platform media sosial, yakni Reddit, Instagram, Facebook, dan X. Pengumpulan manual dipilih karena meme merupakan unit multimodal (teks dan gambar) yang maknanya sering muncul dari interaksi kedua modalitas, sehingga pengambilan data harus mempertahankan format asli (gambar + teks dalam satu konteks). Hal ini sejalan dengan temuan survei \textit{harmful memes} yang menekankan bahwa konten berbahaya sering mengombinasikan beberapa modalitas dan tidak dapat dianalisis secara unimodal saja \cite{Sharma2022HarmfulMemes}.
+
+Proses pengumpulan dilakukan dengan memasukkan kata kunci atau tagar terkait \textit{self-harm} dan ideasi bunuh diri (contoh: \#KMS, \#IWannaCutMySelf, \#depression, dan variasi lainnya) pada fitur pencarian masing-masing platform. Konten yang dianggap relevan kemudian disimpan sebagai tangkapan layar (\textit{screenshot}) agar komposisi visual--tekstual tetap utuh. Strategi pencarian berbasis kata kunci dipandang relevan karena literatur menunjukkan adanya proliferasi konten \textit{self-harm} di media sosial dan efek normalisasi yang bisa meningkat karena paparan berulang \cite{MoraledaEsteban2025SelfHarm}. Pengumpulan manual ini memungkinkan peneliti untuk menyeleksi meme yang secara eksplisit atau implisit mengandung indikasi \textit{self-harm}, sehingga dataset yang diperoleh lebih sesuai dengan tujuan penelitian.
+Dalam proses seleksi, konten dipilih apabila memuat kombinasi teks gambar atau teks yang ditempel pada gambar sehingga dapat dianalisis secara multimodal, konteks meme masih terbaca dengan jelas, dan mengandung indikasi \textit{self-harm} baik secara eksplisit maupun implisit. Konten yang terlalu buram, terpotong sehingga kehilangan konteks utama, atau duplikat yang identik tidak disertakan dalam dataset.
+Proses pengumpulan data ini menghasilkan sebanyak 268 meme \textit{self-harm}. Data tersebut kemudian diproses lebih lanjut pada tahap anotasi dan \textit{pre-processing} sebelum digunakan dalam pengembangan model multimodal.
+
+\subsubsection{Rekayasa Dataset Meme \textit{Self-Harm}} \label{III.Langkah 3.2}
+Selain pengumpulan data melalui media sosial, penelitian ini melakukan rekayasa dataset untuk memperkaya variasi contoh \textit{self-harm} dan meningkatkan keberagaman pola multimodal yang dapat dipelajari model. Langkah ini juga didorong oleh literatur \textit{harmful memes} yang menyatakan bahwa beberapa kategori \textit{harmful memes}, termasuk meme yang memuat \textit{self-harm}, masih kurang diteliti karena keterbatasan dataset yang sesuai \cite{Sharma2022HarmfulMemes}. 
+
+Rekayasa dataset dilakukan dengan membangun meme multimodal secara manual melalui penggabungan komponen tekstual dari dataset publik \textit{Suicidal Ideation Detection Reddit Dataset} yang berisi postingan Reddit dengan label \textit{suicidal} dan \textit{non-suicidal}, serta komponen visual dari dataset publik bertipe \textit{object detection} yang memuat objek berbahaya pisau dan senjata api \cite{mafi_alam_2023_suicidal_reddit}\cite{ali_weapon_knife_2025}. Gambar-gambar tersebut dipilih untuk merepresentasikan \textit{visual cues} yang secara umum diasosiasikan dengan risiko kekerasan atau cedera tanpa harus menampilkan luka eksplisit.
+
+Untuk komponen teks, penelitian ini memilih subset teks berlabel \textit{suicidal} dengan nilai \textit{confidance} atau tingkat kejelasan tinggi untuk resiko keputusasaan, dan menghindari teks yang terlalu pendek atau ambigu. Tujuan pemilihan ini adalah untuk membentuk meme sintetis yang secara semantik lebih konsisten dengan indikator risiko \textit{self-harm}. Pertimbangan ini relevan karena tinjauan sistematis tentang dampak melihat gambar \textit{self-harm online} menunjukkan berbagai efek berbahaya yang dominan, termasuk eskalasi \textit{self-harm}, \textit{social comparison}, terbentuknya \textit{self-harm identity} bahkan ketika tidak menampilkan luka secara eksplisit \cite{Susi2023ViewingSelfHarmImages}. Dengan kata lain, kekuatan sinyal dalam konten, termasuk teks, adalah faktor penting untuk membedakan konten berisiko tinggi versus rendah.
+
+Rekayasa dataset ini menghasilkan 524 meme \textit{self-harm} sintetis. Seluruh meme sintetis tersebut diperlakukan sebagai data penelitian yang harus melalui proses anotasi dan tidak otomatis dianggap benar, sehingga label final tetap ditentukan berdasarkan \textit{annotation guideline} yang disusun berbasis literatur melalui \textit{pseudo-labelling} oleh LLM yang akan dijelaskan dalam sub bab anotasi data.
+
+\subsubsection{Dataset Meme Umum sebagai Kandidat \textit{Non-Self-Harm}} \label{III.Langkah 3.3}
+Selain data \textit{self-harm} yang dikumpulkan secara langsung dari media sosial dan data hasil rekayasa dataset, penelitian ini juga menggunakan sebanyak 1.500 meme yang diambil dari dataset publik Kaggle berjudul \textit{``6992 Labeled Meme Images Dataset''}. Dataset ini dikembangkan untuk keperluan analisis sentimen dan klasifikasi meme multimodal, sehingga memuat berbagai konteks humor umum, ekspresi emosi sehari-hari, serta interaksi sosial yang lazim ditemukan di internet \cite{javaid_6992_meme_images_2023}.
+
+Dataset tersebut tidak secara eksplisit dirancang untuk tugas klasifikasi \textit{self-harm}. Oleh karena itu, secara konseptual dataset ini dapat mengandung konten yang bersifat netral maupun konten yang berpotensi ambigu. Dalam penelitian ini, dataset tersebut tidak diasumsikan sebagai \textit{non-self-harm} secara \textit{a priori}, melainkan diperlakukan sebagai kumpulan data kandidat yang diharapkan mayoritas merepresentasikan konten \textit{non-self-harm}. Pemilihan dataset meme umum ini bertujuan untuk menyediakan \textit{baseline} konten netral serta memperkaya distribusi data selama proses \textit{pseudo-labeling}. Label akhir dari setiap meme dalam dataset ini ditentukan pada tahap anotasi data menggunakan \textit{annotation guideline} berbasis literatur dan pendekatan \textit{ensemble pseudo-labeling}. Dengan demikian, jumlah data yang pada akhirnya dilabeli sebagai \textit{non-self-harm} maupun \textit{self-harm} baru dapat dipastikan setelah seluruh proses anotasi selesai.
+
+Pendekatan ini sejalan dengan praktik \textit{weak supervision}, dimana data mentah yang belum memiliki label spesifik dimasukkan ke dalam \textit{pipeline} anotasi dan pelabelan otomatis, kemudian ditentukan kelas akhirnya melalui agregasi beberapa sumber pelabelan, bukan berdasarkan asumsi awal \cite{ratner2019}.
+
+\subsubsection{Ringkasan Komposisi Dataset Awal} \label{III.Langkah 3.4}
+Secara keseluruhan, dataset awal yang digunakan dalam penelitian ini berjumlah 2.292 meme multimodal. Dataset tersebut terdiri dari 268 data \textit{self-harm} yang dikumpulkan dari media sosial (\textit{in-the-wild}), 524 data \textit{self-harm} hasil rekayasa dataset, serta 1.500 data meme umum dari dataset publik sebagai kandidat \textit{non-self-harm} dan akan ditentukan label akhirnya pada tahap anotasi data.
+
+
+\subsection{Anotasi Data} \label{III.Langkah4}
+Tahap anotasi data menggunakan pendekatan \textit{ensemble pseudo-labeling} dengan dua model vision-language, GPT-4o dan Qwen-VL-Flash, untuk menghasilkan label biner \textit{Self-Harm} dan \textit{Non Self-Harm} pada meme multimodal. Pendekatan ini memanfaatkan kemampuan analisis multimodal kedua model untuk memastikan akurasi pelabelan yang lebih tinggi. \par
+Proses anotasi bertujuan menghasilkan label biner \textit{Self-Harm} dan \textit{Non Self-Harm} pada meme multimodal. 
+Secara klinis, \textit{self-harm} didefinisikan sebagai perilaku melukai diri atau meracuni diri secara sengaja, terlepas dari adanya niat bunuh diri \cite{Dawkins1976SelfishGene}. Berdasarkan definisi tersebut, dalam penelitian ini label \textit{Self-Harm} diberikan apabila kombinasi teks dan visual dalam meme mengindikasikan tindakan melukai diri, ideasi kematian, atau normalisasi perilaku tersebut, baik secara eksplisit maupun implisit. Sebaliknya, label \textit{Non Self-Harm} diberikan apabila meme tidak mengandung indikasi tersebut.
+
+\subsubsection{\textit{Framework Prompting} (\textit{RapGuard})} \label{III.Langkah4.1}
+Untuk menangani kompleksitas analisis meme yang memadukan teks dan gambar, penelitian ini menggunakan kerangka \textit{RapGuard} sebagai dasar dalam perancangan \textit{prompting}. 
+Kerangka ini digunakan karena metode \textit{prompting} sederhana atau statis pada umumnya hanya menganalisis teks atau gambar secara terpisah, sehingga berpotensi mengabaikan risiko yang baru muncul ketika kedua modalitas tersebut digabungkan. \textit{RapGuard} secara khusus dirancang untuk mendorong model melakukan analisis terstruktur terhadap tiga aspek utama, yaitu konten visual, konten tekstual, serta hubungan antara teks dan gambar. Selain itu, kerangka ini juga menyertakan tahap \textit{self-checking}, dimana model diminta untuk meninjau kembali keputusan awalnya secara kritis sebelum memberikan label akhir. Pendekatan ini bertujuan untuk meningkatkan keandalan pelabelan, terutama pada kasus meme yang bersifat ambigu, menggunakan humor gelap, atau menyembunyikan makna berbahaya secara implisit \cite{Jiang2024RapGuard}. Dengan demikian, penggunaan \textit{RapGuard} memungkinkan proses anotasi dilakukan secara lebih sistematis dan konsisten, tanpa penilaian tunggal terhadap satu modalitas.
+
+
+\subsubsection{\textit{Annotation Guideline} Berbasis Literatur} \label{III.Langkah4.2}
+\textit{Annotation guideline} disusun berdasarkan studi literatur dan mencakup tiga tahap analisis, yaitu analisis visual, analisis tekstual, dan analisis relasional. 
+Indikator \textit{self-harm} dibagi menjadi indikator naratif/tekstual dan indikator visual/simbolik, termasuk deskripsi metode, ideasi kematian, romantisasi \textit{self-harm}, objek berbahaya, luka fisik, serta kontras ironis antara visual dan teks. 
+Aturan keputusan menyatakan bahwa apabila minimal satu indikator terpenuhi, khususnya indikator relasional, maka sampel diklasifikasikan sebagai \textit{self-harm}. Rincian lengkap \textit{annotation guideline} diuraikan pada Lampiran.
+
+\subsubsection{Persiapan Data sebelum Anotasi} \label{III.Langkah4.3}
+Sebelum proses anotasi, seluruh gambar diubah ukurannya menjadi 224$\times$224 piksel untuk mengurangi kebutuhan komputasi dan biaya pemrosesan multimodal, dengan tetap memastikan keterbacaan teks yang terdapat pada meme. 
+Ekstraksi teks dilakukan secara implisit oleh masing-masing model \textit{vision-language}, yaitu GPT-4o dan Qwen-VL. 
+Teks hasil ekstraksi tersebut kemudian diverifikasi secara manual oleh peneliti, dan apabila ditemukan ketidaksesuaian dengan teks asli pada gambar, dilakukan koreksi sebelum digunakan pada tahap analisis teks. 
+Pendekatan ini memastikan bahwa teks yang dianalisis benar-benar merepresentasikan konten aktual pada meme.
+
+
+
+\subsubsection{\textit{Ensemble Pseudo-Labeling}} \label{III.Langkah4.4}
+Proses pelabelan dilakukan menggunakan pendekatan \textit{ensemble pseudo-labeling} dengan dua model \textit{vision-language}, yaitu GPT-4o dan Qwen-VL-Flash. 
+Seluruh data dianotasi secara independen oleh kedua model menggunakan \textit{prompt} dan \textit{annotation guideline} yang sama. Apabila kedua model menghasilkan label yang sama, label tersebut diterima sebagai label akhir. Namun, apabila terdapat perbedaan label antara kedua model, data tersebut ditinjau ulang secara manual oleh peneliti berdasarkan \textit{annotation guideline} untuk menentukan label akhir.
+
+\subsubsection{Penentuan Label} \label{III.Langkah4.5}
+Perbedaan hasil pelabelan antara dua model dapat terjadi pada beberapa sampel meme. Dalam kondisi tersebut, dilakukan peninjauan ulang secara manual oleh peneliti untuk menetapkan label akhir. Proses ini bertujuan memastikan bahwa keputusan pelabelan tidak hanya bergantung pada satu hasil prediksi model. Penetapan label akhir mengacu pada indikator yang telah ditetapkan dalam \textit{annotation guideline} berbasis studi literatur. Meme diklasifikasikan sebagai \textit{self-harm} apabila memenuhi setidaknya satu indikator yang berkaitan dengan \textit{self-harm}. Sebaliknya, meme diklasifikasikan sebagai \textit{non self-harm} apabila tidak ditemukan indikator yang relevan dan konteks yang ditampilkan hanya berupa humor umum atau ekspresi sehari-hari.
+
+Pendekatan ini digunakan untuk meminimalkan kemungkinan konten berisiko tidak teridentifikasi, sekaligus tetap mempertimbangkan karakteristik meme yang sering menyampaikan makna secara tidak langsung melalui humor, ironi, atau metafora.
+
+
+\subsection{\textit{Pre-processing Data}} \label{III.Langkah 5}
+Setelah anotasi selesai, seluruh data memasuki tahap \textit{pre-processing} untuk memastikan kualitas input yang optimal. Pada modalitas gambar, \textit{pre-processing} meliputi penyesuaian resolusi, normalisasi piksel, dan konversi format untuk menyesuaikan standar masukan CLIP. Pada modalitas teks, \textit{pre-processing} mencakup pembersihan karakter khusus, normalisasi huruf, tokenisasi, serta penghilangan duplikasi. Tahap ini penting agar model dapat mempelajari pola secara konsisten. \par
+
+\subsubsection{\textit{Resize} Gambar} \label{II.Teori5.Gambar}
+Pada modalitas gambar, ukurannya diubah menjadi 224 x 224 piksel sesuai dengan input model CLIP menggunakan CLIP \textit{processor}, yang secara otomatis menyesuaikan dimensi gambar. Proses ini memastikan bahwa ukuran gambar sesuai dengan yang dibutuhkan oleh model CLIP, yaitu 224 x 224 piksel. CLIP \textit{processor} menggunakan metode untuk mengubah ukuran gambar tanpa merusak proporsinya, sehingga gambar tetap terlihat jelas meskipun ukurannya berubah.
+
+\subsubsection{Normalisasi Gambar} \label{II.Teori5.NormalisasiGambar}
+Normalisasi gambar adalah proses untuk menstandarkan nilai piksel agar berada dalam rentang yang konsisten sesuai dengan kebutuhan model. Normalisasi dilakukan melalui \textit{CLIP processor} yang secara otomatis menangani tahap \textit{preprocessing}. Proses ini bekerja dengan menyesuaikan nilai piksel menggunakan pengurangan rata-rata (\textit{mean}) dan pembagian dengan deviasi standar (\textit{std}) yang telah ditentukan sesuai dengan kondisi pelatihan model CLIP. Dengan demikian, setiap kanal warna \textit{(Red, Green, Blue)} memiliki distribusi nilai yang konsisten sehingga model dapat memproses informasi visual secara lebih efektif. 
+
+\subsubsection{\textit{Flip}} \label{II.Teori5.Flip}
+\textit{Flipping horizontal} diterapkan pada gambar untuk meningkatkan kemampuan model dalam mengenali objek dari berbagai orientasi. Pada tahap ini, gambar dibalik secara acak secara horizontal dengan probabilitas 50\%. Teknik ini memungkinkan model untuk tidak bergantung pada orientasi tertentu, sehingga model tetap dapat mendeteksi objek meskipun posisinya berubah, seperti ketika objek menghadap ke kiri atau kanan. Contoh dari augmentasi ini dapat dilihat pada Gambar \ref{fig:perbandingan_flip}, yang menunjukkan perbandingan antara gambar asli dan hasil augmentasi.
+\begin{figure}[H]
+    \centering
+    % Gambar 1: Asli
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{figure/gambarasli.jpg}
+        \caption{Gambar asli}
+        \label{fig:gambar_asli}
+    \end{subfigure}
+    \hspace{0.05\textwidth}
+    % Gambar 2: Flip Horizontal
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{figure/horizontal_flip.jpg}
+        \caption{Gambar setelah \textit{flip horizontal}}
+        \label{fig:gambar_flip}
+    \end{subfigure}
+
+    \caption{Perbandingan gambar asli dan hasil augmentasi \textit{flip horizontal}}
+    \label{fig:perbandingan_flip}
+\end{figure}
+
+
+\subsubsection{\textit{Rotation}} \label{II.Teori5.Rotation}
+Selain \textit{flipping horizontal}, \textit{rotasi acak} juga diterapkan pada gambar. Pada tahap ini, gambar diputar secara acak dengan rotasi sebesar 15 derajat. Dengan menambahkan rotasi acak, model dapat meningkatkan ketahanannya terhadap perubahan orientasi gambar. Contoh dari augmentasi ini dapat dilihat pada Gambar \ref{fig:perbandingan_rotasi}, yang menunjukkan perbandingan antara gambar asli dan hasil augmentasi rotasi.
+
+\begin{figure}[H]
+    \centering
+    % Gambar 1: Asli
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{figure/gambarasli.jpg}
+        \caption{Gambar asli}
+        \label{fig:gambar_asli}
+    \end{subfigure}
+    \hspace{0.05\textwidth}
+    % Gambar 2: Rotasi
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{figure/rotation.jpg}
+        \caption{Gambar setelah \textit{rotasi}}
+        \label{fig:gambar_rotasi}
+    \end{subfigure}
+
+    \caption{Perbandingan gambar asli dan hasil augmentasi \textit{rotasi acak}}
+    \label{fig:perbandingan_rotasi}
+\end{figure}
+
+
+\subsubsection{\textit{Color Jitter}} \label{II.Teori5.ColorJitter}
+ \textit{Color jitter}juga diterapkan pada gambar untuk meningkatkan ketahanan model terhadap variasi pencahayaan dan warna. Pada tahap ini, kecerahan  kontras, dan saturasi diubah secara acak dengan nilai 0.2 sedangkan rona diubah secara acak 0.1. Teknik ini bertujuan untuk memperkaya variasi gambar dalam dataset, sehingga model dapat belajar mengenali objek dengan lebih baik meskipun dalam kondisi pencahayaan yang berbeda atau variasi warna yang bervariasi. Contoh dari augmentasi ini dapat dilihat pada Gambar \ref{fig:perbandingan_colorjitter}, yang menunjukkan perbandingan antara gambar asli dan hasil augmentasi \textit{color jitter}.
+
+\begin{figure}[H]
+    \centering
+    % Gambar 1: Asli
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{figure/gambarasli.jpg}
+        \caption{Gambar asli}
+        \label{fig:gambar_asli}
+    \end{subfigure}
+    \hspace{0.05\textwidth}
+    % Gambar 2: Color Jitter
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{figure/colorjitter.jpg}
+        \caption{Gambar setelah \textit{color jitter}}
+        \label{fig:gambar_colorjitter}
+    \end{subfigure}
+
+    \caption{Perbandingan gambar asli dan hasil augmentasi \textit{color jitter}}
+    \label{fig:perbandingan_colorjitter}
+\end{figure}
+
+
+\subsubsection{\textit{Lowercasing}} \label{II.Teori5.Lowecasing}
+Pada modalitas teks, \textit{lowercasing} dilakukan menggunakan ELECTRA \textit{tokenizer} yang mengubah semua huruf kapital menjadi huruf kecil. Proses ini bertujuan untuk menyederhanakan representasi teks sehingga model tidak perlu membedakan antara huruf besar dan kecil, yang dapat mengurangi kompleksitas pemrosesan. 
+
+\subsubsection{Tokenisasi} \label{II.Teori5.Tokenisasi}
+Pada modalitas teks, tokenisasi dilakukan menggunakan ELECTRA \textit{ tokenizer} yang memecah teks menjadi unit-unit yang lebih kecil, yaitu token. Token berupa sub kata. Proses tokenisasi ini penting agar teks dapat diproses oleh model ELECTRA, yang memerlukan input dalam bentuk token untuk memahami konteks dan makna dari teks tersebut.
+
+\subsection{Pengembangan Model Arsitektur Multimodal} \label{III.Langkah 6}
+Berikut adalah tahapan dalam pengembangan model arsitektur multimodal dengan menggunakan penggabungan fitur dalam tingkat menengah \textit{intermediate fusion} \par
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figure/pengembangan model.png}
+	\caption{Alur Pengembangan Model}
+	\label{fig:3.pengembangan model}
+	% {\footnotesize Sumber: Vaswani et al., 2017}
+\end{figure}
+\par
+
+\subsubsection{Pembagian Data} \label{III.Langkah 6.1}
+Data yang telah melewati tahap \textit{pre-processing} selanjutnya dibagi menjadi dua \textit{subset} utama dengan rasio 80:20 secara random. Sebanyak 80\% dari total data sebagai data latih (\textit{training set}) untuk proses pembelajaran model, sedangkan 20\% sisanya digunakan sebagai data uji (\textit{testing set}). Pembagian ini bertujuan untuk memastikan bahwa model memiliki porsi data yang cukup besar untuk mempelajari pola fitur multimodal secara optimal, sekaligus menyisakan data yang representatif untuk evaluasi kinerja yang objektif tanpa terjadi kebocoran data (\textit{data leakage}).par
+
+\subsubsection{Pelatihan model} \label{III.Langkah 6.2}
+Tahap pelatihan model dilakukan dengan arsitektur \textit{dual-encoder} yang menggabungkan dua modalitas input. Untuk ekstraksi fitur visual, penelitian ini menggunakan model CLIP (\textit{Contrastive Language-Image Pre-training}) varian CLIP ViT \textit{base} \textit{patch-size} 32 dengan parameter ~151 juta. Pemilihan CLIP didasarkan pada efektivitasnya yang telah terbukti dalam studi literatur terdahulu, seperti pada framework MOMENTA \cite{pramanick2021momenta} dan Hate-CLIPper \cite{kumar2022hateclipper}, dimana representasi visual CLIP terbukti krusial dalam menangkap hubungan semantik lintas-modalitas dan mengenali konten implisit tanpa memerlukan arsitektur yang terlalu kompleks. Pada penelitian ini, model CLIP digunakan murni sebagai ekstraktor fitur \textit{(feature extractor)} tanpa dilakukan proses \textit{fine-tuning,} sehingga seluruh parameter visual encoder tetap dibekukan \textit{(frozen)} selama pelatihan.
+
+Model \textit{ELECTRA} varian \textit{Suicidal-Electra}, adalah model yang telah dilatih untuk mendeteksi kecenderungan bunuh diri dalam teks. Model ini berbasis pada arsitektur transformer, yang unggul dalam memahami konteks kata-kata dalam suatu urutan kalimat. Model ini dilatih menggunakan dataset besar yang berisi postingan \textit{suicidal} (bunuh diri) dan \textit{non-suicidal} (tidak bunuh diri), yang memungkinkan model untuk mengenali pola bahasa, metafora, dan ekspresi yang terkait dengan pemikiran bunuh diri. Pada penelitian ini, model digunakan murni sebagai \textit{feature extractor} tanpa dilakukan proses \textit{fine-tuning}, sehingga seluruh parameter visual encoder tetap dibekukan (frozen) selama pelatihan. \textit{Suicidal-Electra} memiliki \textit{parameter} ~110 juta \cite{Dus2022SuicidalElectra}.
+
+\subsubsection{\textit{Fusion} model} \label{III.Langkah 6.3}
+Dalam penelitian ini, digunakan dua arsitektur \textit{model fusion} yang berbeda untuk menggabungkan informasi dari teks dan gambar. Kedua arsitektur ini dirancang untuk mendeteksi kecenderungan bunuh diri melalui analisis multimodal, yaitu teks dan gambar. Arsitektur yang dirancang sebagai berikut:
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{figure/fusionmodel1.png}
+\caption{Rancangan Fusion Model Varian 1}
+\label{fig:fusion1}
+\end{figure}
+
+Gambar \ref{fig:fusion1} menunjukkan rancangan arsitektur fusion model varian pertama. Model ini menggunakan Transformer Encoder untuk interaksi antara modalitas teks dan gambar. Proses pertama dimulai dengan pemrosesan CLIP \textit{encoder} untuk mengekstrak fitur dari gambar, yang kemudian diproyeksikan ke dalam \textit{Image Projection Layers}. Di sisi lain, teks diproses menggunakan \textit{ELECTRA Pretrained Encoder} yang juga diproyeksikan ke dalam \textit{Text Projection Layers}. Fitur dari teks dan gambar kemudian digabungkan dengan menggunakan \textit{Positional Embedding}. Setelah itu, gabungan fitur dari kedua modalitas ini diproses melalui Transformer Encoder yang memungkinkan model untuk memahami hubungan dan konteks antara teks dan gambar. Hasil dari proses ini selanjutnya diteruskan ke \textit{Multi Layer Perceptron} (MLP) untuk klasifikasi.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{figure/fusionmodel2.png}
+\caption{Rancangan Fusion Model Varian 2}
+\label{fig:fusion2}
+\end{figure}
+
+Gambar \ref{fig:fusion2} menunjukkan rancangan arsitektur fusion model varian kedua. Berbeda dengan varian pertama, model ini tidak menggunakan Transformer Encoder untuk interaksi antar-modalitas. Melainkan langsung menggabungkan fitur teks dan gambar untuk masuk ke MLP.
+Model ini lebih sederhana dibandingkan varian pertama.
+
+
+\subsection{Evaluasi Model} \label{III.Langkah 7}
+Evaluasi kinerja model dilakukan menggunakan metrik standar yang diturunkan dari \textit{Confusion Matrix}, yang meliputi \textit{accuracy}, \textit{precision}, \textit{recall}, dan \textit{F1-Score}. Mengingat urgensi dan sensitivitas identifikasi konten meme \textit{self-harm}, evaluasi tidak hanya berfokus pada akurasi global, tetapi lebih evaluasi pada \textit{recall} untuk memastikan sistem mampu meminimalkan risiko lolosnya konten berbahaya (\textit{false negative}), serta \textit{precision} untuk menjaga validitas prediksi positif. Sebagai metrik penentu, \textit{F1-Score} digunakan untuk menyeimbangkan antara \textit{precision} dan \textit{recall}, sehingga memberikan gambaran objektif mengenai keandalan model dalam mengklasifikasikan fitur multimodal secara efektif pada dataset yang kompleks.
+
+\subsection{Analisis Hasil dan Pembahasan} \label{III.Langkah 8}
+Tahap akhir penelitian ini adalah analisis hasil dan pembahasan. Pada tahap ini, hasil evaluasi model dianalisis untuk melihat seberapa baik model dalam mengenali meme \textit{self-harm}. Analisis meliputi penjelasan metrik evaluasi, kesalahan yang terjadi, serta kelebihan dan kekurangan model. Pembahasan juga mencakup manfaat hasil penelitian dan saran untuk pengembangan selanjutnya. \par
+
+\section{Alat dan Bahan Tugas Akhir} \label{III.Alat dan Bahan}
+Berisi alat-alat dan bahan-bahan yang digunakan dalam penelitian. \par
+
+\subsection{\textit{Software dan Library}} \label{III.SoftwareLibrary}
+Software dan library yang digunakan untuk mendukung pelaksanaan penelitian ini dengan rincian sebagai berikut:
+\begin{enumerate}[noitemsep]
+    \item \textit{Code Editor} Visual Studio Code untuk penulisan kode program.
+    \item \textit{Library Deep Learning} \texttt{PyTorch} digunakan untuk implementasi dan pelatihan model.
+    \item Platform \textit{Cloud Computing} \texttt{Runpod} untuk eksekusi kode Python dan pelatihan model memanfaatkan akselerasi GPU berbasis \textit{cloud}, dengan perangkat keras GPU \texttt{NVIDIA RTX 4090}.
+    \item GitHub sebagai media penyimpanan repositori (\textit{repository}) dan manajemen kode.
+    \item Platform desain \texttt{Canva} yang digunakan dalam proses pembuatan dataset meme secara manual (\textit{constructed dataset}).
+\end{enumerate}
+
+\subsection{Dataset} \label{III.Dataset}
+Dataset yang digunakan dalam penelitian ini terdiri dari tiga sumber dataset. Pertama, dataset meme yang dikumpulkan secara manual dari berbagai platform internet, yang mencakup kombinasi gambar dan teks. Kedua, dataset yang dibuat sendiri \textit{(constructed dataset)} sebanyak 500 meme. Ketiga, dataset publik dari Kaggle berupa \textit{"6992 Meme Images Dataset with Labels"} yang diintegrasikan untuk memperkaya dan meningkatkan keragaman dataset penelitian \cite{javaid_6992_meme_images_2023}. \par
+
+\section{Ilustrasi Perhitungan Metode} \label{III.Ilustrasi_Metode}
+Pada bagian ini, akan dijelaskan ilustrasi perhitungan metode yang digunakan dalam penelitian ini.
+
+
+\subsection{Ilustrasi Perhitungan \textit{contrastive loss} (InfoNCE)} \label{III.Ilustrasi_InfoNCE}
+Pada bagian ini, akan dihitung \textit{loss} menggunakan \ref{eq:clip-infoNCE}. InfoNCE digunakan untuk menghitung kesamaan antara representasi gambar dan teks. 
+Misalkan terdapat dua pasangan gambar-teks sebagai berikut:
+\begin{itemize}
+    \item Pasangan 1: $L_1$ dengan $T_1$
+    \item Pasangan 2: $L_2$ dengan $T_2$
+\end{itemize}
+
+\medskip
+Nilai kesamaan kosinus (\textit{cosine similarity}) untuk setiap pasangan adalah:
+\bigskip
+\begin{align*}
+    \cos(f_L(L_1), f_T(T_1)) &= 0.85 \\
+    \cos(f_L(L_1), f_T(T_2)) &= 0.45 \\
+    \cos(f_L(L_2), f_T(T_1)) &= 0.40 \\
+    \cos(f_L(L_2), f_T(T_2)) &= 0.75 \\
+\end{align*}
+Dengan parameter suhu $\tau = 0.07$, nilai \textit{loss} untuk pasangan pertama $L_1, T_1$ dapat dihitung menggunakan rumus InfoNCE berikut:\\
+\bigskip
+\begin{align*}
+\mathcal{L}_1 = - \frac{1}{2} \Bigg(
+    \log \left( \frac{e^{\cos(f_L(L_1), f_T(T_1)) / \tau}}
+    {\sum_{i=1}^{2} e^{\cos(f_L(L_1), f_T(T_i)) / \tau}} \right)
+    + \log \left( \frac{e^{\cos(f_T(T_1), f_L(L_1)) / \tau}}
+    {\sum_{i=1}^{2} e^{\cos(f_T(T_1), f_L(L_i)) / \tau}} \right)
+\Bigg)\\
+\end{align*}
+Substitusi nilai \textit{cosine similarity}:
+
+\begin{align*}
+    \cos(f_L(L_1), f_T(T_1)) &= 0.85, \quad \cos(f_L(L_1), f_T(T_2)) = 0.45 \\
+    \cos(f_T(T_1), f_L(L_1)) &= 0.85, \quad \cos(f_T(T_1), f_L(L_2)) = 0.40\\
+\end{align*}
+
+\textit{Term} pertama: \\
+\begin{align*}
+    \frac{\exp(0.85 / 0.07)}{\exp(0.85 / 0.07) + \exp(0.45 / 0.07)} 
+    &\approx \frac{1.751 \times 10^5}{1.751 \times 10^5 + 624.8} \\
+    &\approx 0.9996\\
+\end{align*}
+
+\textit{Term} kedua:\\
+\begin{align*}
+    \frac{\exp(0.85 / 0.07)}{\exp(0.85 / 0.07) + \exp(0.40 / 0.07)} 
+    &\approx \frac{1.751 \times 10^5}{1.751 \times 10^5 + 302.5} \\
+    &\approx 0.9998\\
+\end{align*}
+
+Substitusi ke dalam rumus:\\
+\begin{align*}
+    \mathcal{L}_1 &= - \frac{1}{2} \bigg[ \log(0.9996) + \log(0.9998)
+    \bigg]\\
+\end{align*}
+
+Logaritma:\\
+\begin{align*}
+    \log(0.9996) &\approx -0.0004, \quad \log(0.9998) \approx -0.0002\\
+\end{align*}
+
+Hasil akhir:\\
+\begin{align*}
+    \mathcal{L}_1 &= - \frac{1}{2} \left[ -0.0004 + (-0.0002) \right] = 0.0003
+\end{align*}
+
+\subsection{Ilustrasi Perhitungan \textit{Token Detection Loss} pada ELECTRA} \label{III.Ilustrasi_Token_Detection_Loss}
+
+Pada bagian ini, akan dihitung \textit{loss} menggunakan \ref{eq:rtd-loss}. 
+Misalkan terdapat sebuah kalimat yang terdiri dari 3 token, yaitu:\\
+\[
+\text{Kalimat: } \{ "Saya", "pergi", "ke" \}\\
+\]
+\\
+Kemudian, hasil generator model untuk token-token tersebut adalah:
+
+\[
+\text{Hasil Generator: } \{ "Saya", "berlari", "ke" \}\\
+\]
+\\
+Dari kalimat di atas, diketahui bahwa:\\
+- Token "Saya" adalah token asli (\(y_1 = 1\)).\\
+- Token "pergi" digantikan dengan token "berlari" (hasil generator), sehingga \(y_2 = 0\).\\
+- Token "ke" adalah token asli (\(y_3 = 1\)).
+
+Kemudian, probabilitas \(D(x_i)\) yang diberikan oleh diskriminator untuk setiap token adalah sebagai berikut:
+
+\[
+D("Saya") = 0.95, \quad D("berlari") = 0.05, \quad D("ke") = 0.90\\
+\]
+\\
+Sekarang, dapat dihitung \(\mathcal{L}_{RTD}\) untuk kalimat ini dengan menggunakan rumus yang telah diberikan.
+
+\begin{align*}
+    \mathcal{L}_{RTD} &= - \left[ y_1 \log D("Saya") + (1 - y_1) \log (1 - D("Saya")) \right. \\
+    &\quad \left. + y_2 \log D("berlari") + (1 - y_2) \log (1 - D("berlari")) \right. \\
+    &\quad \left. + y_3 \log D("ke") + (1 - y_3) \log (1 - D("ke")) \right] \\
+    &= - \left[ 1 \cdot \log(0.95) + 0 \cdot \log(1 - 0.95) \right. \\
+    &\quad \left. + 0 \cdot \log(0.05) + 1 \cdot \log(1 - 0.05) \right. \\
+    &\quad \left. + 1 \cdot \log(0.90) + 0 \cdot \log(1 - 0.90) \right]\\
+\end{align*}
+
+Setelah mengganti nilai logaritma:
+
+\begin{align*}
+    \mathcal{L}_{RTD} &= - \left[ \log(0.95) + \log(0.95) + \log(0.90) \right] \\
+    &= - \left[ -0.0223 + -0.0223 + -0.1054 \right] \\
+    &= 0.15 \\
+\end{align*}
+
+Dengan demikian, nilai dari \(\mathcal{L}_{RTD}\) untuk kalimat ini adalah 0.15.
+
+\subsection{Ilustrasi Perhitungan Metrik Evaluasi} \label{III.Ilustrasi_Metrik_Evaluasi}
+
+Berikut ilustrasi perhitungan metrik evaluasi pada \ref{eq:accuracy}, \ref{eq:precision}, \ref{eq:recall}, dan \ref{eq:f1-score}.
+
+Dimana:\\
+\(TP\) \textit{(True Positive)}: Jumlah prediksi positif yang benar.\\
+\(TN\) \textit{(True Negative)}: Jumlah prediksi negatif yang benar.\\
+\(FP\) \textit{(False Positive)}: Jumlah prediksi positif yang salah.\\
+\(FN\) \textit{(False Negative)}: Jumlah prediksi negatif yang salah.\\
+Misalkan terdapat hasil pengujian model dengan jumlah sebagai berikut:\\
+\(TP = 50\)\\
+\(TN = 40\)\\
+\(FP = 10\)\\
+\(FN = 5\)\\
+Dengan nilai-nilai tersebut, metrik evaluasi dapat dihitung sebagai berikut:
+
+\begin{align*}
+    \textit{Accuracy} &= \frac{TP + TN}{TP + TN + FP + FN} \\
+    &= \frac{50 + 40}{50 + 40 + 10 + 5} \\
+    &= \frac{90}{105} \\
+    &= 0.8571\\
+\end{align*}
+
+Jadi, \(\textit{Accuracy} = 0.8571\) atau 85.71\%.
+
+\begin{align*}
+    \textit{Precision} &= \frac{TP}{TP + FP} \\
+    &= \frac{50}{50 + 10} \\
+    &= \frac{50}{60} \\
+    &= 0.8333\\
+\end{align*}
+
+Jadi, \(\textit{Precision} = 0.8333\) atau 83.33\%.
+
+
+\begin{align*}
+    \textit{Recall} &= \frac{TP}{TP + FN} \\
+    &= \frac{50}{50 + 5} \\
+    &= \frac{50}{55} \\
+    &= 0.9091\\
+\end{align*}
+
+Jadi, \(\textit{Recall} = 0.9091\) atau 90.91\%.
+
+
+\begin{align*}
+    \textit{F1} &= 2 \times \frac{\textit{Precision} \times \textit{Recall}}{\textit{Precision} + \textit{Recall}} \\
+    &= 2 \times \frac{0.8333 \times 0.9091}{0.8333 + 0.9091} \\
+    &= 2 \times \frac{0.7562}{1.7424} \\
+    &= 2 \times 0.4330 \\
+    &= 0.8660\\
+\end{align*}
+
+Jadi, \(\textit{F1 Score} = 0.8660\) atau 86.60\%.
+
+\medskip
+Dari perhitungan di atas, dapat disimpulkan bahwa model memiliki:
+- \(\textit{Accuracy} = 85.71\%\)
+- \(\textit{Precision} = 83.33\%\)
+- \(\textit{Recall} = 90.91\%\)
+- \(\textit{F1 Score} = 86.60\%\)
+
+Metrik-metrik ini memberikan gambaran yang lebih lengkap tentang performa model dalam mengklasifikasikan data dengan benar, baik dalam hal ketepatan (\textit{precision}) maupun dalam mengidentifikasi seluruh data positif yang relevan (\textit{recall}).
+

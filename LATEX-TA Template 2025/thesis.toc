@@ -1,0 +1,97 @@
+ \renewcommand *\cftchappresnum {\MakeUppercase []{BAB}~} 
+\babel@toc {bahasa}{}\relax 
+\contentsline {chapter}{LEMBAR PENGESAHAN}{ii}{section*.2}%
+\contentsline {chapter}{Halaman Pernyataan Orisinalitas}{iii}{section*.3}%
+\contentsline {chapter}{Halaman Persetujuan Publikasi}{iv}{section*.4}%
+\contentsline {chapter}{KATA PENGANTAR}{v}{section*.5}%
+\contentsline {chapter}{RINGKASAN}{vi}{section*.6}%
+\contentsline {chapter}{ABSTRAK}{vii}{section*.7}%
+\contentsline {chapter}{ABSTRACT}{viii}{section*.8}%
+\contentsline {chapter}{DAFTAR ISI}{ix}{section*.9}%
+\contentsline {chapter}{DAFTAR TABEL}{xiii}{section*.11}%
+\contentsline {chapter}{DAFTAR GAMBAR}{xiv}{section*.13}%
+\contentsline {chapter}{DAFTAR RUMUS}{xv}{section*.15}%
+\contentsline {chapter}{DAFTAR KODE}{xv}{section*.17}%
+\contentsline {chapter}{\numberline {I}PENDAHULUAN}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Latar Belakang}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Rumusan Masalah}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Tujuan Penelitian}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Batasan Masalah}{4}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Manfaat Penelitian}{5}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Sistematika Penulisan}{5}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Bab I: Pendahuluan}{6}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Bab II: Tinjauan Pustaka}{6}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Bab III: Metodologi Penelitian}{6}{subsection.1.6.3}%
+\contentsline {subsection}{\numberline {1.6.4}Bab IV: Hasil dan Pembahasan}{6}{subsection.1.6.4}%
+\contentsline {subsection}{\numberline {1.6.5}Bab V: Kesimpulan dan Saran}{7}{subsection.1.6.5}%
+\contentsline {chapter}{\numberline {II}TINJAUAN PUSTAKA}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Tinjauan Pustaka}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Dasar Teori}{11}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}\textit {Deep Learning}}{12}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}\textit {Computer Vision}}{12}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}\textit {Natural Language Processing} (NLP)}{13}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Transformer}{13}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}\textit {Contrastive Language-Image Pre-training} (CLIP)}{15}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}\textit {Efficiently Learning an Encoder that Classifies Token Replacements Accurately} (ELECTRA)}{16}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}\textit {Multimodal Deep learning}}{17}{subsection.2.2.7}%
+\contentsline {subsection}{\numberline {2.2.8}Klasifikasi \textit {Fusion} dalam \textit {Multimodal Deep learning}}{18}{subsection.2.2.8}%
+\contentsline {subsubsection}{\numberline {2.2.8.1}\textit {Early Fusion}}{18}{subsubsection.2.2.8.1}%
+\contentsline {subsubsection}{\numberline {2.2.8.2}\textit {Intermediate Fusion}}{19}{subsubsection.2.2.8.2}%
+\contentsline {subsubsection}{\numberline {2.2.8.3}\textit {Late Fusion}}{19}{subsubsection.2.2.8.3}%
+\contentsline {subsubsection}{\numberline {2.2.8.4}\textit {Hybrid Fusion}}{20}{subsubsection.2.2.8.4}%
+\contentsline {subsection}{\numberline {2.2.9}Meme}{20}{subsection.2.2.9}%
+\contentsline {subsection}{\numberline {2.2.10}\textit {Self-Harm}}{21}{subsection.2.2.10}%
+\contentsline {subsection}{\numberline {2.2.11}Prapemrosesan Data}{22}{subsection.2.2.11}%
+\contentsline {subsubsection}{\numberline {2.2.11.1}\textit {Resize} Gambar}{22}{subsubsection.2.2.11.1}%
+\contentsline {subsubsection}{\numberline {2.2.11.2}Normalisasi Gambar}{23}{subsubsection.2.2.11.2}%
+\contentsline {subsubsection}{\numberline {2.2.11.3}\textit {Flip}}{23}{subsubsection.2.2.11.3}%
+\contentsline {subsubsection}{\numberline {2.2.11.4}\textit {Rotation}}{23}{subsubsection.2.2.11.4}%
+\contentsline {subsubsection}{\numberline {2.2.11.5}\textit {Color Jitter}}{24}{subsubsection.2.2.11.5}%
+\contentsline {subsection}{\numberline {2.2.12}Evaluasi}{24}{subsection.2.2.12}%
+\contentsline {chapter}{\numberline {III}METODE PENELITIAN}{26}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Alur Penelitian}{26}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Penjabaran Langkah Penelitian}{27}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Identifikasi Masalah}{27}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Studi Literatur}{27}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Pengumpulan Data}{28}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}Pengumpulan Data dari Media Sosial}{28}{subsubsection.3.2.3.1}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}Rekayasa Dataset Meme \textit {Self-Harm}}{29}{subsubsection.3.2.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.3.3}Dataset Meme Umum sebagai Kandidat \textit {Non-Self-Harm}}{30}{subsubsection.3.2.3.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.4}Ringkasan Komposisi Dataset Awal}{31}{subsubsection.3.2.3.4}%
+\contentsline {subsection}{\numberline {3.2.4}Anotasi Data}{31}{subsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.4.1}\textit {Framework Prompting} (\textit {RapGuard})}{31}{subsubsection.3.2.4.1}%
+\contentsline {subsubsection}{\numberline {3.2.4.2}\textit {Annotation Guideline} Berbasis Literatur}{32}{subsubsection.3.2.4.2}%
+\contentsline {subsubsection}{\numberline {3.2.4.3}Persiapan Data sebelum Anotasi}{32}{subsubsection.3.2.4.3}%
+\contentsline {subsubsection}{\numberline {3.2.4.4}\textit {Ensemble Pseudo-Labeling}}{33}{subsubsection.3.2.4.4}%
+\contentsline {subsubsection}{\numberline {3.2.4.5}Penentuan Label}{33}{subsubsection.3.2.4.5}%
+\contentsline {subsection}{\numberline {3.2.5}\textit {Pre-processing Data}}{33}{subsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.5.1}\textit {Resize} Gambar}{34}{subsubsection.3.2.5.1}%
+\contentsline {subsubsection}{\numberline {3.2.5.2}Normalisasi Gambar}{34}{subsubsection.3.2.5.2}%
+\contentsline {subsubsection}{\numberline {3.2.5.3}\textit {Flip}}{34}{subsubsection.3.2.5.3}%
+\contentsline {subsubsection}{\numberline {3.2.5.4}\textit {Rotation}}{35}{subsubsection.3.2.5.4}%
+\contentsline {subsubsection}{\numberline {3.2.5.5}\textit {Color Jitter}}{35}{subsubsection.3.2.5.5}%
+\contentsline {subsubsection}{\numberline {3.2.5.6}\textit {Lowercasing}}{36}{subsubsection.3.2.5.6}%
+\contentsline {subsubsection}{\numberline {3.2.5.7}Tokenisasi}{36}{subsubsection.3.2.5.7}%
+\contentsline {subsection}{\numberline {3.2.6}Pengembangan Model Arsitektur Multimodal}{36}{subsection.3.2.6}%
+\contentsline {subsubsection}{\numberline {3.2.6.1}Pembagian Data}{37}{subsubsection.3.2.6.1}%
+\contentsline {subsubsection}{\numberline {3.2.6.2}Pelatihan model}{38}{subsubsection.3.2.6.2}%
+\contentsline {subsubsection}{\numberline {3.2.6.3}\textit {Fusion} model}{38}{subsubsection.3.2.6.3}%
+\contentsline {subsection}{\numberline {3.2.7}Evaluasi Model}{39}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Analisis Hasil dan Pembahasan}{40}{subsection.3.2.8}%
+\contentsline {section}{\numberline {3.3}Alat dan Bahan Tugas Akhir}{40}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}\textit {Software dan Library}}{40}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Dataset}{41}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Ilustrasi Perhitungan Metode}{41}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Ilustrasi Perhitungan \textit {contrastive loss} (InfoNCE)}{41}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Ilustrasi Perhitungan \textit {Token Detection Loss} pada ELECTRA}{43}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Ilustrasi Perhitungan Metrik Evaluasi}{44}{subsection.3.4.3}%
+\contentsline {chapter}{\numberline {IV}HASIL DAN PEMBAHASAN}{46}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Penggunaan Dataset}{46}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Akuisisi Gambar}{48}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Analisis Hasil Penelitian}{48}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Pembahasan}{49}{section.4.4}%
+\contentsline {chapter}{\numberline {V}KESIMPULAN DAN SARAN}{50}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kesimpulan}{50}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Saran}{50}{section.5.2}%
+\contentsline {chapter}{DAFTAR PUSTAKA}{51}{section*.34}%
+\contentsline {chapter}{LAMPIRAN}{56}{chapter*.35}%
