@@ -135,6 +135,16 @@ sample dataset ob_det/
 Dokumen TA/
 Latex-TA-IF-ITERA-main/
 
+# Ignore Recycle Bin in code folder
+code/Recycle Bin/
+code/Recycle Bin/*
+
+# Ignore specific folders in intermediate_fusion
+code/intermediate_fusion/balanced-dataset-final/
+code/intermediate_fusion/balanced-dataset-final/*
+code/intermediate_fusion/results/
+code/intermediate_fusion/results/*
+
 code/results/
 code/kaggle.ipynb
 code/eda_summary.csv
