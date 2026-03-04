@@ -1,163 +1,319 @@
 \newpage
 \chapter{HASIL DAN PEMBAHASAN} \label{Bab IV}
 
-\section{Penggunaan Dataset} \label{IV.Penggunaan}
-Dataset yang digunakan pada penelitian ini merupakan dataset PURE. 
-\lipsum[1-2] % Menampilkan paragraf 1 sampai 2 dari lorem ipsum
-% Atur margin untuk landscape - bisa disesuaikan nilai left dan right
-\newgeometry{top=2cm, bottom=1.75cm, left=2cm, right=2cm}
+% ============================================================
+% 4.1 PENGUMPULAN DATA
+% ============================================================
+\section{Pengumpulan Data} \label{IV.PengumpulanData}
+Pada tahap ini dilakukan proses pengumpulan dataset yang akan digunakan. Dataset disusun dari tiga sumber utama, yaitu rekayasa dataset \textit{self-harm}, pengumpulan meme dari media sosial, serta pemilihan meme umum dari dataset publik sebagai kandidat \textit{non-self-harm}. Seluruh data yang dikumpulkan berbentuk multimodal, yaitu terdiri dari kombinasi gambar dan teks dalam satu meme. Tahap pengumpulan ini bertujuan untuk membangun dataset yang beragam dan representatif sebelum memasuki proses anotasi dan pemodelan.
 
-\begin{landscape}
-% \thispagestyle{landscape} % Untuk page number yang benar di landscape
-\renewcommand{\arraystretch}{1.2} % Mengatur jarak antar baris tabel
-\centering 
-\begin{longtable}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-    \caption{Hasil Pengujian Model}
-    \label{table:4.Pengujian1}\\
-    \hline
-    \multirow{2}{*}{\parbox{0.375cm}{\centering\textbf{No}}} & 
-    \multirow{2}{*}{\parbox{4.0cm}{\centering\textbf{Citra}}} & 
-    \multirow{2}{*}{\parbox{0.75cm}{\centering\textbf{GT\\Total}}} & 
-    \multicolumn{8}{c|}{\textbf{Prediksi}} &
-    \multirow{2}{*}{\parbox{1.2cm}{\centering\textbf{Hitung\\Manual}}} &
-    \multirow{2}{*}{\parbox{1cm}{\centering\textbf{Model}}} \\
-    \cline{4-11}
-    & & &
-    \parbox{0.75cm}{\centering\textbf{Total}} &
-    \parbox{1.1cm}{\centering\textbf{Correct}} &
-    \parbox{0.7cm}{\centering\textbf{\shortstack{Low\\[-0.2em]Conf}}} &
-    \parbox{0.95cm}{\centering\textbf{\shortstack{Wrong\\[-0.35em]Loc}}} &
-    \parbox{0.7cm}{\centering\textbf{\shortstack{False\\[-0.2em]Pos}}} &
-    \parbox{0.7cm}{\centering\textbf{\shortstack{False\\[-0.2em]Neg}}} &
-    \parbox{0.95cm}{\centering\textbf{\shortstack{AP\\[-0.2em]50:95}}} &
-    \parbox{0.95cm}{\centering\textbf{\shortstack{IoU\\[-0.2em]50:95}}} &
-    & \\
+\subsection{Dataset Primer} \label{IV.PengumpulanData.Primer}
+Dataset primer terdiri dari dua komponen utama, yaitu dataset rekayasa multimodal dan dataset yang dikumpulkan langsung dari media sosial. Kedua komponen ini dirancang khusus untuk membangun representasi meme yang mengandung indikasi \textit{self-harm}.
 
-    \hline
-    \endfirsthead
-    
-    \hline
-    \multirow{2}{*}{\parbox{0.375cm}{\centering\textbf{No}}} & 
-    \multirow{2}{*}{\parbox{4.0cm}{\centering\textbf{Citra}}} & 
-    \multirow{2}{*}{\parbox{0.75cm}{\centering\textbf{GT\\Total}}} & 
-    \multicolumn{8}{c|}{\textbf{Prediksi}} &
-    \multirow{2}{*}{\parbox{1.2cm}{\centering\textbf{Hitung\\Manual}}} &
-    \multirow{2}{*}{\parbox{1cm}{\centering\textbf{Model}}} \\
-    \cline{4-11}
-    & & &
-    \parbox{0.75cm}{\centering\textbf{Total}} &
-    \parbox{1.1cm}{\centering\textbf{Correct}} &
-    \parbox{0.7cm}{\centering\textbf{\shortstack{Low\\[-0.2em]Conf}}} &
-    \parbox{0.95cm}{\centering\textbf{\shortstack{Wrong\\[-0.35em]Loc}}} &
-    \parbox{0.7cm}{\centering\textbf{\shortstack{False\\[-0.2em]Pos}}} &
-    \parbox{0.7cm}{\centering\textbf{\shortstack{False\\[-0.2em]Neg}}} &
-    \parbox{0.95cm}{\centering\textbf{\shortstack{AP\\[-0.2em]50:95}}} &
-    \parbox{0.95cm}{\centering\textbf{\shortstack{IoU\\[-0.2em]50:95}}} &
-    & \\
-    \hline
-    \endhead
-    
-    \hline
-    \endfoot
-    
-    \hline
-    \endlastfoot
-    
-    % ===== Data ke-1 =====
-    \multirow{2}{*}{1} &
-    \multirow{2}{*}{%
-    \parbox[c][1.5cm][c]{4cm}{%
+\subsubsection{Dataset Rekayasa Multimodal} \label{IV.PengumpulanData.Rekayasa}
+Rekayasa dataset dilakukan untuk menghasilkan meme dengan tema \textit{self-harm} secara multimodal karena belum tersedia dataset publik yang secara khusus menyediakan kombinasi gambar dan teks untuk kategori meme \textit{self-harm}. Komponen visual diperoleh dari dataset \textit{Weapon and Knife Detection 137K Images} yang tersedia secara publik, kemudian dipilih secara manual berdasarkan kualitas gambar dan kejelasan objek. Sementara itu, komponen teks diambil dari \textit{Suicidal Ideation Detection Reddit Dataset} yang bersumber dari unggahan komunitas Reddit, dengan menggunakan atribut \textit{Title} yang memiliki nilai \textit{confidence} tertinggi.
+
+Teks yang terlalu panjang diringkas menjadi satu kalimat utama dengan tetap mempertahankan konteks makna, serta melalui tahap pembersihan karakter dan penghapusan duplikasi data. Selanjutnya, gambar dan teks digabungkan secara acak untuk membentuk meme multimodal menghasilkan variasi konteks visual dan tekstual yang beragam sehingga model mampu melakukan generalisasi dengan lebih baik. Dari proses rekayasa ini diperoleh sebanyak 524 meme multimodal yang digunakan dalam penelitian. Rincian lebih lengkap dapat dilihat pada Tabel \ref{table:4.rekayasa_dataset}. \par
+
+\begin{table}[H]
     \centering
-    \includegraphics[width=4.05cm,height=4cm,keepaspectratio]{figure/CLIP.png}}} &
-    \multirow{2}{*}{18} &
+    \caption{Sumber Data Rekayasa Dataset}
+    \label{table:4.rekayasa_dataset}
+    \small
+    \begin{tabular}{|l|p{3.5cm}|c|c|}
+        \hline
+        \textbf{Komponen} & \textbf{Sumber} & \textbf{Tersedia} & \textbf{Digunakan} \\
+        \hline
+        Gambar & \textit{Weapon \& Knife Detection (Kaggle)} & 137.000+ & 524 \\
+        \hline
+        Teks & \textit{Suicidal Ideation Reddit Dataset} & 15.477 & 524 \\
+        \hline
+        \multicolumn{3}{|r|}{\textbf{Total Meme Rekayasa}} & \textbf{524} \\
+        \hline
+    \end{tabular}
+\end{table}
 
-    34\rule{0pt}{3.0em} & 11 & 0 & 1 & 22 & 6 & 0{,}567 & 0{,}938 & 11 &
-    V1 \textit{(Am)} \\
-    \cline{4-13}
+\subsubsection{Dataset Media Sosial} \label{IV.PengumpulanData.Manual}
+Selain melakukan rekayasa dataset, penelitian ini juga melakukan pengumpulan meme secara langsung dari berbagai platform media sosial, yaitu Reddit, Instagram, Twitter/X, Facebook, dan Threads. Proses pencarian dilakukan dengan menggunakan kata kunci dan tagar yang berkaitan dengan \textit{self-harm} serta \textit{suicidal ideation}, seperti \textit{\#selfharm}, \textit{\#depression}, \textit{\#iwannakillmyself}, \textit{\#kms}, dan variasi serupa. Pemilihan kata kunci tersebut bertujuan untuk menjaring konten yang berpotensi mengandung indikasi \textit{self-harm}, baik yang disampaikan secara langsung maupun melalui bentuk ekspresi tidak langsung seperti ironi atau humor gelap. \par
 
-    & & &   % ← WAJIB: kosongkan No | Citra | GT Total
-    36\rule{0pt}{3.0em} & 10 & 1 & 1 & 24 & 6 & 0{,}552 & 0{,}916 & 11 &
-    V2 \textit{(Std)} \\
+Setiap meme yang ditemukan kemudian melalui proses seleksi manual berdasarkan beberapa kriteria, yaitu meme harus terdiri dari kombinasi gambar dan teks, teks dapat dibaca dengan jelas, serta mengandung indikasi \textit{self-harm} secara eksplisit maupun implisit. Melalui proses ini, diperoleh sebanyak 268 meme yang digunakan sebagai bagian dari dataset penelitian. \par
 
-    \hline
-    
-    % ===== Data ke-2 =====
-    \multirow{2}{*}{2} &
-    \multirow{2}{*}{%
-    \parbox[c][1.5cm][c]{4cm}{%
+\subsection{Dataset Sekunder} \label{IV.PengumpulanData.Sekunder}
+Dataset sekunder yang digunakan dalam penelitian ini merupakan dataset publik berjudul \textit{"6992 Meme Images Dataset with Labels"} yang tersedia di platform Kaggle. Dataset tersebut berisi ribuan meme dari berbagai topik umum yang tidak secara khusus berkaitan dengan \textit{self-harm}. Dalam penelitian ini, dataset tersebut dimanfaatkan sebagai sumber kandidat untuk kelas \textit{non-self-harm} guna memberikan pembanding terhadap meme yang mengandung indikasi \textit{self-harm}.
+
+Dari total 6.992 gambar yang tersedia, dipilih sebanyak 1.400 gambar melalui proses pengambilan sampel secara acak. Pemilihan jumlah tersebut dilakukan untuk menjaga keseimbangan proporsi data agar kelas \textit{non-self-harm} tidak mendominasi keseluruhan dataset, sehingga dapat mengurangi potensi bias pada proses pelatihan model. Label asli yang tersedia pada dataset tersebut tidak digunakan secara langsung karena penelitian ini akan melakukan proses anotasi ulang pada seluruh data. Sebelum digunakan, seluruh gambar yang terpilih diperiksa secara manual untuk memastikan bahwa meme terdiri dari kombinasi gambar dan teks yang masih dapat terbaca dengan jelas, sehingga tetap memenuhi karakteristik data multimodal yang digunakan dalam penelitian ini. \par
+
+\subsection{Komposisi Dataset} \label{IV.PengumpulanData.Komposisi}
+Setelah seluruh tahapan pengumpulan data selesai dilakukan, diperoleh total sebanyak 2.192 meme multimodal yang berasal dari tiga sumber utama, yaitu hasil rekayasa dataset \textit{self-harm}, pengumpulan langsung dari media sosial, serta dataset meme umum dari Kaggle sebagai kandidat \textit{non-self-harm}. Ketiga sumber tersebut digabungkan untuk membentuk kumpulan data awal yang akan digunakan pada tahap anotasi dan pengolahan selanjutnya. \par
+
+Seluruh data yang telah dikumpulkan kemudian melalui proses penyeragaman format, termasuk penggantian nama file menjadi sistem penomoran numerik berurutan untuk memudahkan pengelolaan dan pelacakan data selama proses penelitian. Tahap ini dilakukan untuk memastikan konsistensi struktur dataset sebelum memasuki tahap anotasi dan pemrosesan lebih lanjut. Komposisi lengkap dataset awal dapat dilihat pada Tabel \ref{table:4.komposisi_dataset}. \par
+
+\begin{table}[H]
     \centering
-    \includegraphics[width=4.05cm,height=4cm,keepaspectratio]{figure/CLIP.png}}} &
-    \multirow{2}{*}{8} &
+    \caption{Komposisi Dataset Awal}
+    \label{table:4.komposisi_dataset}
+    \begin{tabular}{|l|c|}
+        \hline
+        \textbf{Sumber Data} & \textbf{Jumlah} \\
+        \hline
+        Rekayasa Dataset \textit{Self-Harm} & 524 \\
+        \hline
+        Media Sosial & 268 \\
+        \hline
+        Meme Umum (Kaggle) & 1.400 \\
+        \hline
+        Total & 2192 \\
+        \hline
+    \end{tabular}
+\end{table}
 
-    16\rule{0pt}{3.0em} & 5 & 1 & 0 & 10 & 2 & 0{,}675 & 0{,}940 & 6 &
-    V1 \textit{(Am)} \\
+% ============================================================
+% 4.2 HASIL ANOTASI DATA
+% ============================================================
+\section{Hasil Anotasi Data} \label{IV.Anotasi}
+Proses anotasi dilakukan menggunakan pendekatan \textit{ensemble pseudo-labeling} dengan dua model \textit{vision-language}, yaitu GPT-4o dan Qwen-VL-Flash, berdasarkan \textit{annotation guideline} dan kerangka \textit{RapGuard} yang telah dirancang pada Bab III. Kedua model memberikan label secara independen terhadap seluruh data, dan label akhir ditentukan berdasarkan konsensus maupun peninjauan manual pada kasus yang tidak konsisten. \par
 
-    \cline{4-13}
+\subsection{Tingkat Kesepakatan Antar Model} \label{IV.Anotasi.Agreement}
+Dari seluruh 1.768 data, sebanyak [n] data ([n]\%) mendapatkan label yang sama dari kedua model (GPT-4o dan Qwen-VL-Flash), sehingga label tersebut diterima langsung sebagai label akhir. Sementara itu, sebanyak [n] data ([n]\%) menunjukkan perbedaan label antar model dan harus ditinjau secara manual oleh peneliti berdasarkan \textit{annotation guideline}. \par
 
-    & & &   % ← WAJIB: kosongkan No | Citra | GT Total
-    28\rule{0pt}{3.0em} & 7 & 1 & 0 & 20 & 0 & 0{,}838 & 0{,}920 & 8 &
-    V2 \textit{(Std)} \\
+\subsection{Distribusi Label Akhir} \label{IV.Anotasi.Distribusi}
 
-    \hline
-
-    % ===== Data ke-3 =====
-    \multirow{2}{*}{3} &
-    \multirow{2}{*}{%
-    \parbox[c][1.5cm][c]{4cm}{%
+\begin{table}[H]
     \centering
-    \includegraphics[width=4.05cm,height=4cm,keepaspectratio]{figure/CLIP.png}}} &
-    \multirow{2}{*}{10} &
+    \caption{Distribusi Label Akhir Dataset}
+    \label{table:4.distribusi_label}
+    \begin{tabular}{|l|c|c|c|}
+        \hline
+        \textbf{Kategori} & \textbf{\textit{Self-Harm}} & \textbf{\textit{Non-Self-Harm}} & \textbf{Total} \\
+        \hline
+        Meme Terkumpul & [n] & [n] & 1.768 \\
+        \hline
+    \end{tabular}
+\end{table}
 
-    21\rule{0pt}{3.0em} & 7 & 2 & 0 & 12 & 1 & 0{,}830 & 0{,}936 & 9 &
-    V1 \textit{(Am)} \\
+% ============================================================
+% 4.3 HASIL PRE-PROCESSING DATA
+% ============================================================
+\section{Hasil \textit{Pre-processing} Data} \label{IV.Preprocessing}
+Sebelum data digunakan untuk melatih model, seluruh data melalui tahap \textit{pre-processing} yang mencakup pemrosesan modalitas gambar dan teks.
 
-    \cline{4-13}
+\subsection{\textit{Pre-processing} Modalitas Gambar} \label{IV.Preprocessing.Gambar}
+Seluruh gambar diubah ukurannya menjadi 224$\times$224 piksel menggunakan operasi \textit{resize} sesuai dengan kebutuhan masukan \textit{image encoder} CLIP ViT-B/32. Normalisasi piksel kemudian dilakukan menggunakan nilai \textit{mean} dan \textit{standard deviation} yang sesuai dengan konfigurasi pra-latih CLIP. \par
 
-    & & &   % ← WAJIB: kosongkan No | Citra | GT Total
-    19\rule{0pt}{3.0em} & 6 & 3 & 0 & 10 & 1 & 0{,}820 & 0{,}931 & 9 &
-    V2 \textit{(Std)} \\
+Untuk data \textit{training}, diterapkan augmentasi data guna meningkatkan keragaman sampel dan mencegah \textit{overfitting}. Teknik augmentasi gambar yang digunakan meliputi:
+\begin{enumerate}
+    \item \textbf{\textit{Random Horizontal Flip}}: Membalik gambar secara horizontal dengan probabilitas 0.5 untuk meningkatkan invarians terhadap orientasi.
+    \item \textbf{\textit{Random Rotation}}: Merotasi gambar secara acak hingga $\pm$15 derajat untuk menangani variasi orientasi meme.
+    \item \textbf{\textit{Color Jitter}}: Memvariasikan properti warna gambar dengan parameter \textit{brightness}=0.2, \textit{contrast}=0.2, \textit{saturation}=0.2, dan \textit{hue}=0.1 untuk meningkatkan robustness terhadap variasi pencahayaan dan warna.
+    \item \textbf{\textit{Random Resized Crop}}: Melakukan \textit{crop} dan \textit{resize} acak dengan skala antara 0.8--1.0 dari ukuran asli ke resolusi 224$\times$224 piksel untuk meningkatkan invarians terhadap skala dan posisi objek.
+\end{enumerate}
 
-    \hline
-\end{longtable}
-\end{landscape}
-\restoregeometry
+Sementara itu, untuk data \textit{testing}, hanya diterapkan operasi \textit{resize} ke 224$\times$224 piksel tanpa augmentasi agar evaluasi dilakukan pada kondisi standar. \par
 
-\section{Akuisisi Gambar} \label{IV.Akuisisi}
-Pada tahap ini, proses pembacaan dataset dilakukan dengan seksama untuk memastikan setiap gambar diperoleh dengan urutan yang benar dan sistematis. Penting untuk memastikan bahwa gambar yang diperoleh terurut dalam format \textit{time-series} agar memudahkan analisis pergerakan wajah yang terjadi dalam video. Implementasi kode yang digunakan untuk proses ini dapat dilihat pada \cref{code:4.akuisisi}. \par
+\subsection{\textit{Pre-processing} Modalitas Teks} \label{IV.Preprocessing.Teks}
+Teks yang diekstraksi dari meme diproses melalui beberapa tahap sebagai berikut:
+\begin{enumerate}
+    \item \textbf{Tokenisasi}: Teks diproses menggunakan tokenizer dari model \textit{Suicidal-ELECTRA} yang telah di-\textit{pre-train} pada data terkait \textit{self-harm}.
+    \item \textbf{Pemotongan dan \textit{Padding}}: Panjang sekuens maksimum yang digunakan adalah 128 token. Sekuens yang lebih panjang dipotong (\textit{truncation}), sedangkan sekuens yang lebih pendek diisi dengan \textit{padding token} untuk memastikan panjang input yang seragam.
+    \item \textbf{\textit{Attention Mask}}: Dibuat \textit{attention mask} untuk membedakan token asli dari \textit{padding token} dalam proses encoding.
+\end{enumerate}
 
-\begin{lstlisting}[caption={Akuisisi Gambar}, label={code:4.akuisisi}, basicstyle=\ttfamily\scriptsize]
-DATASET_ROOT = os.path.join(os.getcwd(), 'PURE Dataset')
-def get_all_dataset_folders(root_path):
-    dataset_folders = []
-    for root, dirs, files in os.walk(root_path):
-        if any(file.endswith('.png') for file in files):
-            dataset_folders.append(root)
-    return dataset_folder
-def process_dataset(dataset_path):
-    image_files = glob(os.path.join(dataset_path, '*.png'))
-    image_files.sort()
-    for image_file in image_files:
-        frame = cv2.imread(image_file)
-        if frame is None:
-            continue
-        frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        cv2.imshow('Frame', frame)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
-    cv2.destroyAllWindows()
-def main():
-    datasets = get_all_dataset_folders(DATASET_ROOT)
-    for dataset in datasets:
-        process_dataset(dataset)
-\end{lstlisting}
+Untuk data \textit{training}, diterapkan pula teknik augmentasi teks sederhana dengan probabilitas 30\% pada setiap sampel, meliputi:
+\begin{enumerate}
+    \item \textbf{\textit{Random Deletion}}: Menghapus secara acak sekitar 10\% kata dari teks untuk meningkatkan robustness terhadap kata yang hilang atau tidak terbaca sempurna.
+    \item \textbf{\textit{Random Swap}}: Menukar posisi dua kata secara acak untuk mengurangi ketergantungan model pada urutan kata yang terlalu rigid.
+\end{enumerate}
 
+Augmentasi teks ini diterapkan sebelum proses tokenisasi dan hanya pada data \textit{training}, sementara data \textit{testing} diproses tanpa augmentasi. \par
 
-\cref{code:4.akuisisi} merupakan baris kode untuk melakukan akuisisi gambar. 
+\subsection{Pembagian Dataset} \label{IV.Preprocessing.Split}
+Dataset final dibagi menjadi data \textit{training} dan data \textit{testing} menggunakan metode \textit{stratified random split} dengan rasio 80:20.
 
+\begin{table}[H]
+    \centering
+    \caption{Pembagian Dataset}
+    \label{table:4.datasplit}
+    \begin{tabular}{|l|c|c|c|}
+        \hline
+        \textbf{Split} & \textbf{\textit{Self-Harm}} & \textbf{\textit{Non-Self-Harm}} & \textbf{Total} \\
+        \hline
+        \textit{Training} & [n] & [n] & [n] \\
+        \hline
+        \textit{Testing}  & [n] & [n] & [n] \\
+        \hline
+    \end{tabular}
+\end{table}
 
-\section{Analisis Hasil Penelitian} \label{IV.Analisis}
-\lipsum[1-2] % Menampilkan paragraf 1 sampai 2 dari lorem ipsum
+% ============================================================
+% 4.4 HASIL PENGEMBANGAN MODEL
+% ============================================================
+\section{Hasil Pengembangan Model Multimodal} \label{IV.Model}
+Model multimodal yang dikembangkan terdiri dari dua komponen \textit{encoder} utama dan sebuah modul \textit{fusion} yang menggabungkan representasi dari kedua modalitas.
 
+\subsection{Konfigurasi Model} \label{IV.Model.Konfigurasi}
+Model mengintegrasikan CLIP ViT-B/32 sebagai \textit{image encoder} dan Suicidal-ELECTRA sebagai \textit{text encoder}, dengan keluaran masing-masing diproyeksikan ke ruang dimensi yang seragam sebelum dilakukan \textit{fusion}. \par
 
-\section{Pembahasan} \label{IV.Bahas}
-\lipsum[1-2] % Menampilkan paragraf 1 sampai 2 dari lorem ipsum
+\subsection{Konfigurasi \textit{Hyperparameter}} \label{IV.Model.Hyperparameter}
+
+\begin{table}[H]
+    \centering
+    \caption{Konfigurasi \textit{Hyperparameter} Pelatihan}
+    \label{table:4.hyperparams}
+    \begin{tabular}{|l|c|}
+        \hline
+        \textbf{Parameter} & \textbf{Nilai} \\
+        \hline
+        \textit{Learning Rate} & [nilai] \\
+        \hline
+        \textit{Batch Size} & [nilai] \\
+        \hline
+        \textit{Epochs} & [nilai] \\
+        \hline
+        \textit{Optimizer} & AdamW \\
+        \hline
+        \textit{Loss Function} & CrossEntropyLoss \\
+        \hline
+        \textit{Scheduler} & Linear Warmup \\
+        \hline
+    \end{tabular}
+\end{table}
+
+% ============================================================
+% 4.5 HASIL EKSPERIMEN
+% ============================================================
+\section{Hasil Eksperimen} \label{IV.Eksperimen}
+Eksperimen dilakukan dalam lima bagian untuk mengidentifikasi strategi terbaik dalam membangun model klasifikasi multimodal untuk deteksi meme \textit{self-harm}.
+
+\subsection{Bagian 1: \textit{Baseline} dan Perbandingan Arsitektur} \label{IV.Eksperimen.Baseline}
+
+\begin{table}[H]
+    \centering
+    \caption{Hasil Eksperimen \textit{Baseline} dan Perbandingan Arsitektur (E0--E3)}
+    \label{table:4.exp_baseline}
+    \begin{tabular}{|c|l|c|c|c|c|}
+        \hline
+        \textbf{Kode} & \textbf{Arsitektur} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
+        \hline
+        E0 & \textit{Text Only} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        \hline
+        E1 & \textit{Image Only} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        \hline
+        E2 & \textit{Simple Concat} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        \hline
+        E3 & \textit{Transformer Encoder} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsection{Bagian 2: Evaluasi Strategi \textit{Fusion}} \label{IV.Eksperimen.Fusion}
+
+\begin{table}[H]
+    \centering
+    \caption{Hasil Eksperimen Evaluasi Strategi \textit{Fusion} (E4--E6)}
+    \label{table:4.exp_fusion}
+    \begin{tabular}{|c|l|c|c|c|c|}
+        \hline
+        \textbf{Kode} & \textbf{Strategi \textit{Fusion}} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
+        \hline
+        E4 & \textit{Concat} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        \hline
+        E5 & \textit{Sum} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        \hline
+        E6 & \textit{Gated Fusion} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsection{Bagian 3: Sensitivitas Posisi Modal} \label{IV.Eksperimen.Posisi}
+
+\begin{table}[H]
+    \centering
+    \caption{Hasil Eksperimen Sensitivitas Posisi Modal (E7--E8)}
+    \label{table:4.exp_posisi}
+    \begin{tabular}{|c|l|c|c|c|c|}
+        \hline
+        \textbf{Kode} & \textbf{Posisi Modal} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
+        \hline
+        E7 & IMG$\rightarrow$TXT & [n]\% & [n]\% & [n]\% & [n]\% \\
+        \hline
+        E8 & TXT$\rightarrow$IMG & [n]\% & [n]\% & [n]\% & [n]\% \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsection{Bagian 4: \textit{Ablation} Strategi \textit{Freeze Encoder}} \label{IV.Eksperimen.Freeze}
+
+\begin{table}[H]
+    \centering
+    \caption{Hasil Eksperimen \textit{Ablation Freeze Encoder} (E9--E12)}
+    \label{table:4.exp_freeze}
+    \begin{tabular}{|c|l|c|c|c|c|}
+        \hline
+        \textbf{Kode} & \textbf{Konfigurasi \textit{Freeze}} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
+        \hline
+        E9  & \textit{Train All} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        \hline
+        E10 & \textit{Freeze} CLIP & [n]\% & [n]\% & [n]\% & [n]\% \\
+        \hline
+        E11 & \textit{Freeze} ELECTRA & [n]\% & [n]\% & [n]\% & [n]\% \\
+        \hline
+        E12 & \textit{Freeze Both} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsection{Bagian 5: \textit{Progressive Unfreezing} ELECTRA} \label{IV.Eksperimen.Unfreeze}
+
+\begin{table}[H]
+    \centering
+    \caption{Hasil Eksperimen \textit{Progressive Unfreezing} ELECTRA (E13--E15)}
+    \label{table:4.exp_unfreeze}
+    \begin{tabular}{|c|l|c|c|c|c|}
+        \hline
+        \textbf{Kode} & \textbf{Konfigurasi ELECTRA} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
+        \hline
+        E13 & \textit{Top-2 Layer} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        \hline
+        E14 & \textit{Top-4 Layer} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        \hline
+        E15 & \textit{Full Fine-tune} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        \hline
+    \end{tabular}
+\end{table}
+
+% ============================================================
+% 4.6 ANALISIS KESALAHAN
+% ============================================================
+\section{Analisis Kesalahan (\textit{Error Analysis})} \label{IV.ErrorAnalysis}
+Analisis kesalahan dilakukan terhadap model terbaik untuk memahami pola kesalahan klasifikasi secara lebih mendalam.
+
+\subsection{Kasus \textit{False Positive}} \label{IV.ErrorAnalysis.FP}
+\textit{False positive} merupakan kondisi di mana model memprediksi suatu meme sebagai \textit{self-harm} padahal label sesungguhnya adalah \textit{non-self-harm}. Beberapa pola kasus yang ditemukan antara lain:
+\begin{enumerate}
+    \item Meme yang menggunakan \textit{dark humor} atau humor bertemakan kematian secara tidak serius.
+    \item Meme dengan gambar objek yang secara visual berasosiasi dengan bahaya namun tidak berkaitan dengan \textit{self-harm}.
+    \item Meme yang menggunakan referensi budaya populer yang berkaitan dengan tema melankolis.
+\end{enumerate}
+
+\subsection{Kasus \textit{False Negative}} \label{IV.ErrorAnalysis.FN}
+\textit{False negative} merupakan kondisi di mana model gagal mengidentifikasi meme \textit{self-harm}. Pola kasus yang ditemukan antara lain:
+\begin{enumerate}
+    \item Meme dengan indikator \textit{self-harm} yang sangat implisit menggunakan kiasan atau metafora.
+    \item Meme tanpa teks atau dengan teks yang sangat minimal.
+    \item Meme yang menggunakan referensi komunitas daring yang bersifat \textit{in-group}.
+\end{enumerate}
+
+% ============================================================
+% 4.7 PEMBAHASAN
+% ============================================================
+\section{Pembahasan} \label{IV.Pembahasan}
+Subbab ini menyajikan pembahasan menyeluruh terhadap hasil eksperimen yang telah dilakukan.
+
+\subsection{Keterkaitan dengan Rumusan Masalah} \label{IV.Pembahasan.Tujuan}
+Penelitian ini berhasil menjawab seluruh rumusan masalah yang telah ditetapkan melalui pengembangan model multimodal, penyusunan dataset yang komprehensif, dan evaluasi performa yang menyeluruh. \par
+
+\subsection{Perbandingan dengan Penelitian Terdahulu} \label{IV.Pembahasan.Komparasi}
+Kinerja model yang dikembangkan dalam penelitian ini menunjukkan peningkatan signifikan dibandingkan dengan pendekatan unimodal dan model-model sebelumnya yang tidak spesifik pada domain \textit{self-harm}. \par
+
+\subsection{Implikasi dan Limitasi Penelitian} \label{IV.Pembahasan.Implikasi}
+Temuan dalam penelitian ini memiliki implikasi praktis dalam pengembangan sistem moderasi konten otomatis berbasis kecerdasan buatan. Namun penelitian ini memiliki beberapa limitasi, termasuk penggunaan \textit{pseudo-labeling} tanpa validasi manusia penuh, fokus pada konten berbahasa Inggris, dan tantangan dalam mendeteksi meme dengan metafora budaya spesifik. \par

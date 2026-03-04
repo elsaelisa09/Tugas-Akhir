@@ -16,35 +16,31 @@ Kumar dan Nandakumarpada tahun 2022 mengusulkan \textit{Hate-CLIPper}, sebuah ar
 Shah et al. pada tahun 2024 mengusulkan MemeCLIP, sebuah kerangka kerja yang dirancang untuk mengatasi tantangan kompleksitas gambar dengan teks tersemat melalui pemahaman berbagai aspek ekspresi di dalamnya. Berbeda dengan penelitian sebelumnya yang lebih berfokus pada aspek tunggal seperti ujaran kebencian dan subkelasnya, penelitian ini memperluas cakupan ke beberapa aspek linguistik, yaitu kebencian, target kebencian, sikap, dan humor. Dalam penelitian ini, mereka juga memperkenalkan dataset baru bernama PrideMM yang terdiri dari 5.063 gambar dengan teks tersemat terkait gerakan Pride LGBTQ+, sehingga mengisi kekurangan sumber daya yang ada. Hasil eksperimen menunjukkan bahwa MemeCLIP mencapai kinerja lebih baik dibandingkan kerangka kerja sebelumnya pada dua dataset dunia nyata. Penulis juga membandingkan kinerja MemeCLIP dengan GPT-4 dalam tugas klasifikasi kebencian serta membahas kekurangan model ini melalui analisis kualitatif terhadap sampel yang salah diklasifikasikan \cite{shah2024memeclip}. Namun, penelitian ini juga mencatat bahwa model masih memiliki keterbatasan dalam mengenali simbol visual berukuran kecil (\textit{fine-grained}) seperti logo atau ikon beresolusi rendah, serta memahami konteks budaya spesifik yang tidak tercakup dalam data pelatihan CLIP, terutama untuk meme berbahasa non-Inggris atau yang mengandung referensi lokal.
 
 Penulis  melakukan  pencarian  referensi  terkait beberapa penelitian serupa yang pernah dilakukan sebagai dasar penelitian. Penelitian-penelitian yang menjadi referensi penulis dijabarkan pada Tabel \ref{table:2.literasi}. \par
-\renewcommand{\arraystretch}{1.0} % Mengatur spasi antar baris menjadi 1
-\begin{longtable}{|c|p{0.25\textwidth}|p{0.21\textwidth}|p{0.145\textwidth}|p{0.2\textwidth}|}
-  \caption{Literasi Penelitian Terdahulu}\label{table:2.literasi}\\
-  \hline
-  \textbf{No} 
-    & \textbf{Penulis [Tahun] [Judul]} 
-    & \textbf{Permasalahan} 
-    & \textbf{Metode} 
-    & \textbf{Hasil} \\ % ← you must end the row here
-  \hline
-\endfirsthead
-  \hline
-  \textbf{No} 
-    & \textbf{Penulis [Tahun] [Judul]} 
-    & \textbf{Permasalahan} 
-    & \textbf{Metode} 
-    & \textbf{Hasil} \\ % ← and here too
-  \hline
-\endhead
-  \hline
-\endfoot
-  \hline
-\endlastfoot
-    1. & Weibo Wang, Zongkai Wei, Jin Yuan, Yu Fang, dan Yongkang Zheng [2022] [Non-contact heart rate estimation based on singular spectrum component reconstruction using low-rank matrix and autocorrelation] & akaoapaoaj & ak & \\ 
-    \hline
-    2. & Riza Agung Firmansyah, Yuliyanto Agung Prabowo, Titiek Suheta, dan Syahri &  &  & \\
-    \hline
-    & [2023] [Implementation of 1D convolutional neural network for improvement remote photoplethys-mography] & & & \\ 
+
+\begin{landscape}
+\begin{longtable}{|>{\centering\arraybackslash}p{0.8cm}|p{5cm}|p{4.5cm}|p{4cm}|p{5cm}|}
+	\caption{Literasi Penelitian Terdahulu}
+	\label{table:2.literasi}\\
+	\hline
+	\textbf{No.} & \textbf{Judul} & \textbf{Masalah} & \textbf{Metode} & \textbf{Hasil} \\
+	\hline
+	\endfirsthead
+	\hline
+	\textbf{No.} & \textbf{Judul} & \textbf{Masalah} & \textbf{Metode} & \textbf{Hasil} \\
+	\hline
+	\endhead
+	1. & \textit{Can ChatGPT Reproduce Human Labels?} (Gilardi et al., 2023) & Keterbatasan data berlabel dan biaya anotasi manual tinggi &  ChatGPT \textit{zero-shot text annotation} & Akurasi 25\% lebih tinggi dari pelabelan manusia dan biaya \$0.003 per label\\ 
+	\hline
+	2. & \textit{GPT-4V with Emotion: A Zero-shot Benchmark for Generalized Emotion Recognition } (Lian et al., 2023) & Keterbatasan anotasi manual untuk data multimodal & GPT-4V sebagai \textit{zero-shot automatic annotator} & Mampu mengenali emosi multimodal dengan akurat pada 21 dataset \textit{benchmark} tanpa memerlukan pelatihan tambahan atau \textit{fine-tuning}\\ 
+	\hline
+	3. & MOMENTA: \textit{A Multimodal Framework for Detecting Harmful Memes and Their Targets} (Pramanick et al., 2021) & Analisis meme berbahaya memerlukan pemahaman konteks multimodal & CLIP + Google Vision API + VGG-19 + DistilBERT + CMAF & Peningkatan akurasi 1.3--2.6 poin vs UNITER dan ViLBERT\\ 
+	\hline
+	4. & \textit{Hate-CLIPper: Multimodal Hateful Meme Classification based on Cross-modal Interaction of CLIP Features} (Kumar \& Nandakumar, 2022) & Keterbatasan ekstraksi interaksi semantik lintas-modalitas pada meme kebencian & CLIP dengan \textit{Feature Interaction Matrix} (FIM) & AUROC 85.8 pada Hateful Memes Challenge, melampaui manusia (82.65)\\ 
+	\hline
+	5. & \textit{MemeCLIP: Leveraging CLIP Representations for Multimodal Meme Classification} (Shah et al., 2024) & kompleksitas gambar teks-embedded, yang membutuhkan pemahaman multimodal & MemeCLIP dengan  modifikasi model CLIP + \textit{projection layers + lightweight feature adapters} & F1 77.21\% (humor), 75.09\% (hate) pada PrideMM dan HarMeme\\ 
+	\hline
 \end{longtable}
+\end{landscape}
 
 
 
