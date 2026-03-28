@@ -1,21 +1,23 @@
 \babel@toc {bahasa}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Contoh Meme dengan Makna Tersirat \blx@tocontentsinit {0}\cite {kiela2020hateful}}}{3}{figure.caption.19}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Contoh Meme Non Self-Harm}}{2}{figure.caption.19}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Contoh Meme \textit {Self-Harm}}}{3}{figure.caption.20}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Contoh Meme dengan Makna Tersirat \blx@tocontentsinit {0}\cite {kiela2020hateful}}}{5}{figure.caption.21}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Arsitektur Transformer dengan Encoder \blx@tocontentsinit {0}\cite {vaswani2017attention}}}{15}{figure.caption.20}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Arsitektur CLIP \blx@tocontentsinit {0}\cite {Pan2022ContrastiveKCLIP}}}{17}{figure.caption.21}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Arsitektur ELECTRA \blx@tocontentsinit {0}\cite {clark2020electra}}}{18}{figure.caption.22}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Contoh Early Fusion \blx@tocontentsinit {0}\cite {jiao2024comprehensive}}}{19}{figure.caption.23}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Contoh Intermediate Fusion \blx@tocontentsinit {0}\cite {jiao2024comprehensive}}}{20}{figure.caption.24}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Contoh Late Fusion \blx@tocontentsinit {0}\cite {jiao2024comprehensive}}}{20}{figure.caption.25}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Contoh Hybrid Fusion \blx@tocontentsinit {0}\cite {jiao2024comprehensive}}}{21}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Contoh Early Fusion \blx@tocontentsinit {0}\cite {jiao2024comprehensive}}}{22}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Contoh Intermediate Fusion \blx@tocontentsinit {0}\cite {jiao2024comprehensive}}}{22}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Contoh Late Fusion \blx@tocontentsinit {0}\cite {jiao2024comprehensive}}}{23}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Contoh \textit {Hybrid Fusion} \blx@tocontentsinit {0}\cite {jiao2024comprehensive}}}{23}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Arsitektur Transformer dengan Encoder \blx@tocontentsinit {0}\cite {vaswani2017attention}}}{27}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Arsitektur CLIP \blx@tocontentsinit {0}\cite {Pan2022ContrastiveKCLIP}}}{29}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Arsitektur ELECTRA \blx@tocontentsinit {0}\cite {clark2020electra}}}{30}{figure.caption.28}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Alur Penelitian}}{27}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Perbandingan gambar asli dan hasil augmentasi \textit {flip horizontal}}}{36}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Perbandingan gambar asli dan hasil augmentasi \textit {rotasi acak}}}{36}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Perbandingan gambar asli dan hasil augmentasi \textit {color jitter}}}{37}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Alur Pengembangan Model}}{38}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Rancangan Fusion Model Varian 1}}{40}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Rancangan Fusion Model Varian 2}}{41}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Alur Penelitian}}{36}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Perbandingan gambar asli dan hasil augmentasi \textit {flip horizontal}}}{46}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Perbandingan gambar asli dan hasil augmentasi \textit {rotasi acak}}}{47}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Perbandingan gambar asli dan hasil augmentasi \textit {color jitter}}}{47}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Alur Pengembangan Model}}{49}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Rancangan Fusion Model Varian 1}}{51}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Rancangan Fusion Model Varian 2}}{52}{figure.caption.36}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

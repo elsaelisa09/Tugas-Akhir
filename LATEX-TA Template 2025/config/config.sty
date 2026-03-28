@@ -125,6 +125,16 @@
 	{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}%
 	{\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+\titleclass{\subsubsubsection}{straight}[\subsubsection]
+\newcounter{subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
+\makeatletter
+\providecommand*{\toclevel@subsubsubsection}{4}
+\providecommand*{\Hy@toclevel@subsubsubsection}{4}
+\providecommand*{\theHsubsubsubsection}{\theHsubsubsection.\arabic{subsubsubsection}}
+\makeatother
+\titleformat{\subsubsubsection}%
+  {\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
 
 %\makeatletter
 %\def\@makechapterhead#1{%
@@ -145,6 +155,7 @@
 \titlespacing*{\section}{0pt}{20pt}{0pt}
 \titlespacing*{\subsection}{0pt}{20pt}{0pt}
 \titlespacing*{\subsubsection}{0pt}{20pt}{0pt}
+\titlespacing*{\subsubsubsection}{0pt}{20pt}{0pt}
 
 \usepackage{listings}
 \usepackage{xcolor}
@@ -152,7 +163,7 @@
 
 
 % Setting nomor pada subbsubsubbab
-\setcounter{secnumdepth}{3}
+\setcounter{secnumdepth}{4}
 
 % Counter untuk figure dan table, agar bertambah walaupun lintas subbab
 \counterwithout{figure}{section}
@@ -172,6 +183,13 @@
 \cftsetindents{section}{1.5em}{2.3em}
 \cftsetindents{subsection}{3em}{3em}
 \cftsetindents{subsubsection}{4.5em}{4em}
+\newlength{\subsubsubsecindent}
+\setlength{\subsubsubsecindent}{8.5em}
+\newlength{\subsubsubsecnumwidth}
+\setlength{\subsubsubsecnumwidth}{4.5em}
+\makeatletter
+\newcommand{\l@subsubsubsection}{\@dottedtocline{4}{\subsubsubsecindent}{\subsubsubsecnumwidth}}
+\makeatother
 \setlength{\cfttabindent}{1.5em}
 \setlength{\cftfigindent}{1.5em}
 
@@ -186,7 +204,7 @@
 
 
 
-\setcounter{tocdepth}{3} 
+\setcounter{tocdepth}{4} 
 
 % Tambahkan kata "BAB" sebelum nomor bab di daftar isi
 \renewcommand*\cftchappresnum{\MakeUppercase{BAB}~}

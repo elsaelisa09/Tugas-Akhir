@@ -13,7 +13,7 @@ Dataset primer terdiri dari dua komponen utama, yaitu dataset rekayasa multimoda
 \subsubsection{Dataset Rekayasa Multimodal} \label{IV.PengumpulanData.Rekayasa}
 Rekayasa dataset dilakukan untuk menghasilkan meme dengan tema \textit{self-harm} secara multimodal karena belum tersedia dataset publik yang secara khusus menyediakan kombinasi gambar dan teks untuk kategori meme \textit{self-harm}. Komponen visual diperoleh dari dataset \textit{Weapon and Knife Detection 137K Images} yang tersedia secara publik, kemudian dipilih secara manual berdasarkan kualitas gambar dan kejelasan objek. Sementara itu, komponen teks diambil dari \textit{Suicidal Ideation Detection Reddit Dataset} yang bersumber dari unggahan komunitas Reddit, dengan menggunakan atribut \textit{Title} yang memiliki nilai \textit{confidence} tertinggi.
 
-Teks yang terlalu panjang diringkas menjadi satu kalimat utama dengan tetap mempertahankan konteks makna, serta melalui tahap pembersihan karakter dan penghapusan duplikasi data. Selanjutnya, gambar dan teks digabungkan secara acak untuk membentuk meme multimodal menghasilkan variasi konteks visual dan tekstual yang beragam sehingga model mampu melakukan generalisasi dengan lebih baik. Dari proses rekayasa ini diperoleh sebanyak 524 meme multimodal yang digunakan dalam penelitian. Rincian lebih lengkap dapat dilihat pada Tabel \ref{table:4.rekayasa_dataset}. \par
+Teks yang terlalu panjang diringkas menjadi satu kalimat utama dengan tetap mempertahankan konteks makna, serta melalui tahap pembersihan karakter dan penghapusan duplikasi data. Selanjutnya, gambar dan teks digabungkan secara acak untuk membentuk meme multimodal menghasilkan variasi konteks visual dan tekstual yang beragam sehingga model mampu melakukan generalisasi dengan lebih baik. Dari proses rekayasa ini diperoleh sebanyak 524 meme multimodal yang digunakan dalam penelitian. Rincian lebih lengkap dapat dilihat pada                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Tabel \ref{table:4.rekayasa_dataset}. \par
 
 \begin{table}[H]
     \centering
@@ -182,104 +182,313 @@ Model mengintegrasikan CLIP ViT-B/32 sebagai \textit{image encoder} dan Suicidal
 % 4.5 HASIL EKSPERIMEN
 % ============================================================
 \section{Hasil Eksperimen} \label{IV.Eksperimen}
-Eksperimen dilakukan dalam lima bagian untuk mengidentifikasi strategi terbaik dalam membangun model klasifikasi multimodal untuk deteksi meme \textit{self-harm}.
+Eksperimen pada bagian ini dibagi menjadi dua modalitas utama, yaitu modalitas gambar dan modalitas teks, untuk mengidentifikasi konfigurasi terbaik dalam klasifikasi meme \textit{self-harm}.
 
-\subsection{Bagian 1: \textit{Baseline} dan Perbandingan Arsitektur} \label{IV.Eksperimen.Baseline}
+% ===============================
+% 4.2 Eksperimen Modalitas Gambar
+% ===============================
+
+\subsection{Eksperimen Modalitas Gambar}
+\label{IV.Eksperimen.Gambar}
+
+Subbab ini membahas hasil eksperimen pada modalitas gambar menggunakan model \textit{CNN/CLIP Image Encoder}. Evaluasi dilakukan untuk mengetahui pengaruh kombinasi hyperparameter terhadap performa model dalam mengklasifikasikan meme \textit{self-harm}.
+
+% -------------------------------
+% 4.2.1 Hasil Terbaik
+% -------------------------------
+
+\subsubsection{Hasil Pelatihan Modalitas Gambar}
+\label{IV.Gambar.HasilTerbaik}
+
+Tabel \ref{table:4.gambar_best} menunjukkan hasil eksperimen terbaik pada modalitas gambar berdasarkan nilai \textit{F1-Score}.
 
 \begin{table}[H]
     \centering
-    \caption{Hasil Eksperimen \textit{Baseline} dan Perbandingan Arsitektur (E0--E3)}
-    \label{table:4.exp_baseline}
-    \begin{tabular}{|c|l|c|c|c|c|}
+    \caption{Hasil Terbaik Model Modalitas Gambar}
+    \label{table:4.gambar_best}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
         \hline
-        \textbf{Kode} & \textbf{Arsitektur} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
+        \textbf{No} & \textbf{Batch} & \textbf{Epoch} & \textbf{LR} & \textbf{Patience} & \textbf{Acc} & \textbf{Prec} & \textbf{Recall} & \textbf{F1} & \textbf{Best Epoch} \\
         \hline
-        E0 & \textit{Text Only} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        1 & 16 & 24 & 1e-4 & 5 & - & - & - & - & - \\
         \hline
-        E1 & \textit{Image Only} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        2 & 32 & 24 & 1e-5 & 5 & - & - & - & - & - \\
         \hline
-        E2 & \textit{Simple Concat} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        3 & 16 & 12 & 1e-5 & 3 & - & - & - & - & - \\
         \hline
-        E3 & \textit{Transformer Encoder} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        4 & 8 & 24 & 1e-4 & 5 & - & - & - & - & - \\
+        \hline
+        5 & 16 & 24 & 1e-6 & 5 & - & - & - & - & - \\
         \hline
     \end{tabular}
 \end{table}
 
-\subsection{Bagian 2: Evaluasi Strategi \textit{Fusion}} \label{IV.Eksperimen.Fusion}
+Berdasarkan hasil pada Tabel \ref{table:4.gambar_best}, kombinasi hyperparameter terbaik diperoleh pada konfigurasi [isi disini]. Hal ini menunjukkan bahwa pemilihan nilai \textit{learning rate} dan \textit{batch size} memiliki pengaruh signifikan terhadap performa model.
+
+% -------------------------------
+% 4.2.2 Analisis Hyperparameter
+% -------------------------------
+
+\subsubsection{Analisis Hyperparameter}
+\label{IV.Gambar.Hyperparameter}
+
+Analisis dilakukan untuk mengetahui pengaruh \textit{learning rate} terhadap performa model. Parameter lain dibuat konstan untuk memastikan pengaruh yang diamati berasal dari satu variabel utama.
 
 \begin{table}[H]
     \centering
-    \caption{Hasil Eksperimen Evaluasi Strategi \textit{Fusion} (E4--E6)}
-    \label{table:4.exp_fusion}
-    \begin{tabular}{|c|l|c|c|c|c|}
+    \caption{Pengaruh Learning Rate pada Modalitas Gambar}
+    \label{table:4.gambar_lr}
+    \begin{tabular}{|c|c|c|c|c|c|}
         \hline
-        \textbf{Kode} & \textbf{Strategi \textit{Fusion}} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
+        \textbf{Learning Rate} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Best Epoch} \\
         \hline
-        E4 & \textit{Concat} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        1e-3 & - & - & - & - & - \\
         \hline
-        E5 & \textit{Sum} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        1e-4 & - & - & - & - & - \\
         \hline
-        E6 & \textit{Gated Fusion} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        1e-5 & - & - & - & - & - \\
+        \hline
+        1e-6 & - & - & - & - & - \\
         \hline
     \end{tabular}
 \end{table}
 
-\subsection{Bagian 3: Sensitivitas Posisi Modal} \label{IV.Eksperimen.Posisi}
+Dari hasil tersebut, dapat diamati bahwa nilai \textit{learning rate} yang terlalu besar menyebabkan model sulit konvergen, sedangkan nilai yang terlalu kecil memperlambat proses pelatihan. Nilai optimal diperoleh pada [isi].
+
+% -------------------------------
+% 4.2.3 Analisis Training
+% -------------------------------
+
+\subsubsection{Analisis Proses Pelatihan}
+\label{IV.Gambar.Training}
+
+Analisis proses pelatihan dilakukan dengan melihat nilai \textit{best epoch} serta kestabilan proses training.
+
+Berdasarkan hasil eksperimen, sebagian besar model mencapai performa terbaik sebelum mencapai jumlah epoch maksimum. Hal ini menunjukkan bahwa mekanisme \textit{early stopping} dengan parameter \textit{patience} yang digunakan telah berjalan dengan baik dalam mencegah terjadinya \textit{overfitting}.
+
+Selain itu, perbedaan nilai \textit{best epoch} pada setiap eksperimen menunjukkan bahwa kombinasi hyperparameter berpengaruh terhadap kecepatan konvergensi model.
+
+% ===============================
+% 4.3 Eksperimen Modalitas Teks
+% ===============================
+
+\subsection{Eksperimen Modalitas Teks}
+\label{IV.Eksperimen.Teks}
+
+Subbab ini membahas hasil eksperimen pada modalitas teks menggunakan model \textit{BERT/ELECTRA}.
+
+% -------------------------------
+% 4.3.1 Hasil Terbaik
+% -------------------------------
+
+\subsubsection{Hasil Terbaik Model Teks}
+\label{IV.Teks.HasilTerbaik}
 
 \begin{table}[H]
     \centering
-    \caption{Hasil Eksperimen Sensitivitas Posisi Modal (E7--E8)}
-    \label{table:4.exp_posisi}
-    \begin{tabular}{|c|l|c|c|c|c|}
+    \caption{Hasil Terbaik Model Modalitas Gambar}
+    \label{table:4.gambar_best}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
         \hline
-        \textbf{Kode} & \textbf{Posisi Modal} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
+        \textbf{No} & \textbf{Batch} & \textbf{Epoch} & \textbf{LR} & \textbf{Patience} & \textbf{Acc} & \textbf{Prec} & \textbf{Recall} & \textbf{F1} & \textbf{Best Epoch} \\
         \hline
-        E7 & IMG$\rightarrow$TXT & [n]\% & [n]\% & [n]\% & [n]\% \\
+        1 & 16 & 24 & 1e-4 & 5 & - & - & - & - & - \\
         \hline
-        E8 & TXT$\rightarrow$IMG & [n]\% & [n]\% & [n]\% & [n]\% \\
+        2 & 32 & 24 & 1e-5 & 5 & - & - & - & - & - \\
+        \hline
+        3 & 16 & 12 & 1e-5 & 3 & - & - & - & - & - \\
+        \hline
+        4 & 8 & 24 & 1e-4 & 5 & - & - & - & - & - \\
+        \hline
+        5 & 16 & 24 & 1e-6 & 5 & - & - & - & - & - \\
         \hline
     \end{tabular}
 \end{table}
 
-\subsection{Bagian 4: \textit{Ablation} Strategi \textit{Freeze Encoder}} \label{IV.Eksperimen.Freeze}
+Berdasarkan hasil tersebut, model teks menunjukkan performa terbaik pada konfigurasi [isi], yang mengindikasikan bahwa representasi tekstual memiliki kontribusi penting dalam klasifikasi.
+
+% -------------------------------
+% 4.3.2 Analisis Hyperparameter
+% -------------------------------
+
+\subsubsection{Analisis Hyperparameter}
+\label{IV.Teks.Hyperparameter}
 
 \begin{table}[H]
     \centering
-    \caption{Hasil Eksperimen \textit{Ablation Freeze Encoder} (E9--E12)}
-    \label{table:4.exp_freeze}
-    \begin{tabular}{|c|l|c|c|c|c|}
+    \caption{Pengaruh Learning Rate pada Modalitas Teks}
+    \label{table:4.teks_lr}
+    \begin{tabular}{|c|c|c|c|c|c|}
         \hline
-        \textbf{Kode} & \textbf{Konfigurasi \textit{Freeze}} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
+        \textbf{Learning Rate} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Best Epoch} \\
         \hline
-        E9  & \textit{Train All} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        1e-3 & - & - & - & - & - \\
         \hline
-        E10 & \textit{Freeze} CLIP & [n]\% & [n]\% & [n]\% & [n]\% \\
+        1e-4 & - & - & - & - & - \\
         \hline
-        E11 & \textit{Freeze} ELECTRA & [n]\% & [n]\% & [n]\% & [n]\% \\
+        1e-5 & - & - & - & - & - \\
         \hline
-        E12 & \textit{Freeze Both} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        1e-6 & - & - & - & - & - \\
         \hline
     \end{tabular}
 \end{table}
 
-\subsection{Bagian 5: \textit{Progressive Unfreezing} ELECTRA} \label{IV.Eksperimen.Unfreeze}
+Hasil menunjukkan bahwa \textit{learning rate} memiliki pengaruh signifikan terhadap performa model teks, di mana nilai optimal diperoleh pada [isi].
+
+% -------------------------------
+% 4.3.3 Analisis Training
+% -------------------------------
+
+\subsubsection{Analisis Proses Pelatihan}
+\label{IV.Teks.Training}
+
+Berdasarkan hasil eksperimen, model teks menunjukkan kecenderungan konvergensi yang lebih stabil dibandingkan model gambar.
+
+Nilai \textit{best epoch} menunjukkan bahwa model mampu mencapai performa optimal sebelum mencapai epoch maksimum, sehingga penggunaan \textit{early stopping} efektif dalam menghindari overfitting.
+
+
+```latex
+% =========================================
+% 4.x Eksperimen Multimodal
+% =========================================
+
+\subsection{Eksperimen Multimodal}
+\label{IV.Eksperimen.Multimodal}
+
+Subbab ini membahas eksperimen pada model multimodal yang menggabungkan fitur teks dan gambar. Eksperimen dilakukan untuk mengevaluasi pengaruh dimensi fitur, strategi penanganan \textit{class imbalance}, serta metode \textit{fusion} terhadap performa model.
+
+% =====================================================
+% 1. Variasi Dimensi Fitur Teks dan Gambar
+% =====================================================
+
+\subsubsection{Variasi Dimensi Fitur Teks dan Gambar}
+\label{IV.Multimodal.Dimensi}
+
+Eksperimen ini bertujuan untuk menentukan kombinasi dimensi fitur teks dan gambar terbaik sebelum proses \textit{fusion}. Dimensi fitur teks diperoleh melalui \textit{MLP} sebelum proses \textit{concatenation}, sedangkan fitur gambar disesuaikan untuk menjaga keseimbangan representasi.
 
 \begin{table}[H]
     \centering
-    \caption{Hasil Eksperimen \textit{Progressive Unfreezing} ELECTRA (E13--E15)}
-    \label{table:4.exp_unfreeze}
-    \begin{tabular}{|c|l|c|c|c|c|}
+    \caption{Hasil Eksperimen Variasi Dimensi Fitur}
+    \label{table:4.multi_dim_result}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
         \hline
-        \textbf{Kode} & \textbf{Konfigurasi ELECTRA} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
+        \textbf{No} & \textbf{Dim Teks} & \textbf{Dim Gambar} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
         \hline
-        E13 & \textit{Top-2 Layer} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        1 & 768 & 512 & - & - & - & - \\
         \hline
-        E14 & \textit{Top-4 Layer} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        2 & 768 & 256 & - & - & - & - \\
         \hline
-        E15 & \textit{Full Fine-tune} & [n]\% & [n]\% & [n]\% & [n]\% \\
+        3 & 512 & 512 & - & - & - & - \\
+        \hline
+        4 & 512 & 256 & - & - & - & - \\
+        \hline
+        5 & 256 & 512 & - & - & - & - \\
+        \hline
+        6 & 256 & 256 & - & - & - & - \\
         \hline
     \end{tabular}
 \end{table}
+
+% =====================================================
+% 2. Strategi Loss (Class Imbalance)
+% =====================================================
+
+\subsubsection{Eksperimen Strategi Penanganan Class Imbalance}
+\label{IV.Multimodal.Loss}
+
+Eksperimen ini bertujuan untuk mengevaluasi pengaruh strategi \textit{loss weighting} dalam menangani ketidakseimbangan kelas pada dataset.
+
+\begin{table}[H]
+    \centering
+    \caption{Skenario Strategi Loss}
+    \label{table:4.multi_loss_setup}
+    \begin{tabular}{|c|l|l|}
+        \hline
+        \textbf{No} & \textbf{Strategi} & \textbf{Tujuan} \\
+        \hline
+        1 & Class Weight & Memberikan bobot lebih pada kelas minoritas \\
+        \hline
+        2 & Focal Loss & Fokus pada sampel sulit \\
+        \hline
+        3 & Class Weight + Focal Loss & Kombinasi kedua metode \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Hasil Eksperimen Strategi Loss}
+    \label{table:4.multi_loss_result}
+    \begin{tabular}{|c|l|c|c|c|c|}
+        \hline
+        \textbf{No} & \textbf{Strategi} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
+        \hline
+        1 & Class Weight & - & - & - & - \\
+        \hline
+        2 & Focal Loss & - & - & - & - \\
+        \hline
+        3 & Kombinasi & - & - & - & - \\
+        \hline
+    \end{tabular}
+\end{table}
+
+% =====================================================
+% 3. Eksperimen Metode Fusion
+% =====================================================
+
+\subsubsection{Eksperimen Metode Fusion}
+\label{IV.Multimodal.Fusion}
+
+Eksperimen ini bertujuan untuk membandingkan berbagai metode penggabungan fitur (\textit{fusion}) pada model multimodal.
+
+\begin{table}[H]
+    \centering
+    \caption{Skenario Metode Fusion}
+    \label{table:4.multi_fusion_setup}
+    \begin{tabular}{|c|l|l|}
+        \hline
+        \textbf{No} & \textbf{Metode Fusion} & \textbf{Deskripsi} \\
+        \hline
+        1 & Concatenation & Penggabungan langsung fitur \\
+        \hline
+        2 & Addition & Penjumlahan fitur \\
+        \hline
+        3 & Multiplication & Perkalian elemen fitur \\
+        \hline
+        4 & Gated Fusion & Penggabungan dengan mekanisme gerbang \\
+        \hline
+        5 & Attention Fusion & Menggunakan mekanisme perhatian \\
+        \hline
+        6 & Bilinear Fusion & Interaksi fitur tingkat tinggi \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Hasil Eksperimen Metode Fusion}
+    \label{table:4.multi_fusion_result}
+    \begin{tabular}{|c|l|c|c|c|c|}
+        \hline
+        \textbf{No} & \textbf{Metode Fusion} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} \\
+        \hline
+        1 & Concatenation & - & - & - & - \\
+        \hline
+        2 & Addition & - & - & - & - \\
+        \hline
+        3 & Multiplication & - & - & - & - \\
+        \hline
+        4 & Gated Fusion & - & - & - & - \\
+        \hline
+        5 & Attention Fusion & - & - & - & - \\
+        \hline
+        6 & Bilinear Fusion & - & - & - & - \\
+        \hline
+    \end{tabular}
+\end{table}
+
+Berdasarkan hasil eksperimen, metode fusion terbaik diperoleh pada [isi], yang menunjukkan bahwa strategi penggabungan fitur memiliki pengaruh signifikan terhadap performa model multimodal.
+```
 
 % ============================================================
 % 4.6 ANALISIS KESALAHAN

@@ -1,18 +1,23 @@
 \babel@toc {bahasa}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Literasi Penelitian Terdahulu}}{11}{table.2.1}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces \textit {Confusion Matrix}}}{25}{table.2.2}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Literasi Penelitian Terdahulu}}{16}{table.2.1}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces \textit {Confusion Matrix}}}{34}{table.2.2}%
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Komposisi Dataset Awal Penelitian}}{42}{table.caption.30}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Sumber Data Rekayasa Dataset}}{48}{table.caption.34}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Komposisi Dataset Awal}}{49}{table.caption.35}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Distribusi Label Akhir Dataset}}{50}{table.caption.36}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Pembagian Dataset}}{52}{table.caption.37}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Konfigurasi \textit {Hyperparameter} Pelatihan}}{52}{table.caption.38}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Hasil Eksperimen \textit {Baseline} dan Perbandingan Arsitektur (E0--E3)}}{53}{table.caption.39}%
-\contentsline {table}{\numberline {4.7}{\ignorespaces Hasil Eksperimen Evaluasi Strategi \textit {Fusion} (E4--E6)}}{53}{table.caption.40}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces Hasil Eksperimen Sensitivitas Posisi Modal (E7--E8)}}{53}{table.caption.41}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces Hasil Eksperimen \textit {Ablation Freeze Encoder} (E9--E12)}}{53}{table.caption.42}%
-\contentsline {table}{\numberline {4.10}{\ignorespaces Hasil Eksperimen \textit {Progressive Unfreezing} ELECTRA (E13--E15)}}{54}{table.caption.43}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Sumber Data Rekayasa Dataset}}{59}{table.caption.37}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Komposisi Dataset Awal}}{60}{table.caption.38}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Distribusi Label Akhir Dataset}}{61}{table.caption.39}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Pembagian Dataset}}{63}{table.caption.40}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Konfigurasi \textit {Hyperparameter} Pelatihan}}{63}{table.caption.41}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Hasil Terbaik Model Modalitas Gambar}}{64}{table.caption.42}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Pengaruh Learning Rate pada Modalitas Gambar}}{65}{table.caption.43}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Hasil Terbaik Model Modalitas Gambar}}{65}{table.caption.44}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Pengaruh Learning Rate pada Modalitas Teks}}{66}{table.caption.45}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces Hasil Eksperimen Variasi Dimensi Fitur}}{67}{table.caption.46}%
+\contentsline {table}{\numberline {4.11}{\ignorespaces Skenario Strategi Loss}}{67}{table.caption.47}%
+\contentsline {table}{\numberline {4.12}{\ignorespaces Hasil Eksperimen Strategi Loss}}{67}{table.caption.48}%
+\contentsline {table}{\numberline {4.13}{\ignorespaces Skenario Metode Fusion}}{67}{table.caption.49}%
+\contentsline {table}{\numberline {4.14}{\ignorespaces Hasil Eksperimen Metode Fusion}}{68}{table.caption.50}%
 \addvspace {10\p@ }
