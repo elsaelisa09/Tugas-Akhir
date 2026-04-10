@@ -8,7 +8,7 @@ Penelitian yang dilakukan oleh Sharma et al. pada tahun 2022 menyajikan sebuah s
 
 Penelitian yang dilakukan oleh Pramanick \textit{et al.} pada tahun 2021 memperkenalkan MOMENTA, yaitu sebuah kerangka kerja multimodal yang dirancang untuk mendeteksi meme berbahaya sekaligus mengidentifikasi target yang disasar. Metode yang diusulkan menggabungkan informasi global melalui representasi gabungan gambar dan teks, serta informasi lokal yang diperoleh dari deteksi objek, atribut visual, dan ekstraksi teks menggunakan OCR (\textit{Optical Character Recognition}), sehingga mampu menangkap konteks meme secara lebih komprehensif. Hasil eksperimen menunjukkan bahwa MOMENTA mampu mengungguli berbagai model pembanding pada tugas deteksi meme berbahaya dan identifikasi target, dengan peningkatan performa yang konsisten \cite{pramanick2021momenta}. Meskipun penelitian ini berfokus pada kategori \textit{hate speech} dan propaganda, pendekatan multimodal yang digunakan menunjukkan relevansi untuk analisis meme \textit{self-harm}, sekaligus mengindikasikan adanya peluang pengembangan lebih lanjut pada kategori tersebut yang masih belum banyak diteliti.
 
-Penelitian yang dilakukan oleh Kumar dan Nandakumar pada tahun 2022 mengusulkan Hate-CLIPper, yaitu model klasifikasi meme berbasis multimodal yang memanfaatkan representasi dari CLIP serta interaksi eksplisit antara fitur visual dan teks. Penelitian ini dilatarbelakangi oleh permasalahan bahwa informasi pada meme tidak dapat dipahami secara terpisah antara gambar dan teks, sehingga diperlukan pemodelan hubungan lintas-modal yang lebih efektif . Untuk mengatasi hal tersebut, penulis memperkenalkan \textit{Feature Interaction Matrix} (FIM) yang dibangun dari interaksi antara \textit{embedding}  visual dan teks, sehingga mampu menangkap hubungan semantik secara lebih mendalam dibandingkan pendekatan konvensional . Hasil eksperimen menunjukkan bahwa model yang diusulkan mencapai performa state-of-the-art dengan nilai AUROC sebesar 85{,}8\% pada dataset Hateful Memes Challenge, bahkan melampaui performa manusia, serta menunjukkan kemampuan generalisasi pada dataset lain \cite{kumar2022hateclipper}. Meskipun penelitian ini berfokus pada deteksi hate speech, pendekatan berbasis interaksi fitur lintas-modal yang diusulkan memberikan dasar yang kuat untuk menangkap makna implisit pada meme, sehingga membuka peluang penerapan pada analisis meme \textit{self-harm} yang masih terbatas dalam penelitian sebelumnya.
+Penelitian yang dilakukan oleh Kumar dan Nandakumar pada tahun 2022 mengusulkan Hate-CLIPper, yaitu model klasifikasi meme berbasis multimodal yang memanfaatkan representasi dari CLIP serta interaksi eksplisit antara fitur visual dan teks. Penelitian ini dilatarbelakangi oleh permasalahan bahwa informasi pada meme tidak dapat dipahami secara terpisah antara gambar dan teks, sehingga diperlukan pemodelan hubungan lintas-modal yang lebih efektif . Untuk mengatasi hal tersebut, penulis memperkenalkan FIM (\textit{Feature Interaction Matrix}) yang dibangun dari interaksi antara \textit{embedding}  visual dan teks, sehingga mampu menangkap hubungan semantik secara lebih mendalam dibandingkan pendekatan konvensional . Hasil eksperimen menunjukkan bahwa model yang diusulkan mencapai performa state-of-the-art dengan nilai AUROC sebesar 85{,}8\% pada dataset Hateful Memes Challenge, bahkan melampaui performa manusia, serta menunjukkan kemampuan generalisasi pada dataset lain \cite{kumar2022hateclipper}. Meskipun penelitian ini berfokus pada deteksi hate speech, pendekatan berbasis interaksi fitur lintas-modal yang diusulkan memberikan dasar yang kuat untuk menangkap makna implisit pada meme, sehingga membuka peluang penerapan pada analisis meme \textit{self-harm} yang masih terbatas dalam penelitian sebelumnya.
 
 Penelitian yang dilakukan oleh Shah \textit{et al.} pada tahun 2024 mengusulkan \textit{MemeCLIP}, yaitu sebuah \textit{framework} multimodal yang memanfaatkan representasi \textit{CLIP} untuk melakukan klasifikasi meme secara multiaspek. Penelitian ini dilatarbelakangi oleh keterbatasan studi sebelumnya yang umumnya hanya berfokus pada satu aspek, seperti \textit{hate speech}, sehingga belum mampu menangkap kompleksitas makna dalam meme yang bersifat multi-dimensi. Untuk mengatasi hal tersebut, penulis memperkenalkan dataset baru bernama \textit{PrideMM} yang terdiri dari 5.063 meme terkait gerakan \textit{LGBTQ+} dengan beberapa label sekaligus, yaitu \textit{hate}, \textit{target}, \textit{stance}, dan \textit{humor}, serta mengembangkan pendekatan berbasis \textit{CLIP} yang diadaptasi untuk pembelajaran \textit{downstream}. Hasil eksperimen menunjukkan bahwa \textit{MemeCLIP} mampu mengungguli berbagai metode sebelumnya pada beberapa dataset nyata, serta menunjukkan performa yang kompetitif ketika dibandingkan dengan pendekatan \textit{zero-shot} berbasis \textit{GPT-4} \cite{shah2024memeclip}. Temuan ini menegaskan pentingnya pendekatan multiaspek dalam analisis meme, sekaligus menunjukkan adanya peluang penelitian lebih lanjut untuk memasukkan kategori lain seperti \textit{self-harm} yang belum tercakup dalam skema klasifikasi tersebut.
 
@@ -18,32 +18,45 @@ Penelitian yang dilakukan oleh Lian \textit{et al.} pada tahun 2023 mengevaluasi
 Penelitian-penelitian yang menjadi referensi penulis dijabarkan pada Tabel \ref{table:2.literasi} di bawah ini. \par
 
 \begin{landscape}
-\begingroup
-\setlength{\LTleft}{0cm}
-\setlength{\LTright}{\fill}
-\begin{longtable}{|>{\centering\arraybackslash}p{0.4cm}|p{1.7cm}|p{3.2cm}|p{3cm}|p{3.2cm}|p{4cm}|}
-	\caption{Literasi Penelitian Terdahulu}
-	\label{table:2.literasi}\\
-	\hline
-	\textbf{No.} & \textbf{Peneliti} & \textbf{Judul} & \textbf{Permasalahan} & \textbf{Metode} & \textbf{Hasil} \\
-	\hline
-	\endfirsthead
-	\hline
-	\textbf{No.} & \textbf{Peneliti} & \textbf{Judul} & \textbf{Permasalahan} & \textbf{Metode} & \textbf{Hasil} \\
-	\hline
-	\endhead
-	1. & Sharma \textit{et al.} (2022) \cite{Sharma2022HarmfulMemes} & \textit{Detecting and Understanding Harmful Memes: A Survey} & Minimnya studi untuk meme berbahaya termasuk \textit{self-harm} & Survei literatur dan klasifikasi tipologi meme berbahaya & Menyoroti gap penting yaitu meme \textit{self-harm} belum diteliti dan sulit karena data tidak tersedia\\ 
-	\hline
-	2. & Pramanick \textit{et al.} (2021) \cite{pramanick2021momenta} & \textit{MOMENTA: Multimodal Framework for Harmful Memes} & Deteksi meme toksik dan targetnya (menggabungkan konteks visual + teks) & \textit{Framework} multimodal MOMENTA: gabungkan fitur global (CLIP) dan lokal (wajah/objek via VGG-19 + OCR) dengan \textit{attention fusion} & Kinerja unggul, yaitu akurasi +1,3--2,6 poin dibanding \textit{baseline} dengan dua tugas, yaitu deteksi bahaya dan identifikasi target\\ 
-	\hline
-	3. & Kumar \& Nandakumar (2022) \cite{kumar2022hateclipper} & \textit{Hate-CLIPper: Multimodal Hateful Meme Classification based on Cross-modal Interaction of CLIP Features} & Klasifikasi meme kebencian dengan interaksi fitur halus & Arsitektur Hate-CLIPper: menggunakan \textit{embedding} CLIP (gambar dan teks) dan \textit{Feature Interaction Matrix} (\textit{outer-product}) & AUROC 85,8\% pada dataset Hateful Memes (melampaui manusia 82,65\%); generalis di beberapa dataset meme lainnya\\ 
-	\hline
-	4. & Shah \textit{et al.} (2024) \cite{shah2024memeclip} & \textit{MemeCLIP: CLIP for Multimodal Meme Classification} & Klasifikasi meme multimodal dengan label multiperkara (\textit{hate}, \textit{target}, \textit{humor}) & Dataset baru PrideMM (5.063 meme LGBT) dengan label \textit{hate}/\textit{target}/\textit{stance}/\textit{humor}; melatih CLIP dengan adapter ringan & MemeCLIP unggul pada dua dataset nyata (PrideMM dan HarMeme) dibanding metode sebelumnya\\ 
-	\hline
-	5. & Lian \textit{et al.} (2023) \cite{lian2023gpt4v} & \textit{GPT-4V with Emotion: Zero-shot Benchmark for Emotion Recognition} & Evaluasi GPT-4V di tugas pengenalan emosi multimodal & Uji \textit{zero-shot} GPT-4V pada 21 dataset emosi (visual + teks) termasuk analisis sentimen dan ekspresi wajah & GPT-4V kuat di tugas emosi umum dan integrasi multimodal baik, namun lemah mengenali ekspresi mikro khusus\\ 
-	\hline
-\end{longtable}
-\endgroup
+\begin{table}[H]
+    \centering
+    \caption{Literasi Penelitian Terdahulu (Bagian 1)}
+    \label{table:2.literasi}
+    \small
+    \setlength{\tabcolsep}{4pt}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{>{\raggedright\arraybackslash}m{0.4cm} >{\raggedright\arraybackslash}m{1.6cm} >{\raggedright\arraybackslash}m{3cm} >{\raggedright\arraybackslash}m{2.8cm} >{\raggedright\arraybackslash}m{3cm} >{\raggedright\arraybackslash}m{3.8cm}}
+        \hline
+        \textbf{No.} & \textbf{Peneliti} & \textbf{Judul} & \textbf{Permasalahan} & \textbf{Metode} & \textbf{Hasil} \\
+        \hline
+        1. & Sharma \textit{et al.} (2022) \cite{Sharma2022HarmfulMemes} & \textit{Detecting and Understanding Harmful Memes: A Survey} & Minimnya studi untuk meme berbahaya termasuk \textit{self-harm} & Survei literatur dan klasifikasi tipologi meme berbahaya & Menyoroti gap penting yaitu meme \textit{self-harm} belum diteliti dan sulit karena data tidak tersedia \\
+        \hline
+        2. & Pramanick \textit{et al.} (2021) \cite{pramanick2021momenta} & \textit{MOMENTA: Multimodal Framework for Harmful Memes} & Deteksi meme toksik dan targetnya (menggabungkan konteks visual + teks) & \textit{Framework} multimodal MOMENTA: gabungkan fitur global (CLIP) dan lokal (wajah/objek via VGG-19 + OCR) dengan \textit{attention fusion} & Kinerja unggul, yaitu akurasi +1,3--2,6 poin dibanding \textit{baseline} dengan dua tugas, yaitu deteksi bahaya dan identifikasi target \\
+        \hline
+        3. & Kumar \& Nandakumar (2022) \cite{kumar2022hateclipper} & \textit{Hate-CLIPper: Multimodal Hateful Meme Classification based on Cross-modal Interaction of CLIP Features} & Klasifikasi meme kebencian dengan interaksi fitur halus & Arsitektur Hate-CLIPper: menggunakan \textit{embedding} CLIP (gambar dan teks) dan \textit{Feature Interaction Matrix} (\textit{outer-product}) & AUROC 85,8\% pada dataset Hateful Memes (melampaui manusia 82,65\%); generalis di beberapa dataset meme lainnya \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\vspace{0.5cm}
+
+\begin{table}[H]
+    \centering
+    \caption{Literasi Penelitian Terdahulu (Bagian 2)}
+    \label{table:2.literasi.2}
+    \small
+    \setlength{\tabcolsep}{4pt}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{>{\raggedright\arraybackslash}m{0.4cm} >{\raggedright\arraybackslash}m{1.6cm} >{\raggedright\arraybackslash}m{3cm} >{\raggedright\arraybackslash}m{2.8cm} >{\raggedright\arraybackslash}m{3cm} >{\raggedright\arraybackslash}m{3.8cm}}
+        \hline
+        \textbf{No.} & \textbf{Peneliti} & \textbf{Judul} & \textbf{Permasalahan} & \textbf{Metode} & \textbf{Hasil} \\
+        \hline
+        4. & Shah \textit{et al.} (2024) \cite{shah2024memeclip} & \textit{MemeCLIP: CLIP for Multimodal Meme Classification} & Klasifikasi meme multimodal dengan label multiperkara (\textit{hate}, \textit{target}, \textit{humor}) & Dataset baru PrideMM (5.063 meme LGBT) dengan label \textit{hate}/\textit{target}/\textit{stance}/\textit{humor}; melatih CLIP dengan adapter ringan & MemeCLIP unggul pada dua dataset nyata (PrideMM dan HarMeme) dibanding metode sebelumnya \\
+        \hline
+        5. & Lian \textit{et al.} (2023) \cite{lian2023gpt4v} & \textit{GPT-4V with Emotion: Zero-shot Benchmark for Emotion Recognition} & Evaluasi GPT-4V di tugas pengenalan emosi multimodal & Uji \textit{zero-shot} GPT-4V pada 21 dataset emosi (visual + teks) termasuk analisis sentimen dan ekspresi wajah & GPT-4V kuat di tugas emosi umum dan integrasi multimodal baik, namun lemah mengenali ekspresi mikro khusus \\
+        \hline
+    \end{tabular}
+\end{table}
 \end{landscape}
 
 
@@ -53,7 +66,7 @@ Penelitian-penelitian yang menjadi referensi penulis dijabarkan pada Tabel \ref{
 Berikut adalah penjelasan mengenai teori-teori yang menjadi landasan dalam penelitian ini, termasuk konsep-konsep utama seperti \textit{self-harm}, meme, multimodal \textit{deep learning}, klasifikasi \textit{fusion}, \textit{computer vision}, \textit{natural language processing}, \textit{deep learning}, \textit{transformer}, CLIP \textit{(Contrastive Language-Image Pre-training)} dan ELECTRA \textit{(Efficiently and Encoder that Classifies Token Replacements Accurately)}. Penjelasan ini bertujuan untuk memberikan pemahaman yang mendalam mengenai konsep-konsep tersebut serta bagaimana mereka saling terkait dalam penelitian ini.
 
 \subsection{\textit{Self-Harm}} \label{II.teori10}
-\textit{Self-harm} atau perilaku menyakiti diri sendiri merupakan tindakan yang dilakukan seseorang untuk melukai tubuhnya secara sengaja, baik dengan maupun tanpa niat untuk mengakhiri hidup. Organisasi Kesehatan Dunia (WHO) mendefinisikan \textit{self-harm} sebagai \textit{ ``intentional self-inflicted injury, with or without suicidal intent''} \cite{WHO2014PreventingSuicide}. Dalam ranah psikiatri, \textit{Diagnostic and Statistical Manual of Mental Disorders} edisi kelima (DSM-5) membedakan antara \textit{non-suicidal self-injury} (NSSI), yaitu perilaku menyakiti diri tanpa niat bunuh diri yang setidaknya terjadi selama lima hari dalam setahun, dengan \textit{suicidal behavior} yang berorientasi pada keinginan mengakhiri hidup \cite{APA2022_DSM5TR}. \textit{Self-harm} banyak dikaitkan dengan kondisi psikologis seperti depresi, kecemasan, dan kesulitan regulasi emosi.
+\textit{Self-harm} atau perilaku menyakiti diri sendiri merupakan tindakan yang dilakukan seseorang untuk melukai tubuhnya secara sengaja, baik dengan maupun tanpa niat untuk mengakhiri hidup. WHO (Organisasi Kesehatan Dunia) mendefinisikan \textit{self-harm} sebagai \textit{ ``intentional self-inflicted injury, with or without suicidal intent''} \cite{WHO2014PreventingSuicide}. Dalam ranah psikiatri, DSM-5 (\textit{Diagnostic and Statistical Manual of Mental Disorders} edisi kelima) membedakan antara NSSI (\textit{non-suicidal self-injury}), yaitu perilaku menyakiti diri tanpa niat bunuh diri yang setidaknya terjadi selama lima hari dalam setahun, dengan \textit{suicidal behavior} yang berorientasi pada keinginan mengakhiri hidup \cite{APA2022_DSM5TR}. \textit{Self-harm} banyak dikaitkan dengan kondisi psikologis seperti depresi, kecemasan, dan kesulitan regulasi emosi.
 
 Berdasarkan penelitian Marchant \textit{et al.} pada tahun 2017, \textit{self-harm} dalam konten digital didefinisikan sebagai fenomena yang mencakup penyebaran gambar atau video eksplisit mengenai tindakan melukai diri sendiri, serta pemanfaatan platform daring untuk mengomunikasikan distres psikologis, keputusasaan, dan ide bunuh diri, khususnya kepada rekan sebaya. Konten digital ini sering kali berperan dalam menormalisasi perilaku menyakiti diri sebagai mekanisme koping yang dianggap efektif. Selain itu, konten tersebut juga dapat menyediakan informasi teknis terkait metode pelukaan dan cara penyembunyiannya, serta berpotensi menimbulkan efek pemicu \textit{(triggering)} maupun kompetisi di antara individu yang rentan \cite{Marchant2017}.
 
@@ -253,10 +266,10 @@ $\|z_1\|, \|z_2\|$ & : norma L2 masing-masing vektor \\
 \indent Dengan demikian, \textit{projection layer} berperan penting dalam proses pembelajaran representasi (\textit{representation learning}), karena memungkinkan model untuk mengubah dan menyesuaikan fitur agar lebih relevan terhadap tugas yang dihadapi.
 
 \subsection{\textit{Computer Vision}} \label{II.teori2}
-\textit{Computer vision} merupakan bidang dalam kecerdasan buatan yang berfokus pada bagaimana mesin dapat memahami dan menafsirkan informasi visual dari gambar maupun video melalui representasi numerik yang terstruktur \cite{sciencedirect_computer_vision_overview}. Proses komputasional ini mencakup tahapan seperti ekstraksi fitur, deteksi pola, dan pemahaman objek melalui algoritma yang mempelajari hubungan spasial maupun semantik di dalam citra. Pendekatan modern dalam \textit{computer vision} didominasi oleh \textit{deep learning}, khususnya \textit{Convolutional Neural Networks} (CNN), yang mampu mempelajari fitur visual secara hierarkis mulai dari tepi (\textit{low-level features}) hingga representasi abstrak (\textit{high-level features}) melalui pembelajaran berbasis data \cite{lecun2015deep}. Perkembangan lebih lanjut \textit{Vision Transformer} (ViT), arsitektur berbasis mekanisme \textit{self-attention} yang memecah gambar dalam bentuk \textit{patch} dan memprosesnya seperti token dalam \textit{Natural Language Processing}, sehingga menghasilkan performa kompetitif pada skala data besar \cite{dosovitskiy2020image}. Dengan kemampuan menghasilkan \textit{embedding} visual yang kaya semantik, \textit{computer vision}  menjadi fondasi penting dalam berbagai aplikasi, termasuk klasifikasi gambar, deteksi objek, dan pemahaman multimodal seperti pada model \textit{vision-language}.
+\textit{Computer vision} merupakan bidang dalam kecerdasan buatan yang berfokus pada bagaimana mesin dapat memahami dan menafsirkan informasi visual dari gambar maupun video melalui representasi numerik yang terstruktur \cite{sciencedirect_computer_vision_overview}. Proses komputasional ini mencakup tahapan seperti ekstraksi fitur, deteksi pola, dan pemahaman objek melalui algoritma yang mempelajari hubungan spasial maupun semantik di dalam citra. Pendekatan modern dalam \textit{computer vision} didominasi oleh \textit{deep learning}, khususnya CNN (\textit{Convolutional Neural Networks}), yang mampu mempelajari fitur visual secara hierarkis mulai dari tepi (\textit{low-level features}) hingga representasi abstrak (\textit{high-level features}) melalui pembelajaran berbasis data \cite{lecun2015deep}. Perkembangan lebih lanjut ViT (\textit{Vision Transformer}), arsitektur berbasis mekanisme \textit{self-attention} yang memecah gambar dalam bentuk \textit{patch} dan memprosesnya seperti token dalam \textit{Natural Language Processing}, sehingga menghasilkan performa kompetitif pada skala data besar \cite{dosovitskiy2020image}. Dengan kemampuan menghasilkan \textit{embedding} visual yang kaya semantik, \textit{computer vision}  menjadi fondasi penting dalam berbagai aplikasi, termasuk klasifikasi gambar, deteksi objek, dan pemahaman multimodal seperti pada model \textit{vision-language}.
 
 \subsection{\textit{Natural Language Processing} } \label{II.teori3}
-\textit{Naural Language Processing} merupakan cabang kecerdasan buatan yang berfokus pada bagaimana mesin dapat memahami, memproses, dan menghasilkan bahasa manusia melalui representasi matematis yang terstruktur \cite{jurafsky2026slp}. NLP modern bertumpu pada pembelajaran representasi \textit{(representation learning)}, dimana teks diubah menjadi \textit{embedding} yang mampu menangkap konteks semantik maupun sintaksis \cite{liu2018neural}. Pergeseran besar dalam NLP terjadi dengan hadirnya pendekatan berbasis \textit{deep learning}, yang dimulai dengan penggunaan \textit{recurrent neural networks} (RNN) dan \textit{Long Short-Term Memory} (LSTM), sebelum akhirnya banyak digantikan oleh arsitektur Transformer yang memungkinkan pemodelan konteks panjang melalui mekanisme \textit{self-attention} \cite{young2017recent}. Transformer kemudian menjadi fondasi model-model pra-latih (\textit{pre-trained models}) seperti BERT, GPT, dan ELECTRA yang memanfaatkan \textit{pre-training} berskala besar untuk mempelajari pola bahasa secara mendalam, sehingga meningkatkan performa berbagai tugas seperti klasifikasi teks, analisis sentimen, dan pemahaman multimodal \cite{devlin2018bert}. Dengan kemampuan menghasilkan representasi linguistik yang kaya konteks, NLP menjadi komponen penting dalam pemrosesan modalitas teks pada sistem multimodal modern. \par
+\textit{Naural Language Processing} merupakan cabang kecerdasan buatan yang berfokus pada bagaimana mesin dapat memahami, memproses, dan menghasilkan bahasa manusia melalui representasi matematis yang terstruktur \cite{jurafsky2026slp}. NLP modern bertumpu pada pembelajaran representasi \textit{(representation learning)}, dimana teks diubah menjadi \textit{embedding} yang mampu menangkap konteks semantik maupun sintaksis \cite{liu2018neural}. Pergeseran besar dalam NLP terjadi dengan hadirnya pendekatan berbasis \textit{deep learning}, yang dimulai dengan penggunaan RNN (\textit{recurrent neural networks}) dan LSTM (\textit{Long Short-Term Memory}), sebelum akhirnya banyak digantikan oleh arsitektur Transformer yang memungkinkan pemodelan konteks panjang melalui mekanisme \textit{self-attention} \cite{young2017recent}. Transformer kemudian menjadi fondasi model-model pra-latih (\textit{pre-trained models}) seperti BERT, GPT, dan ELECTRA yang memanfaatkan \textit{pre-training} berskala besar untuk mempelajari pola bahasa secara mendalam, sehingga meningkatkan performa berbagai tugas seperti klasifikasi teks, analisis sentimen, dan pemahaman multimodal \cite{devlin2018bert}. Dengan kemampuan menghasilkan representasi linguistik yang kaya konteks, NLP menjadi komponen penting dalam pemrosesan modalitas teks pada sistem multimodal modern. \par
 
 
 \subsection{\textit{Deep Learning}} \label{II.teori1}
@@ -292,7 +305,7 @@ Selain itu, \textit{multi-head attention} memungkinkan model untuk memproses inf
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.35\textwidth]{figure/Arsitektur Transformer.png}
-	\caption{Arsitektur Transformer dengan Encoder \cite{vaswani2017attention}}
+	\caption{Arsitektur Transformer dengan \textit{Encoder} \cite{vaswani2017attention}}
 	\label{fig:2.transformer}
 	% {\footnotesize Sumber: Vaswani et al., 2017}
 \end{figure}
@@ -301,7 +314,7 @@ Gambar \ref{fig:2.transformer} menunjukkan arsitektur Transformer dengan \textit
 Gambar ini menggambarkan bagaimana \textit{input embedding} berfungsi sebagai representasi awal bagi setiap token yang masuk, dan bagaimana \textit{embedding} ini bekerja bersama dengan komponen lain seperti \textit{multi-head attention} untuk menghasilkan representasi yang lebih kompleks dalam proses pemodelan \cite{vaswani2017attention}. Kemampuan Transformer dalam menangkap hubungan konteks yang kompleks ini menjadikannya fondasi utama dalam pengembangan model multimodal dan model bahasa modern. Perkembangan arsitektur Transformer ini kemudian mendorong lahirnya berbagai model multimodal yang mampu mengintegrasikan informasi visual dan tekstual, salah satunya adalah CLIP.
 
 \subsection{\textit{Contrastive Language-Image Pre-training} } \label{II.teori5}
-CLIP (\textit{Contrastive Language--Image Pre-training}) adalah model \textit{vision--language} yang dikembangkan oleh OpenAI untuk mempelajari keterkaitan semantik antara gambar dan teks melalui pembelajaran kontrasif berskala besar. CLIP terdiri atas dua \textit{encoder} terpisah, yaitu \textit{image encoder} berbasis Vision Transformer (ViT), serta \textit{text encoder} berbasis Transformer yang keduanya memetakan gambar dan teks ke dalam ruang \textit{embedding} yang sama. Selama pelatihan, CLIP memanfaatkan 400 juta pasangan gambar--teks dari internet untuk mempelajari \textit{alignment} antar-modalitas dengan menempatkan pasangan yang cocok semakin dekat dan pasangan tidak cocok semakin jauh dalam ruang vektor. Mekanisme pembelajaran ini diformalkan menggunakan \textit{contrastive loss} (InfoNCE), yang dirumuskan sebagai:
+CLIP (\textit{Contrastive Language--Image Pre-training}) adalah model \textit{vision--language} yang dikembangkan oleh OpenAI untuk mempelajari keterkaitan semantik antara gambar dan teks melalui pembelajaran kontrasif berskala besar. CLIP terdiri atas dua \textit{encoder} terpisah, yaitu \textit{image encoder} berbasis ViT (\textit{Vision Transformer}), serta \textit{text encoder} berbasis Transformer yang keduanya memetakan gambar dan teks ke dalam ruang \textit{embedding} yang sama. Selama pelatihan, CLIP memanfaatkan 400 juta pasangan gambar--teks dari internet untuk mempelajari \textit{alignment} antar-modalitas dengan menempatkan pasangan yang cocok semakin dekat dan pasangan tidak cocok semakin jauh dalam ruang vektor. Mekanisme pembelajaran ini diformalkan menggunakan InfoNCE (\textit{contrastive loss}), yang dirumuskan sebagai:
 \begin{equationcaptioned}[eq:clip-infoNCE]{
 \begin{aligned}
 \mathcal{L} = -\frac{1}{2N} \sum_{i=1}^{N} \Bigg[
@@ -309,7 +322,7 @@ CLIP (\textit{Contrastive Language--Image Pre-training}) adalah model \textit{vi
 	+ &\log \frac{\exp(\cos(f_T(T_i), f_I(L_i))/\tau)}{\sum_{j=1}^{N} \exp(\cos(f_T(T_i), f_I(L_j))/\tau)}
 \Bigg]
 \end{aligned}
-}{\textit{Contrastive Loss} (InfoNCE) pada CLIP}
+}{InfoNCE (\textit{Contrastive Loss}) pada CLIP}
 \end{equationcaptioned}
 
 \noindent
@@ -342,7 +355,7 @@ CLIP digunakan sebagai ekstraksi fitur gambar \textit{image encoder}, karena kem
 
 \subsection{\textit{Efficiently Learning an Encoder that Classifies Token Replacements Accurately} } \label{II.teori6}
 
-ELECTRA (\textit{Efficiently Learning an Encoder that Classifies Token Replacements Accurately}) merupakan model pra-latih berbasis arsitektur Transformer yang diperkenalkan sebagai alternatif yang lebih efisien dibandingkan pendekatan \textit{Masked Language Modeling} (MLM) seperti pada BERT. Berbeda dengan MLM yang hanya mempelajari representasi dari token yang di-\textit{masking}, ELECTRA menggunakan pendekatan diskriminatif yang disebut \textit{Replaced Token Detection} (RTD), di mana model dilatih untuk membedakan apakah suatu token dalam urutan merupakan token asli atau hasil penggantian oleh model \textit{generator} \cite{clark2020electra}.
+ELECTRA (\textit{Efficiently Learning an Encoder that Classifies Token Replacements Accurately}) merupakan model pra-latih berbasis arsitektur Transformer yang diperkenalkan sebagai alternatif yang lebih efisien dibandingkan pendekatan MLM (\textit{Masked Language Modeling}) seperti pada BERT. Berbeda dengan MLM yang hanya mempelajari representasi dari token yang di-\textit{masking}, ELECTRA menggunakan pendekatan diskriminatif yang disebut RTD (\textit{Replaced Token Detection}), di mana model dilatih untuk membedakan apakah suatu token dalam urutan merupakan token asli atau hasil penggantian oleh model \textit{generator} \cite{clark2020electra}.
 
 Arsitektur ELECTRA terdiri dari dua komponen utama, yaitu \textit{generator} dan \textit{discriminator}. \textit{Generator} bertugas menghasilkan token pengganti berdasarkan skema MLM dalam skala kecil, sedangkan \textit{discriminator} berfungsi untuk mengevaluasi setiap token dalam urutan dan menentukan apakah token tersebut merupakan token asli atau hasil substitusi. Dengan pendekatan ini, proses pembelajaran terjadi pada seluruh token dalam satu urutan, tidak terbatas hanya pada token tertentu seperti pada \textit{Mask Language Modelling}.Gambar \ref{fig:3.electra} di bawah ini menunjukkan arsitektur ELECTRA yang terdiri dari interaksi antara \textit{generator} dan \textit{discriminator} dalam proses pelatihan. Melalui mekanisme ini, ELECTRA mampu mempelajari konteks bahasa secara lebih menyeluruh dibandingkan pendekatan pra-latih tradisional.
 
@@ -353,12 +366,12 @@ Arsitektur ELECTRA terdiri dari dua komponen utama, yaitu \textit{generator} dan
 	\label{fig:3.electra}
 \end{figure}
 
-Proses pelatihan ELECTRA dimodelkan melalui fungsi \textit{Replaced Token Detection} (RTD) \textit{loss} sebagai berikut: 
+Proses pelatihan ELECTRA dimodelkan melalui fungsi RTD (\textit{Replaced Token Detection}) \textit{loss} sebagai berikut: 
 \\
 
 \begin{equationcaptioned}[eq:rtd-loss]{
 \mathcal{L}_{\text{RTD}} = - \sum_{i=1}^{n} \left[ y_i \log D(x_i) + (1 - y_i)\log \left(1 - D(x_i)\right) \right]
-}{\textit{Replaced Token Detection} (RTD) \textit{Loss} pada ELECTRA}
+}{RTD (\textit{Replaced Token Detection}) \textit{Loss} pada ELECTRA}
 \end{equationcaptioned}
 
 \noindent
@@ -367,14 +380,14 @@ Proses pelatihan ELECTRA dimodelkan melalui fungsi \textit{Replaced Token Detect
 \begin{tabular}{l l}
 $\mathcal{L}_{RTD}$ & : fungsi \textit{Replaced Token Detection loss} \\ 
 $n$ & : jumlah token dalam satu \textit{batch} \\ 
-$i$ & : indeks token \\  
-$x_i$ & : token ke-$i$ \\ 
-$y_i$ & : label token (0: asli, 1: hasil penggantian) \\ 
-$D(x_i)$ & : probabilitas bahwa token $x_i$ adalah hasil penggantian \\ 
+$i$ & : indeks \textit{token} \\
+$x_i$ & : \textit{token} ke-$i$ \\
+$y_i$ & : label \textit{token} (0: asli, 1: hasil penggantian) \\
+$D(x_i)$ & : probabilitas bahwa \textit{token} $x_i$ adalah hasil penggantian \\
 $\log$ & : fungsi logaritma \\ 
 \end{tabular} \\
 
-dengan $y_i = 1$ jika token merupakan token asli dan $y_i = 0$ jika token merupakan hasil penggantian, serta $D(x_i)$ merupakan probabilitas bahwa token tersebut adalah token asli. Fungsi \textit{loss} ini mendorong model untuk mempelajari representasi kontekstual yang mampu membedakan distribusi token asli dan token hasil substitusi secara efektif. Pendekatan RTD memungkinkan ELECTRA menjadi lebih \textit{sample-efficient} dibandingkan model berbasis MLM, karena seluruh token dalam urutan digunakan dalam proses pembelajaran. Hal ini menjadikan ELECTRA lebih efisien secara komputasi sekaligus mampu menghasilkan representasi linguistik yang lebih kaya dan informatif. Dibandingkan dengan BERT, ELECTRA memiliki keunggulan dalam efisiensi pelatihan dan pemanfaatan data, sehingga lebih efektif digunakan pada dataset dengan ukuran terbatas. Selain itu, kemampuan model dalam mengevaluasi setiap token berdasarkan konteks global menjadikannya cocok untuk tugas klasifikasi teks yang membutuhkan pemahaman kontekstual yang mendalam.
+dengan $y_i = 1$ jika \textit{token} merupakan \textit{token} asli dan $y_i = 0$ jika \textit{token} merupakan hasil penggantian, serta $D(x_i)$ merupakan probabilitas bahwa \textit{token} tersebut adalah \textit{token} asli. Fungsi \textit{loss} ini mendorong model untuk mempelajari representasi kontekstual yang mampu membedakan distribusi \textit{token} asli dan \textit{token} hasil substitusi secara efektif. Pendekatan RTD memungkinkan ELECTRA menjadi lebih \textit{sample-efficient} dibandingkan model berbasis MLM, karena seluruh \textit{token} dalam urutan digunakan dalam proses pembelajaran. Hal ini menjadikan ELECTRA lebih efisien secara komputasi sekaligus mampu menghasilkan representasi linguistik yang lebih kaya dan informatif. Dibandingkan dengan BERT, ELECTRA memiliki keunggulan dalam efisiensi pelatihan dan pemanfaatan data, sehingga lebih efektif digunakan pada dataset dengan ukuran terbatas. Selain itu, kemampuan model dalam mengevaluasi setiap \textit{token} berdasarkan konteks global menjadikannya cocok untuk tugas klasifikasi teks yang membutuhkan pemahaman kontekstual yang mendalam.
 
 Dalam penelitian ini, ELECTRA digunakan sebagai \textit{text encoder} karena kemampuannya dalam menghasilkan representasi teks yang efisien dan kontekstual. 
 Selain itu, pemilihan ELECTRA juga didasarkan pada ketersediaan model pra-latih yang telah dilatih pada domain teks yang mengandung sinyal \textit{suicidality} atau \textit{self-harm} \cite{sentinet_suicidality}. Model pra-latih pada domain spesifik ini memungkinkan representasi tekstual yang lebih relevan terhadap konteks penelitian, karena telah memiliki pemahaman awal terhadap pola bahasa yang berkaitan dengan ekspresi emosional dan indikasi \textit{self-harm}. Dengan demikian, penggunaan model ini diharapkan dapat meningkatkan kemampuan sistem dalam mendeteksi meme \textit{self-harm} secara lebih akurat.
@@ -457,12 +470,11 @@ Evaluasi merupakan tahap penting dalam menilai performa model klasifikasi, terut
 	\small
 	\setlength{\tabcolsep}{4pt}
 	\renewcommand{\arraystretch}{1.2}
-	\begin{tabular}{>{\centering\arraybackslash}m{3.6cm} >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm}}
+	\begin{tabular}{>{\centering\arraybackslash}m{2.6cm} >{\centering\arraybackslash}m{1.5cm} >{\centering\arraybackslash}m{1.5cm}}
 		\hline
 		\textbf{\textit{Actual $\backslash$ Predicted}} & \textbf{\textit{Positive}} & \textbf{\textit{Negative}} \\
 		\hline
 		\textit{Positive} & TP & FN \\
-		\hline
 		\textit{Negative} & FP & TN \\
 		\hline
 	\end{tabular}
@@ -483,7 +495,7 @@ Berdasarkan elemen di atas, beberapa metrik evaluasi dapat dihitung.
 namun sering tidak cukup representatif ketika data tidak seimbang 
 (\textit{imbalanced}) seperti pada deteksi \textit{self-harm} meme \cite{sokolova2009systematic}. \textit{Precision} mengukur tingkat ketepatan prediksi kelas positif, sedangkan 
 \textit{Recall} mengukur kemampuan model dalam menangkap seluruh sampel positif. 
-Keduanya penting karena kesalahan \textit{False Negative} (FN) pada deteksi 
+Keduanya penting karena kesalahan FN (\textit{False Negative}) pada deteksi 
 konten \textit{self-harm} berpotensi membahayakan pengguna. 
 Untuk menyeimbangkan \textit{precision} dan \textit{recall} digunakan \textit{F1-score}, yaitu 
 rata-rata harmonik keduanya, yang efektif untuk dataset tidak seimbang 

@@ -1,15 +1,15 @@
-\contentsline {myequations}{\numberline {Rumus~2.1} Perhitungan \textit {Concatenation Fusion} }{26}{equation.2.1}%
-\contentsline {myequations}{\numberline {Rumus~2.2} Rumus \textit {Addition Fusion} }{26}{equation.2.2}%
-\contentsline {myequations}{\numberline {Rumus~2.3} Rumus \textit {Multiplication Fusion} }{27}{equation.2.3}%
-\contentsline {myequations}{\numberline {Rumus~2.4} Rumus \textit {Gated Fusion} }{27}{equation.2.4}%
-\contentsline {myequations}{\numberline {Rumus~2.5} Rumus \textit {Bilinear Fusion} }{28}{equation.2.5}%
-\contentsline {myequations}{\numberline {Rumus~2.6} Rumus \textit {L2 Normalization} }{29}{equation.2.6}%
-\contentsline {myequations}{\numberline {Rumus~2.7} Rumus \textit {Cosine Similarity} }{29}{equation.2.7}%
-\contentsline {myequations}{\numberline {Rumus~2.8} \textit {Scaled Dot-Product Attention} }{32}{equation.2.8}%
-\contentsline {myequations}{\numberline {Rumus~2.9}\textit {Contrastive Loss} (InfoNCE) pada CLIP}{34}{equation.2.9}%
-\contentsline {myequations}{\numberline {Rumus~2.10}\textit {Replaced Token Detection} (RTD) \textit {Loss} pada ELECTRA}{37}{equation.2.10}%
-\contentsline {myequations}{\numberline {Rumus~2.11} Perhitungan Faktor Skala }{38}{equation.2.11}%
-\contentsline {myequations}{\numberline {Rumus~2.12} Perhitungan \textit {Accuracy} }{41}{equation.2.12}%
-\contentsline {myequations}{\numberline {Rumus~2.13} Perhitungan \textit {Precision} }{41}{equation.2.13}%
-\contentsline {myequations}{\numberline {Rumus~2.14} Perhitungan \textit {Recall} }{41}{equation.2.14}%
-\contentsline {myequations}{\numberline {Rumus~2.15} Perhitungan \textit {F1-Score} }{41}{equation.2.15}%
+\contentsline {myequations}{\numberline {Rumus~2.1} Perhitungan \textit {Concatenation Fusion} }{25}{equation.2.1}%
+\contentsline {myequations}{\numberline {Rumus~2.2} Rumus \textit {Addition Fusion} }{25}{equation.2.2}%
+\contentsline {myequations}{\numberline {Rumus~2.3} Rumus \textit {Multiplication Fusion} }{26}{equation.2.3}%
+\contentsline {myequations}{\numberline {Rumus~2.4} Rumus \textit {Gated Fusion} }{26}{equation.2.4}%
+\contentsline {myequations}{\numberline {Rumus~2.5} Rumus \textit {Bilinear Fusion} }{27}{equation.2.5}%
+\contentsline {myequations}{\numberline {Rumus~2.6} Rumus \textit {L2 Normalization} }{28}{equation.2.6}%
+\contentsline {myequations}{\numberline {Rumus~2.7} Rumus \textit {Cosine Similarity} }{28}{equation.2.7}%
+\contentsline {myequations}{\numberline {Rumus~2.8} \textit {Scaled Dot-Product Attention} }{31}{equation.2.8}%
+\contentsline {myequations}{\numberline {Rumus~2.9}InfoNCE (\textit {Contrastive Loss}) pada CLIP}{33}{equation.2.9}%
+\contentsline {myequations}{\numberline {Rumus~2.10}RTD (\textit {Replaced Token Detection}) \textit {Loss} pada ELECTRA}{36}{equation.2.10}%
+\contentsline {myequations}{\numberline {Rumus~2.11} Perhitungan Faktor Skala }{37}{equation.2.11}%
+\contentsline {myequations}{\numberline {Rumus~2.12} Perhitungan \textit {Accuracy} }{40}{equation.2.12}%
+\contentsline {myequations}{\numberline {Rumus~2.13} Perhitungan \textit {Precision} }{40}{equation.2.13}%
+\contentsline {myequations}{\numberline {Rumus~2.14} Perhitungan \textit {Recall} }{40}{equation.2.14}%
+\contentsline {myequations}{\numberline {Rumus~2.15} Perhitungan \textit {F1-Score} }{40}{equation.2.15}%
