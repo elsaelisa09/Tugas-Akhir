@@ -1,0 +1,90 @@
+\section{Dataset}
+\subsection{Dataset Pelatihan Model}
+Dataset yang digunakan dalam pengembangan model terdiri dari 2.178 gambar meme yang merupakan gabungan data primer dan data sekunder. Untuk mengakses dataset secara lengkap, dapat melalui tautan berikut: \href{https://bit.ly/dataset-pelatihan-model}{https://bit.ly/dataset-pelatihan-model}
+
+\subsection{Dataset Pengujian}
+Dataset pengujian terdiri dari 19 gambar meme yang berada di luar dataset pelatihan, dengan variasi data eksplisit, implisit, dan ambigu. Untuk mengakses dataset pengujian secara lengkap, dapat melalui tautan berikut: \href{https://bit.ly/dataset-uji}{https://bit.ly/dataset-uji}
+
+\section{Anotasi Data}
+\subsection{Pedoman Anotasi \textit{Large Language Model}}
+Berikut adalah pedoman anotasi yang digunakan untuk LLM dalam proses anotasi data dengan \textit{framework prompt} yang telah disusun mengikuti Rap Guard (\textit{Rationale-aware Defensive Prompting})
+\vspace{0.5cm}
+
+\lstset{
+	 basicstyle=\ttfamily\small,
+	 backgroundcolor=\color{gray!10},
+	 frame=single,
+	 breaklines=true,
+	 columns=fullflexible,
+	 showstringspaces=false
+}
+
+\begin{lstlisting}
+Anda adalah anotator ahli dalam psikologi, dan ahli linguistik.
+Tugas Anda adalah mengklasifikasikan meme menjadi [SELF-HARM] atau [NON-SELF-HARM] dengan presisi tinggi.
+
+Ikuti alur penalaran (reasoning) di bawah ini secara berurutan. Jangan melompati langkah.
+
+Langkah 1: Analisis Multimodal & Relasi
+Lakukan analisis mendalam terhadap input dengan menjawab pertanyaan berikut:
+1. Analisis visual: apa objek, aktivitas, atau simbol yang muncul di gambar? apakah ada luka, darah, alat berbahaya, atau ekspresi emosional tertentu? [1]
+2. Analisis tekstual: apa makna harfiah dari teks? apakah ada kata kunci terkait kematian, rasa sakit, atau keputusasaan? [2]
+3. Analisis relasi (PENTING), yaitu bagaimana teks dan gambar berinteraksi? Apakah teks mengubah makna gambar netral menjadi berbahaya? Apakah ini sindiran (sarkasme), dark humor, atau hanya ungkapan biasa? Identifikasi risiko gabungan yang tidak terlihat jika teks/gambar dipisah.
+
+Langkah 2: Indikator
+Berdasarkan analisis relasi di atas, periksa apakah meme ini memenuhi salah satu indikator valid berikut secara ketat:
+
+A. Indikator Narasi & Teks
+(1a) Metode dan deskripsi: mendeskripsikan cara menyakiti diri (cutting, burning, overdosis)
+(1b) Masking & romantisasi: menganggap self-harm estetik, puitis, atau mekanisme coping yang wajar
+(1c) Ideasi bunuh diri: menyiratkan keinginan mati
+(1d) Gaslighting/manipulasi: menyalahkan orang lain atas niat menyakiti diri sendiri
+
+B. Indikator Visual dan Simbolik
+(2a) Luka fisik: gambar darah, bekas sayatan, lebam
+(2b) Alat berbahaya: silet, pisau, tali gantung, tumpukan obat
+(2c) Estetika dark humor: gambar ceria/kartun imut tetapi teksnya tentang keinginan mati/bunuh diri (kontras ironis)
+
+Instruksi Label:
+Jika terdapat minimal satu indikator terpenuhi (terutama indikator relasional 2c)
+-> Klasifikasikan sebagai [SELF-HARM].
+
+Jika tidak ada indikator terpenuhi dan konteks hanya humor umum
+-> Klasifikasikan sebagai [NON-SELF-HARM].
+
+Langkah 3: Self-checking
+Sebelum memberikan label final, kritik keputusan Anda sendiri:
+Apakah saya salah mengartikan slang atau lelucon internet sebagai ancaman serius?
+Apakah saya mengabaikan sinyal bahaya terselubung karena gambarnya terlihat lucu (kartun)?
+
+Jika ragu, prioritaskan keselamatan (safety-first approach) namun tetap bedakan
+antara dark jokes umum vs promosi self-harm spesifik.
+\end{lstlisting}
+
+\textbf{Sumber Referensi}
+
+\begin{enumerate}
+    \item S.-L. Unterschemmann, E. M. Mueller, S. Lux, A. Philipsen, and M. Schulze, ``First evaluation of the emotional picture set of self-injury images (EPSI) using psychophysiological and self-report measures,'' \textit{Borderline Personality Disorder and Emotion Dysregulation}, vol. 12, no. 27, 2025. doi: 10.1186/s40479-025-00304-4.
+
+    \item J.-W. Guo, J. Kimmel, and L. A. Linder, ``Text Analysis of Suicide Risk in Adolescents and Young Adults,'' \textit{Journal of the American Psychiatric Nurses Association}, vol. 30, no. 1, pp. 169--173, 2024. doi: 10.1177/10783903221077292.
+\end{enumerate}
+
+
+
+
+\subsection{Pedoman Anotasi Data untuk Annotator Manusia}
+Berikut adalah pedoman yang harus diikuti oleh anotator manusia dalam melakukan anotasi data dapat diakses pada link berikut: \href{https://bit.ly/pedoman-anotasi-annotator-manusia}{https://bit.ly/pedoman-anotasi-annotator-manusia}
+
+\subsection{Lampiran Anotasi Data LLM}
+Berikut adalah hasil anotasi data LLM yang dapat diakses pada link berikut : \href{https://bit.ly/hasil-anotasi-data}{https://bit.ly/hasil-anotasi-data}
+
+
+\subsection{Lampiran Anotasi Data Manusia}
+Berikut adalah lampiran anotasi data yang dilakukan oleh anotator manusia: \href{https://bit.ly/hasil-anotasi-data-manusia-dan-model}{https://bit.ly/hasil-anotasi-data-manusia-dan-model}
+
+\section{Kode Program}
+\subsection{Kode Program Pelabelan Data LLM}
+Berikut adalah kode program yang digunakan untuk melakukan pelabelan data menggunakan LLM dengan pendekatan \textit{framework prompt} yang telah disusun mengikuti Rap Guard (\textit{Rationale-aware Defensive Prompting}). Kode program ini dapat diakses pada link berikut: \href{https://bit.ly/kode-program-pelabelan-data}{https://bit.ly/kode-program-pelabelan-data}
+\subsection{Kode Program Pengembangan dan Pelatihan Model}
+Berikut adalah kode program yang digunakan untuk pengembangan dan pelatihan model klasifikasi berbasis multimodal CLIP-ELECTRA dengan pendekatan \textit{intermediate fusion}. Kode program ini dapat diakses pada link berikut: \href{https://bit.ly/kode-program-pengembangan-model}{https://bit.ly/kode-program-pengembangan-model}
+

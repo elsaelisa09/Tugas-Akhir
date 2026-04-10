@@ -3,8 +3,8 @@
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated by
-% biber as required.
+% This file may safely be deleted. It will be recreated as
+% required.
 %
 \begingroup
 \makeatletter
@@ -16,2190 +16,2182 @@
   {}
 \endgroup
 
+\datalist[entry]{none/global//global/global/global}
+  \entry{SyakhraniWidijatmoko2024}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=SAW}{%
+         family={Syakhrani},
+         familyi={S\bibinitperiod},
+         given={Abdul\bibnamedelima Wahab},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=WEK}{%
+         family={Widijatmoko},
+         familyi={W\bibinitperiod},
+         given={Engelbertus\bibnamedelima Kukuh},
+         giveni={E\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SAWWEK1}
+    \strng{fullhash}{SAWWEK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{12}
+    \field{title}{Perkembangan Komunikasi Digital: Dampak Media Sosial pada
+  Interaksi Sosial di Era Modern}
+    \verb{url}
+    \verb https://jkm.my.id/index.php/komunikasi/article/view/3
+    \endverb
+    \field{volume}{2}
+    \field{journaltitle}{Jurnal Komunikasi}
+    \field{year}{2024}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
 
-\refsection{0}
-  \datalist[entry]{none/global//global/global/global}
-    \entry{SyakhraniWidijatmoko2024}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=e2c7758fb38442bcf708bbacf4f1acba}{%
-           family={Syakhrani},
-           familyi={S\bibinitperiod},
-           given={Abdul\bibnamedelima Wahab},
-           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=ba9a9bc6af69f0882de8a58a8bd55ff8}{%
-           family={Widijatmoko},
-           familyi={W\bibinitperiod},
-           given={Engelbertus\bibnamedelima Kukuh},
-           giveni={E\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-      }
-      \strng{namehash}{9a7192b9f69065f5c72739f42667ff92}
-      \strng{fullhash}{9a7192b9f69065f5c72739f42667ff92}
-      \strng{fullhashraw}{9a7192b9f69065f5c72739f42667ff92}
-      \strng{bibnamehash}{9a7192b9f69065f5c72739f42667ff92}
-      \strng{authorbibnamehash}{9a7192b9f69065f5c72739f42667ff92}
-      \strng{authornamehash}{9a7192b9f69065f5c72739f42667ff92}
-      \strng{authorfullhash}{9a7192b9f69065f5c72739f42667ff92}
-      \strng{authorfullhashraw}{9a7192b9f69065f5c72739f42667ff92}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Jurnal Komunikasi}
-      \field{month}{12}
-      \field{number}{12}
-      \field{title}{Perkembangan Komunikasi Digital: Dampak Media Sosial pada Interaksi Sosial di Era Modern}
-      \field{volume}{2}
-      \field{year}{2024}
-      \verb{urlraw}
-      \verb https://jkm.my.id/index.php/komunikasi/article/view/3
-      \endverb
-      \verb{url}
-      \verb https://jkm.my.id/index.php/komunikasi/article/view/3
-      \endverb
-    \endentry
-    \entry{datareportal2024_global}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=521cd76c97ca2b4cb17c6aa8d1e02001}{%
-           family={DataReportal},
-           familyi={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{521cd76c97ca2b4cb17c6aa8d1e02001}
-      \strng{fullhash}{521cd76c97ca2b4cb17c6aa8d1e02001}
-      \strng{fullhashraw}{521cd76c97ca2b4cb17c6aa8d1e02001}
-      \strng{bibnamehash}{521cd76c97ca2b4cb17c6aa8d1e02001}
-      \strng{authorbibnamehash}{521cd76c97ca2b4cb17c6aa8d1e02001}
-      \strng{authornamehash}{521cd76c97ca2b4cb17c6aa8d1e02001}
-      \strng{authorfullhash}{521cd76c97ca2b4cb17c6aa8d1e02001}
-      \strng{authorfullhashraw}{521cd76c97ca2b4cb17c6aa8d1e02001}
-      \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://datareportal.com/reports/digital-2024-global-overview-report}}
-      \field{note}{[Online; accessed 2024]}
-      \field{title}{Digital 2024: Global Overview Report}
-      \field{year}{2024}
-    \endentry
-    \entry{datareportal2024_5billion}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=521cd76c97ca2b4cb17c6aa8d1e02001}{%
-           family={DataReportal},
-           familyi={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{521cd76c97ca2b4cb17c6aa8d1e02001}
-      \strng{fullhash}{521cd76c97ca2b4cb17c6aa8d1e02001}
-      \strng{fullhashraw}{521cd76c97ca2b4cb17c6aa8d1e02001}
-      \strng{bibnamehash}{521cd76c97ca2b4cb17c6aa8d1e02001}
-      \strng{authorbibnamehash}{521cd76c97ca2b4cb17c6aa8d1e02001}
-      \strng{authornamehash}{521cd76c97ca2b4cb17c6aa8d1e02001}
-      \strng{authorfullhash}{521cd76c97ca2b4cb17c6aa8d1e02001}
-      \strng{authorfullhashraw}{521cd76c97ca2b4cb17c6aa8d1e02001}
-      \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://datareportal.com/reports/digital-2024-deep-dive-5-billion-social-media-users}}
-      \field{note}{[Online; accessed 2024]}
-      \field{title}{5 Billion Social Media Users – Global Digital Insights}
-      \field{year}{2024}
-    \endentry
-    \entry{shifman2013memes}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=16f5b168efe97282b6998d9b12fc1bff}{%
-           family={Shifman},
-           familyi={S\bibinitperiod},
-           given={Limor},
-           giveni={L\bibinitperiod}}}%
-      }
-      \strng{namehash}{16f5b168efe97282b6998d9b12fc1bff}
-      \strng{fullhash}{16f5b168efe97282b6998d9b12fc1bff}
-      \strng{fullhashraw}{16f5b168efe97282b6998d9b12fc1bff}
-      \strng{bibnamehash}{16f5b168efe97282b6998d9b12fc1bff}
-      \strng{authorbibnamehash}{16f5b168efe97282b6998d9b12fc1bff}
-      \strng{authornamehash}{16f5b168efe97282b6998d9b12fc1bff}
-      \strng{authorfullhash}{16f5b168efe97282b6998d9b12fc1bff}
-      \strng{authorfullhashraw}{16f5b168efe97282b6998d9b12fc1bff}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Computer-Mediated Communication}
-      \field{month}{04}
-      \field{title}{Memes in a Digital World: Reconciling with a Conceptual Troublemaker}
-      \field{volume}{18}
-      \field{year}{2013}
-      \field{pages}{n/a\bibrangedash n/a}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1111/jcc4.12013
-      \endverb
-    \endentry
-    \entry{Sharma2022HarmfulMemes}{misc}{}{}
-      \name{author}{10}{}{%
-        {{hash=f3fae123e7a7789e270d29c850b5f6c3}{%
-           family={Sharma},
-           familyi={S\bibinitperiod},
-           given={Shivam},
-           giveni={S\bibinitperiod}}}%
-        {{hash=25ea39800076074d7570d29c22c81049}{%
-           family={Alam},
-           familyi={A\bibinitperiod},
-           given={Firoj},
-           giveni={F\bibinitperiod}}}%
-        {{hash=dbe5532cd643bc6511330e076c8b65cf}{%
-           family={Akhtar},
-           familyi={A\bibinitperiod},
-           given={Md.\bibnamedelimi Shad},
-           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=272df20c57f002bfbfbb5bca2cb05e2f}{%
-           family={Dimitrov},
-           familyi={D\bibinitperiod},
-           given={Dimitar},
-           giveni={D\bibinitperiod}}}%
-        {{hash=e626cc14fe97d79fa1a84810bc1cd4fb}{%
-           family={Martino},
-           familyi={M\bibinitperiod},
-           given={Giovanni\bibnamedelimb Da\bibnamedelima San},
-           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=79d1455bfb4655ec70535dc17dc22813}{%
-           family={Firooz},
-           familyi={F\bibinitperiod},
-           given={Hamed},
-           giveni={H\bibinitperiod}}}%
-        {{hash=90b320dddaa2fa799eea1f8d3893a43d}{%
-           family={Halevy},
-           familyi={H\bibinitperiod},
-           given={Alon\bibnamedelima Y.},
-           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
-        {{hash=37e5f5213268c0946bc6178f7d89bf4c}{%
-           family={Silvestri},
-           familyi={S\bibinitperiod},
-           given={Fabrizio},
-           giveni={F\bibinitperiod}}}%
-        {{hash=b1e0f88aae37cfd1c213a370797c03b3}{%
-           family={Nakov},
-           familyi={N\bibinitperiod},
-           given={Preslav},
-           giveni={P\bibinitperiod}}}%
-        {{hash=12ef4925945d218592da34e0e46c4eb4}{%
-           family={Chakraborty},
-           familyi={C\bibinitperiod},
-           given={Tanmoy},
-           giveni={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{a34061c5605fb034e5a10638f6b0919a}
-      \strng{fullhash}{aaf367acd709abc5d8cdc64845d6b5b2}
-      \strng{fullhashraw}{aaf367acd709abc5d8cdc64845d6b5b2}
-      \strng{bibnamehash}{a34061c5605fb034e5a10638f6b0919a}
-      \strng{authorbibnamehash}{a34061c5605fb034e5a10638f6b0919a}
-      \strng{authornamehash}{a34061c5605fb034e5a10638f6b0919a}
-      \strng{authorfullhash}{aaf367acd709abc5d8cdc64845d6b5b2}
-      \strng{authorfullhashraw}{aaf367acd709abc5d8cdc64845d6b5b2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{cs.CL}
-      \field{eprinttype}{arXiv}
-      \field{title}{Detecting and Understanding Harmful Memes: A Survey}
-      \field{year}{2022}
-      \verb{doi}
-      \verb 10.48550/arXiv.2205.04274
-      \endverb
-      \verb{eprint}
-      \verb 2205.04274
-      \endverb
-      \verb{urlraw}
-      \verb https://arxiv.org/abs/2205.04274
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/abs/2205.04274
-      \endverb
-    \endentry
-    \entry{NICE_NG225_2022}{manual}{}{}
-      \name{author}{1}{}{%
-        {{hash=d2e8faef2216e284dabe6e87962a04cc}{%
-           family={{National Institute for Health and Care Excellence (NICE)}},
-           familyi={N\bibinitperiod}}}%
-      }
-      \list{organization}{2}{%
-        {National Institute for Health}%
-        {Care Excellence}%
-      }
-      \strng{namehash}{d2e8faef2216e284dabe6e87962a04cc}
-      \strng{fullhash}{d2e8faef2216e284dabe6e87962a04cc}
-      \strng{fullhashraw}{d2e8faef2216e284dabe6e87962a04cc}
-      \strng{bibnamehash}{d2e8faef2216e284dabe6e87962a04cc}
-      \strng{authorbibnamehash}{d2e8faef2216e284dabe6e87962a04cc}
-      \strng{authornamehash}{d2e8faef2216e284dabe6e87962a04cc}
-      \strng{authorfullhash}{d2e8faef2216e284dabe6e87962a04cc}
-      \strng{authorfullhashraw}{d2e8faef2216e284dabe6e87962a04cc}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{Online guideline}
-      \field{month}{9}
-      \field{note}{Guideline NG225}
-      \field{title}{Self-harm: assessment, management and preventing recurrence}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://www.nice.org.uk/guidance/ng225
-      \endverb
-      \verb{url}
-      \verb https://www.nice.org.uk/guidance/ng225
-      \endverb
-    \endentry
-    \entry{who_iris_82c0b4812026}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=531217507bec092b6ec36c0f78f46736}{%
-           family={{World Health Organization}},
-           familyi={W\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {World Health Organization}%
-      }
-      \strng{namehash}{531217507bec092b6ec36c0f78f46736}
-      \strng{fullhash}{531217507bec092b6ec36c0f78f46736}
-      \strng{fullhashraw}{531217507bec092b6ec36c0f78f46736}
-      \strng{bibnamehash}{531217507bec092b6ec36c0f78f46736}
-      \strng{authorbibnamehash}{531217507bec092b6ec36c0f78f46736}
-      \strng{authornamehash}{531217507bec092b6ec36c0f78f46736}
-      \strng{authorfullhash}{531217507bec092b6ec36c0f78f46736}
-      \strng{authorfullhashraw}{531217507bec092b6ec36c0f78f46736}
-      \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Accessed via WHO IRIS digital repository}
-      \field{title}{Title Unknown — IRIS Document 82c0b481-3d64-48bc-b403-a3e43300f6ef}
-      \field{year}{2026}
-      \verb{urlraw}
-      \verb https://iris.who.int/server/api/core/bitstreams/82c0b481-3d64-48bc-b403-a3e43300f6ef/content
-      \endverb
-      \verb{url}
-      \verb https://iris.who.int/server/api/core/bitstreams/82c0b481-3d64-48bc-b403-a3e43300f6ef/content
-      \endverb
-    \endentry
-    \entry{seko2015creative}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=b484f0a7239f839661405c799a15bef9}{%
-           family={Seko},
-           familyi={S\bibinitperiod},
-           given={Yukari},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=00698d82f3d8258e2009591cefeeb2dd}{%
-           family={Kidd},
-           familyi={K\bibinitperiod},
-           given={Sean\bibnamedelima A.},
-           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=899e8b4fb539ad0d954b77bc443c75aa}{%
-           family={Wiljer},
-           familyi={W\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-        {{hash=06f8d3f6daab87ad5b3dafa3b295c586}{%
-           family={McKenzie},
-           familyi={M\bibinitperiod},
-           given={Kwame\bibnamedelima J.},
-           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \strng{namehash}{927bd623cd5898bff981b444f241566e}
-      \strng{fullhash}{6ecdd7835f162d4f95042f696214ddf1}
-      \strng{fullhashraw}{6ecdd7835f162d4f95042f696214ddf1}
-      \strng{bibnamehash}{927bd623cd5898bff981b444f241566e}
-      \strng{authorbibnamehash}{927bd623cd5898bff981b444f241566e}
-      \strng{authornamehash}{927bd623cd5898bff981b444f241566e}
-      \strng{authorfullhash}{6ecdd7835f162d4f95042f696214ddf1}
-      \strng{authorfullhashraw}{6ecdd7835f162d4f95042f696214ddf1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Qualitative Health Research}
-      \field{number}{10}
-      \field{title}{On the Creative Edge: Exploring Motivations for Creating Non‑Suicidal Self‑Injury Content Online}
-      \field{volume}{25}
-      \field{year}{2015}
-      \field{pages}{1334\bibrangedash 1346}
-      \range{pages}{13}
-      \verb{doi}
-      \verb 10.1177/1049732315570134
-      \endverb
-      \verb{urlraw}
-      \verb https://pubmed.ncbi.nlm.nih.gov/25662942/
-      \endverb
-      \verb{url}
-      \verb https://pubmed.ncbi.nlm.nih.gov/25662942/
-      \endverb
-    \endentry
-    \entry{zhang2025social}{article}{}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{3}{}{%
-        {{hash=1f26f664835ac6c347db22001b657f1a}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Y.},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=4b44bba1743c2ad874f7d960887af663}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={X.},
-           giveni={X\bibinitperiod}}}%
-        {{hash=39856f0439f35f79a8eed8b12d26166c}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{3c1307f04a2326d8574987ac3a9ef4db}
-      \strng{fullhash}{5152a7b2e8de7b9c7c195b1068ca3ab4}
-      \strng{fullhashraw}{5152a7b2e8de7b9c7c195b1068ca3ab4}
-      \strng{bibnamehash}{5152a7b2e8de7b9c7c195b1068ca3ab4}
-      \strng{authorbibnamehash}{5152a7b2e8de7b9c7c195b1068ca3ab4}
-      \strng{authornamehash}{3c1307f04a2326d8574987ac3a9ef4db}
-      \strng{authorfullhash}{5152a7b2e8de7b9c7c195b1068ca3ab4}
-      \strng{authorfullhashraw}{5152a7b2e8de7b9c7c195b1068ca3ab4}
-      \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2949-7329}
-      \field{journaltitle}{Smart Health}
-      \field{title}{The impact of social media on self-harm behaviors: A review and future directions}
-      \field{year}{2025}
-      \verb{doi}
-      \verb 10.1016/j.smhl.2025.100023
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S2949732925000237
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S2949732925000237
-      \endverb
-    \endentry
-    \entry{samaritans2022social}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=a4fad5bf939aca580392fff7ed2f45e0}{%
-           family={{Samaritans}},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{a4fad5bf939aca580392fff7ed2f45e0}
-      \strng{fullhash}{a4fad5bf939aca580392fff7ed2f45e0}
-      \strng{fullhashraw}{a4fad5bf939aca580392fff7ed2f45e0}
-      \strng{bibnamehash}{a4fad5bf939aca580392fff7ed2f45e0}
-      \strng{authorbibnamehash}{a4fad5bf939aca580392fff7ed2f45e0}
-      \strng{authornamehash}{a4fad5bf939aca580392fff7ed2f45e0}
-      \strng{authorfullhash}{a4fad5bf939aca580392fff7ed2f45e0}
-      \strng{authorfullhashraw}{a4fad5bf939aca580392fff7ed2f45e0}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://www.samaritans.org/news/samaritans-report-reveals-dangers-of-social-medias-self-harm-content/}}
-      \field{month}{11}
-      \field{note}{Press Release. [Online; accessed November 2025]}
-      \field{title}{Samaritans report reveals dangers of social media's self-harm content}
-      \field{year}{2022}
-    \endentry
-    \entry{WHO2025AdolescentMentalHealth}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=531217507bec092b6ec36c0f78f46736}{%
-           family={{World Health Organization}},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{531217507bec092b6ec36c0f78f46736}
-      \strng{fullhash}{531217507bec092b6ec36c0f78f46736}
-      \strng{fullhashraw}{531217507bec092b6ec36c0f78f46736}
-      \strng{bibnamehash}{531217507bec092b6ec36c0f78f46736}
-      \strng{authorbibnamehash}{531217507bec092b6ec36c0f78f46736}
-      \strng{authornamehash}{531217507bec092b6ec36c0f78f46736}
-      \strng{authorfullhash}{531217507bec092b6ec36c0f78f46736}
-      \strng{authorfullhashraw}{531217507bec092b6ec36c0f78f46736}
-      \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health}}
-      \field{note}{Diakses: 29 November 2025}
-      \field{title}{Adolescent mental health}
-      \field{year}{2025}
-    \endentry
-    \entry{baltrusaitis2018multimodal}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=0282f658a8fd598405cc09097bde4040}{%
-           family={Baltrusaitis},
-           familyi={B\bibinitperiod},
-           given={Tadas},
-           giveni={T\bibinitperiod}}}%
-        {{hash=93a92cb2f2018320f5fe203d00ae1cc3}{%
-           family={Ahuja},
-           familyi={A\bibinitperiod},
-           given={Chaitanya},
-           giveni={C\bibinitperiod}}}%
-        {{hash=2b23af9d24a98a5912d3b7c941b08ed7}{%
-           family={Morency},
-           familyi={M\bibinitperiod},
-           given={Louis-Philippe},
-           giveni={L\bibinithyphendelim P\bibinitperiod}}}%
-      }
-      \strng{namehash}{7ad48b26b1be53e6333045ebe3155ec8}
-      \strng{fullhash}{21a1115869ebbea6b8e1ffb436d31759}
-      \strng{fullhashraw}{21a1115869ebbea6b8e1ffb436d31759}
-      \strng{bibnamehash}{21a1115869ebbea6b8e1ffb436d31759}
-      \strng{authorbibnamehash}{21a1115869ebbea6b8e1ffb436d31759}
-      \strng{authornamehash}{7ad48b26b1be53e6333045ebe3155ec8}
-      \strng{authorfullhash}{21a1115869ebbea6b8e1ffb436d31759}
-      \strng{authorfullhashraw}{21a1115869ebbea6b8e1ffb436d31759}
-      \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv}
-      \field{title}{Multimodal Machine Learning: A Survey and Taxonomy}
-      \field{volume}{abs/1705.09406}
-      \field{year}{2018}
-      \verb{urlraw}
-      \verb https://arxiv.org/abs/1705.09406
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/abs/1705.09406
-      \endverb
-    \endentry
-    \entry{kiela2020hateful}{misc}{}{}
-      \name{author}{7}{}{%
-        {{hash=ca01c762f4a52dd8a8548508f8d727c9}{%
-           family={Kiela},
-           familyi={K\bibinitperiod},
-           given={Douwe},
-           giveni={D\bibinitperiod}}}%
-        {{hash=79d1455bfb4655ec70535dc17dc22813}{%
-           family={Firooz},
-           familyi={F\bibinitperiod},
-           given={Hamed},
-           giveni={H\bibinitperiod}}}%
-        {{hash=dacdbbf2ee9a38974d687bd7f86786c7}{%
-           family={Mohan},
-           familyi={M\bibinitperiod},
-           given={Aravind},
-           giveni={A\bibinitperiod}}}%
-        {{hash=3b3711fab2634fac4eff6816c0f5cb0c}{%
-           family={Goswami},
-           familyi={G\bibinitperiod},
-           given={Vedanuj},
-           giveni={V\bibinitperiod}}}%
-        {{hash=521e70c5902413a086400bdd5e4fe60c}{%
-           family={Singh},
-           familyi={S\bibinitperiod},
-           given={Amanpreet},
-           giveni={A\bibinitperiod}}}%
-        {{hash=4eb6ec39183d68cc2ede2f2cfb87ee83}{%
-           family={Ringshia},
-           familyi={R\bibinitperiod},
-           given={Pratik},
-           giveni={P\bibinitperiod}}}%
-        {{hash=b8388eead45ea4429fa88916bc9a6cd5}{%
-           family={Testuggine},
-           familyi={T\bibinitperiod},
-           given={Davide},
-           giveni={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{e55c3bb8127db728fa98bb56a74e23a3}
-      \strng{fullhash}{ef7387166285f9966c7aa117dc6bda13}
-      \strng{fullhashraw}{ef7387166285f9966c7aa117dc6bda13}
-      \strng{bibnamehash}{e55c3bb8127db728fa98bb56a74e23a3}
-      \strng{authorbibnamehash}{e55c3bb8127db728fa98bb56a74e23a3}
-      \strng{authornamehash}{e55c3bb8127db728fa98bb56a74e23a3}
-      \strng{authorfullhash}{ef7387166285f9966c7aa117dc6bda13}
-      \strng{authorfullhashraw}{ef7387166285f9966c7aa117dc6bda13}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{cs.AI}
-      \field{eprinttype}{arXiv}
-      \field{title}{The Hateful Memes Challenge: Detecting Hate Speech in Multimodal Memes}
-      \field{year}{2020}
-      \verb{doi}
-      \verb 10.48550/arXiv.2005.04790
-      \endverb
-      \verb{eprint}
-      \verb 2005.04790
-      \endverb
-    \endentry
-    \entry{shah2024memeclip}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=b5e055e849a141e3406cdfe4e1810762}{%
-           family={Shah},
-           familyi={S\bibinitperiod},
-           given={Pranav},
-           giveni={P\bibinitperiod}}}%
-        {{hash=6d1746cd922c212c912ff2e485872afc}{%
-           family={Shiwakoti},
-           familyi={S\bibinitperiod},
-           given={Satish},
-           giveni={S\bibinitperiod}}}%
-        {{hash=46111106fdb41a31157917085b6de82d}{%
-           family={Chaudhary},
-           familyi={C\bibinitperiod},
-           given={Apoorv},
-           giveni={A\bibinitperiod}}}%
-        {{hash=4914ed000e76ff5797f091ad4da80f08}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Shu},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{649f3889f0667b86218c49ce8858e505}
-      \strng{fullhash}{e11f0c746363f2cc7e2034a9234997a8}
-      \strng{fullhashraw}{e11f0c746363f2cc7e2034a9234997a8}
-      \strng{bibnamehash}{649f3889f0667b86218c49ce8858e505}
-      \strng{authorbibnamehash}{649f3889f0667b86218c49ce8858e505}
-      \strng{authornamehash}{649f3889f0667b86218c49ce8858e505}
-      \strng{authorfullhash}{e11f0c746363f2cc7e2034a9234997a8}
-      \strng{authorfullhashraw}{e11f0c746363f2cc7e2034a9234997a8}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:2403.11245}
-      \field{title}{MemeCLIP: Leveraging CLIP Representations for Multimodal Meme Classification}
-      \field{year}{2024}
-    \endentry
-    \entry{lee_pseudo2013}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=21625086a5f2ed7349d554e6b3a0f646}{%
-           family={Lee},
-           familyi={L\bibinitperiod},
-           given={Dong-Hyun},
-           giveni={D\bibinithyphendelim H\bibinitperiod}}}%
-      }
-      \strng{namehash}{21625086a5f2ed7349d554e6b3a0f646}
-      \strng{fullhash}{21625086a5f2ed7349d554e6b3a0f646}
-      \strng{fullhashraw}{21625086a5f2ed7349d554e6b3a0f646}
-      \strng{bibnamehash}{21625086a5f2ed7349d554e6b3a0f646}
-      \strng{authorbibnamehash}{21625086a5f2ed7349d554e6b3a0f646}
-      \strng{authornamehash}{21625086a5f2ed7349d554e6b3a0f646}
-      \strng{authorfullhash}{21625086a5f2ed7349d554e6b3a0f646}
-      \strng{authorfullhashraw}{21625086a5f2ed7349d554e6b3a0f646}
-      \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{ICML 2013 Workshop : Challenges in Representation Learning (WREPL)}
-      \field{month}{07}
-      \field{title}{Pseudo-Label : The Simple and Efficient Semi-Supervised Learning Method for Deep Neural Networks}
-      \field{year}{2013}
-    \endentry
-    \entry{zhang2025impact}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=1f26f664835ac6c347db22001b657f1a}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Y.},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=4b44bba1743c2ad874f7d960887af663}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={X.},
-           giveni={X\bibinitperiod}}}%
-        {{hash=39856f0439f35f79a8eed8b12d26166c}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={H.},
-           giveni={H\bibinitperiod}}}%
-        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
-           family={al.},
-           familyi={a\bibinitperiod},
-           prefix={et},
-           prefixi={e\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{3c1307f04a2326d8574987ac3a9ef4db}
-      \strng{fullhash}{0825cee7ba326c8f9c02d13f4d08474c}
-      \strng{fullhashraw}{0825cee7ba326c8f9c02d13f4d08474c}
-      \strng{bibnamehash}{3c1307f04a2326d8574987ac3a9ef4db}
-      \strng{authorbibnamehash}{3c1307f04a2326d8574987ac3a9ef4db}
-      \strng{authornamehash}{3c1307f04a2326d8574987ac3a9ef4db}
-      \strng{authorfullhash}{0825cee7ba326c8f9c02d13f4d08474c}
-      \strng{authorfullhashraw}{0825cee7ba326c8f9c02d13f4d08474c}
-      \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2949-7329}
-      \field{journaltitle}{JAACAP Open}
-      \field{number}{1}
-      \field{title}{The impact of social media on self-harm behaviors: A review and future directions}
-      \field{volume}{1}
-      \field{year}{2025}
-      \field{pages}{100023}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1016/j.jaacop.2025.100023
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S2949732925000237
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S2949732925000237
-      \endverb
-    \endentry
-    \entry{radford2021clip}{misc}{}{}
-      \name{author}{12}{}{%
-        {{hash=a812c46caad94fc8701be37871f303ba}{%
-           family={Radford},
-           familyi={R\bibinitperiod},
-           given={Alec},
-           giveni={A\bibinitperiod}}}%
-        {{hash=37a96525bc70870f8509160f7eccf4b7}{%
-           family={Kim},
-           familyi={K\bibinitperiod},
-           given={Jong\bibnamedelima Wook},
-           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=4d5d078d439e163a02d9d1ba0002bb12}{%
-           family={Hallacy},
-           familyi={H\bibinitperiod},
-           given={Chris},
-           giveni={C\bibinitperiod}}}%
-        {{hash=82063a12702e7b2c026ae0ff03b8f102}{%
-           family={Ramesh},
-           familyi={R\bibinitperiod},
-           given={Aditya},
-           giveni={A\bibinitperiod}}}%
-        {{hash=e5e3e996c0a95da7e97cae269822bbef}{%
-           family={Goh},
-           familyi={G\bibinitperiod},
-           given={Gabriel},
-           giveni={G\bibinitperiod}}}%
-        {{hash=abe4801e322e893b23785fd6d0800b5c}{%
-           family={Agarwal},
-           familyi={A\bibinitperiod},
-           given={Sandhini},
-           giveni={S\bibinitperiod}}}%
-        {{hash=3c1d9a663596faaf544c1a65aac581be}{%
-           family={Sastry},
-           familyi={S\bibinitperiod},
-           given={Girish},
-           giveni={G\bibinitperiod}}}%
-        {{hash=1e84eff933be9f4887bf369cf181bf12}{%
-           family={Askell},
-           familyi={A\bibinitperiod},
-           given={Amanda},
-           giveni={A\bibinitperiod}}}%
-        {{hash=2321e04943bcadb0275819652b980521}{%
-           family={Mishkin},
-           familyi={M\bibinitperiod},
-           given={Pamela},
-           giveni={P\bibinitperiod}}}%
-        {{hash=1480c861b1a73e1d1de1b227e985b179}{%
-           family={Clark},
-           familyi={C\bibinitperiod},
-           given={Jack},
-           giveni={J\bibinitperiod}}}%
-        {{hash=c3a5cc5e520e0d1a9f8bbf377c74cd27}{%
-           family={Krueger},
-           familyi={K\bibinitperiod},
-           given={Gretchen},
-           giveni={G\bibinitperiod}}}%
-        {{hash=8d569d1d5b8b5a7836017a98b430f959}{%
-           family={Sutskever},
-           familyi={S\bibinitperiod},
-           given={Ilya},
-           giveni={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{ca3baa5a22057195db1c71be39b4c922}
-      \strng{fullhash}{de02402f48bd17333411ead3b5ca6de9}
-      \strng{fullhashraw}{de02402f48bd17333411ead3b5ca6de9}
-      \strng{bibnamehash}{ca3baa5a22057195db1c71be39b4c922}
-      \strng{authorbibnamehash}{ca3baa5a22057195db1c71be39b4c922}
-      \strng{authornamehash}{ca3baa5a22057195db1c71be39b4c922}
-      \strng{authorfullhash}{de02402f48bd17333411ead3b5ca6de9}
-      \strng{authorfullhashraw}{de02402f48bd17333411ead3b5ca6de9}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{cs.CV}
-      \field{eprinttype}{arXiv}
-      \field{title}{Learning Transferable Visual Models from Natural Language Supervision}
-      \field{year}{2021}
-      \verb{doi}
-      \verb 10.48550/arXiv.2103.00020
-      \endverb
-      \verb{eprint}
-      \verb 2103.00020
-      \endverb
-      \verb{urlraw}
-      \verb https://arxiv.org/abs/2103.00020
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/abs/2103.00020
-      \endverb
-    \endentry
-    \entry{clark2020electra}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=fc24d54994dc7c0893aaf6e1ca5fb42b}{%
-           family={Clark},
-           familyi={C\bibinitperiod},
-           given={Kevin},
-           giveni={K\bibinitperiod}}}%
-        {{hash=5fc2dc715fc35ea0dd825a5d84ac0e60}{%
-           family={Luong},
-           familyi={L\bibinitperiod},
-           given={Minh-Thang},
-           giveni={M\bibinithyphendelim T\bibinitperiod}}}%
-        {{hash=c636f146591d51579a8119b777394878}{%
-           family={Le},
-           familyi={L\bibinitperiod},
-           given={Quoc\bibnamedelima V.},
-           giveni={Q\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-        {{hash=2214edb8305f7ccd7cdc310b3a8ae1b4}{%
-           family={Manning},
-           familyi={M\bibinitperiod},
-           given={Christopher\bibnamedelima D.},
-           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-      }
-      \strng{namehash}{8f29543aaad0d840827aaab943a2e393}
-      \strng{fullhash}{1616e28b53907ac54d37f9dc941586bf}
-      \strng{fullhashraw}{1616e28b53907ac54d37f9dc941586bf}
-      \strng{bibnamehash}{8f29543aaad0d840827aaab943a2e393}
-      \strng{authorbibnamehash}{8f29543aaad0d840827aaab943a2e393}
-      \strng{authornamehash}{8f29543aaad0d840827aaab943a2e393}
-      \strng{authorfullhash}{1616e28b53907ac54d37f9dc941586bf}
-      \strng{authorfullhashraw}{1616e28b53907ac54d37f9dc941586bf}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:2003.10555}
-      \field{title}{ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators}
-      \field{year}{2020}
-      \verb{doi}
-      \verb 10.48550/arXiv.2003.10555
-      \endverb
-    \endentry
-    \entry{boulahia2021fusion}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=7534b8c606e35d7df3ee91d025de1a3c}{%
-           family={Boulahia},
-           familyi={B\bibinitperiod},
-           given={Said\bibnamedelima Yacine},
-           giveni={S\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
-        {{hash=372c9cdebe53e448700bfab04edf6289}{%
-           family={Amamra},
-           familyi={A\bibinitperiod},
-           given={Abdenour},
-           giveni={A\bibinitperiod}}}%
-        {{hash=7a8ea1c267ae1edf99e0fc4b35c9f4b7}{%
-           family={Madi},
-           familyi={M\bibinitperiod},
-           given={Mohamed\bibnamedelima Ridha},
-           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=f21fbe4b2db3ffe466397abef719245a}{%
-           family={Daikh},
-           familyi={D\bibinitperiod},
-           given={Said},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{9e159c23925ec8c5092f96e98910fc91}
-      \strng{fullhash}{310b104404f2ac4910d4c42f008a7307}
-      \strng{fullhashraw}{310b104404f2ac4910d4c42f008a7307}
-      \strng{bibnamehash}{9e159c23925ec8c5092f96e98910fc91}
-      \strng{authorbibnamehash}{9e159c23925ec8c5092f96e98910fc91}
-      \strng{authornamehash}{9e159c23925ec8c5092f96e98910fc91}
-      \strng{authorfullhash}{310b104404f2ac4910d4c42f008a7307}
-      \strng{authorfullhashraw}{310b104404f2ac4910d4c42f008a7307}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Machine Vision and Applications}
-      \field{month}{9}
-      \field{number}{6}
-      \field{title}{Early, intermediate and late fusion strategies for robust deep learning-based multimodal action recognition}
-      \field{volume}{32}
-      \field{year}{2021}
-      \field{pages}{121}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1007/s00138-021-01249-8
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/s00138-021-01249-8
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/s00138-021-01249-8
-      \endverb
-    \endentry
-    \entry{lee2013pseudo}{inproceedings}{}{}
-      \name{author}{1}{}{%
-        {{hash=21625086a5f2ed7349d554e6b3a0f646}{%
-           family={Lee},
-           familyi={L\bibinitperiod},
-           given={Dong-Hyun},
-           giveni={D\bibinithyphendelim H\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Atlanta, Georgia, USA}%
-      }
-      \strng{namehash}{21625086a5f2ed7349d554e6b3a0f646}
-      \strng{fullhash}{21625086a5f2ed7349d554e6b3a0f646}
-      \strng{fullhashraw}{21625086a5f2ed7349d554e6b3a0f646}
-      \strng{bibnamehash}{21625086a5f2ed7349d554e6b3a0f646}
-      \strng{authorbibnamehash}{21625086a5f2ed7349d554e6b3a0f646}
-      \strng{authornamehash}{21625086a5f2ed7349d554e6b3a0f646}
-      \strng{authorfullhash}{21625086a5f2ed7349d554e6b3a0f646}
-      \strng{authorfullhashraw}{21625086a5f2ed7349d554e6b3a0f646}
-      \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{ICML Workshop on Challenges in Representation Learning (WREPL)}
-      \field{title}{Pseudo-Label: The Simple and Efficient Semi-Supervised Learning Method for Deep Neural Networks}
-      \field{year}{2013}
-      \verb{urlraw}
-      \verb https://www.researchgate.net/publication/280581078_Pseudo-Label_The_Simple_and_Efficient_Semi-Supervised_Learning_Method_for_Deep_Neural_Networks
-      \endverb
-      \verb{url}
-      \verb https://www.researchgate.net/publication/280581078_Pseudo-Label_The_Simple_and_Efficient_Semi-Supervised_Learning_Method_for_Deep_Neural_Networks
-      \endverb
-    \endentry
-    \entry{pramanick2021momenta}{inproceedings}{}{}
-      \name{author}{4}{}{%
-        {{hash=ae2aae379bebb6e4dc16d33adcfc10d6}{%
-           family={Pramanick},
-           familyi={P\bibinitperiod},
-           given={Shubham},
-           giveni={S\bibinitperiod}}}%
-        {{hash=2ebc97c1eab4d7f7cc603b0a80ad4c33}{%
-           family={Sharma},
-           familyi={S\bibinitperiod},
-           given={Shubham},
-           giveni={S\bibinitperiod}}}%
-        {{hash=cdf71420f79afc09c2c99b2aec4cc18d}{%
-           family={Le},
-           familyi={L\bibinitperiod},
-           given={Thai},
-           giveni={T\bibinitperiod}}}%
-        {{hash=9ff088972e751f036f6d04e4c835050d}{%
-           family={Ferrara},
-           familyi={F\bibinitperiod},
-           given={Emilio},
-           giveni={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{6934409b26d39d277492e1cd91d738ec}
-      \strng{fullhash}{9f5aec2545edb9447a8032d2c7cadc71}
-      \strng{fullhashraw}{9f5aec2545edb9447a8032d2c7cadc71}
-      \strng{bibnamehash}{6934409b26d39d277492e1cd91d738ec}
-      \strng{authorbibnamehash}{6934409b26d39d277492e1cd91d738ec}
-      \strng{authornamehash}{6934409b26d39d277492e1cd91d738ec}
-      \strng{authorfullhash}{9f5aec2545edb9447a8032d2c7cadc71}
-      \strng{authorfullhashraw}{9f5aec2545edb9447a8032d2c7cadc71}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP)}
-      \field{title}{MOMENTA: A Multimodal Framework for Detecting Harmful Memes and Their Targets}
-      \field{year}{2021}
-      \field{pages}{10374\bibrangedash 10388}
-      \range{pages}{15}
-    \endentry
-    \entry{kumar2022hateclipper}{inproceedings}{}{}
-      \name{author}{2}{}{%
-        {{hash=002c9cfb1173662b2da90984514a0f89}{%
-           family={Kumar},
-           familyi={K\bibinitperiod},
-           given={Anup},
-           giveni={A\bibinitperiod}}}%
-        {{hash=f8abf0d82418ca5710c18e5465c18358}{%
-           family={Nandakumar},
-           familyi={N\bibinitperiod},
-           given={Karthik},
-           giveni={K\bibinitperiod}}}%
-      }
-      \strng{namehash}{f680f4535a71aff5d53474633ce61afa}
-      \strng{fullhash}{f680f4535a71aff5d53474633ce61afa}
-      \strng{fullhashraw}{f680f4535a71aff5d53474633ce61afa}
-      \strng{bibnamehash}{f680f4535a71aff5d53474633ce61afa}
-      \strng{authorbibnamehash}{f680f4535a71aff5d53474633ce61afa}
-      \strng{authornamehash}{f680f4535a71aff5d53474633ce61afa}
-      \strng{authorfullhash}{f680f4535a71aff5d53474633ce61afa}
-      \strng{authorfullhashraw}{f680f4535a71aff5d53474633ce61afa}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops}
-      \field{title}{Hate-CLIPper: Multimodal Hateful Meme Classification based on Cross-modal Interaction of CLIP Features}
-      \field{year}{2022}
-    \endentry
-    \entry{lian2023gpt4v}{article}{}{}
-      \name{author}{8}{}{%
-        {{hash=5850ca95706865f0a04cef086dedd166}{%
-           family={Lian},
-           familyi={L\bibinitperiod},
-           given={Zheng},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=e33de1a8473f88ffe9b2d1b35563c5be}{%
-           family={Sun},
-           familyi={S\bibinitperiod},
-           given={Licai},
-           giveni={L\bibinitperiod}}}%
-        {{hash=e910062ea2f57b4c0c34d592e00e642e}{%
-           family={Sun},
-           familyi={S\bibinitperiod},
-           given={Haiyang},
-           giveni={H\bibinitperiod}}}%
-        {{hash=4131da5ff245e426fb9762f2b57780ef}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Kang},
-           giveni={K\bibinitperiod}}}%
-        {{hash=0ba404e8b480c719cabb852fafce6e90}{%
-           family={Wen},
-           familyi={W\bibinitperiod},
-           given={Zhuofan},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=ca992488e0e11e867b1618c0b2ada2ff}{%
-           family={Gu},
-           familyi={G\bibinitperiod},
-           given={Hao},
-           giveni={H\bibinitperiod}}}%
-        {{hash=97396b63631c7b5155fe9e624a564950}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Bin},
-           giveni={B\bibinitperiod}}}%
-        {{hash=c2d300d040a5480ff7359c84ff1b1eeb}{%
-           family={Tao},
-           familyi={T\bibinitperiod},
-           given={Jianhua},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{49e60556397770cf889bfd5944abc45a}
-      \strng{fullhash}{39f844fcb32ed687da68bd3842e74373}
-      \strng{fullhashraw}{39f844fcb32ed687da68bd3842e74373}
-      \strng{bibnamehash}{49e60556397770cf889bfd5944abc45a}
-      \strng{authorbibnamehash}{49e60556397770cf889bfd5944abc45a}
-      \strng{authornamehash}{49e60556397770cf889bfd5944abc45a}
-      \strng{authorfullhash}{39f844fcb32ed687da68bd3842e74373}
-      \strng{authorfullhashraw}{39f844fcb32ed687da68bd3842e74373}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:2312.04293}
-      \field{title}{GPT-4V with Emotion: A Zero-shot Benchmark for Generalized Emotion Recognition}
-      \field{year}{2023}
-      \verb{doi}
-      \verb 10.48550/arXiv.2312.04293
-      \endverb
-      \verb{urlraw}
-      \verb https://arxiv.org/abs/2312.04293
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/abs/2312.04293
-      \endverb
-    \endentry
-    \entry{WHO2014PreventingSuicide}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=531217507bec092b6ec36c0f78f46736}{%
-           family={{World Health Organization}},
-           familyi={W\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Geneva, Switzerland}%
-      }
-      \list{publisher}{1}{%
-        {World Health Organization}%
-      }
-      \strng{namehash}{531217507bec092b6ec36c0f78f46736}
-      \strng{fullhash}{531217507bec092b6ec36c0f78f46736}
-      \strng{fullhashraw}{531217507bec092b6ec36c0f78f46736}
-      \strng{bibnamehash}{531217507bec092b6ec36c0f78f46736}
-      \strng{authorbibnamehash}{531217507bec092b6ec36c0f78f46736}
-      \strng{authornamehash}{531217507bec092b6ec36c0f78f46736}
-      \strng{authorfullhash}{531217507bec092b6ec36c0f78f46736}
-      \strng{authorfullhashraw}{531217507bec092b6ec36c0f78f46736}
-      \field{extraname}{3}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{978-92-4-156477-9}
-      \field{title}{Preventing suicide: A global imperative}
-      \field{year}{2014}
-      \verb{urlraw}
-      \verb https://www.who.int/publications/i/item/9789241564779
-      \endverb
-      \verb{url}
-      \verb https://www.who.int/publications/i/item/9789241564779
-      \endverb
-    \endentry
-    \entry{APA2022_DSM5TR}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=3f66c642802f76fee00ebf8365ba9298}{%
-           family={Association},
-           familyi={A\bibinitperiod},
-           given={American\bibnamedelima Psychiatric},
-           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Psychiatric Association}%
-      }
-      \strng{namehash}{3f66c642802f76fee00ebf8365ba9298}
-      \strng{fullhash}{3f66c642802f76fee00ebf8365ba9298}
-      \strng{fullhashraw}{3f66c642802f76fee00ebf8365ba9298}
-      \strng{bibnamehash}{3f66c642802f76fee00ebf8365ba9298}
-      \strng{authorbibnamehash}{3f66c642802f76fee00ebf8365ba9298}
-      \strng{authornamehash}{3f66c642802f76fee00ebf8365ba9298}
-      \strng{authorfullhash}{3f66c642802f76fee00ebf8365ba9298}
-      \strng{authorfullhashraw}{3f66c642802f76fee00ebf8365ba9298}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Diagnostic and Statistical Manual of Mental Disorders (5th ed., text rev.)}
-      \field{year}{2022}
-      \verb{doi}
-      \verb 10.1176/appi.books.9780890425787
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1176/appi.books.9780890425787
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1176/appi.books.9780890425787
-      \endverb
-    \endentry
-    \entry{arendt2019effects}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=0b5183f8e0e613d48eb016f9850edd27}{%
-           family={Arendt},
-           familyi={A\bibinitperiod},
-           given={Florian},
-           giveni={F\bibinitperiod}}}%
-        {{hash=29126cf65910406ec518c269859a74eb}{%
-           family={Scherr},
-           familyi={S\bibinitperiod},
-           given={Sebastian},
-           giveni={S\bibinitperiod}}}%
-        {{hash=66a9d5ca9fa83d0f3292e446ab0bf853}{%
-           family={Romer},
-           familyi={R\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{a9daa16f80496404d1c4451c90bfeaba}
-      \strng{fullhash}{afafe79db3d01dcd2d39e75b0680c20e}
-      \strng{fullhashraw}{afafe79db3d01dcd2d39e75b0680c20e}
-      \strng{bibnamehash}{afafe79db3d01dcd2d39e75b0680c20e}
-      \strng{authorbibnamehash}{afafe79db3d01dcd2d39e75b0680c20e}
-      \strng{authornamehash}{a9daa16f80496404d1c4451c90bfeaba}
-      \strng{authorfullhash}{afafe79db3d01dcd2d39e75b0680c20e}
-      \strng{authorfullhashraw}{afafe79db3d01dcd2d39e75b0680c20e}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{New Media \& Society}
-      \field{number}{11-12}
-      \field{title}{Effects of exposure to self-harm on social media: Evidence from a two-wave panel study among young adults}
-      \field{volume}{21}
-      \field{year}{2019}
-      \verb{doi}
-      \verb 10.1177/1461444819850106
-      \endverb
-      \verb{urlraw}
-      \verb https://journals.sagepub.com/doi/10.1177/1461444819850106
-      \endverb
-      \verb{url}
-      \verb https://journals.sagepub.com/doi/10.1177/1461444819850106
-      \endverb
-    \endentry
-    \entry{ngiam2011multimodal}{inproceedings}{}{}
-      \name{author}{6}{}{%
-        {{hash=d2d0d4d79851cb75a2676c526c4cb160}{%
-           family={Ngiam},
-           familyi={N\bibinitperiod},
-           given={Jiquan},
-           giveni={J\bibinitperiod}}}%
-        {{hash=c8d6add84efe17681e0d4968ebf47fdc}{%
-           family={Khosla},
-           familyi={K\bibinitperiod},
-           given={Aditya},
-           giveni={A\bibinitperiod}}}%
-        {{hash=787792a05d28d3856babc3fc75d6cad8}{%
-           family={Kim},
-           familyi={K\bibinitperiod},
-           given={Mingyu},
-           giveni={M\bibinitperiod}}}%
-        {{hash=b7c57c9ad12471fb5ec7eb082cd69eeb}{%
-           family={Nam},
-           familyi={N\bibinitperiod},
-           given={Juhan},
-           giveni={J\bibinitperiod}}}%
-        {{hash=d09ea8631bf43468107b5ef02c5195aa}{%
-           family={Lee},
-           familyi={L\bibinitperiod},
-           given={Honglak},
-           giveni={H\bibinitperiod}}}%
-        {{hash=49e889356ff39df159461bc2895c7e16}{%
-           family={Ng},
-           familyi={N\bibinitperiod},
-           given={Andrew\bibnamedelima Y.},
-           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
-      }
-      \strng{namehash}{314be6cfe369eaa7dd52efa4c65de664}
-      \strng{fullhash}{848240b4ef4218a82c3640fcf878f52c}
-      \strng{fullhashraw}{848240b4ef4218a82c3640fcf878f52c}
-      \strng{bibnamehash}{314be6cfe369eaa7dd52efa4c65de664}
-      \strng{authorbibnamehash}{314be6cfe369eaa7dd52efa4c65de664}
-      \strng{authornamehash}{314be6cfe369eaa7dd52efa4c65de664}
-      \strng{authorfullhash}{848240b4ef4218a82c3640fcf878f52c}
-      \strng{authorfullhashraw}{848240b4ef4218a82c3640fcf878f52c}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 28th International Conference on Machine Learning (ICML 2011)}
-      \field{title}{Multimodal Deep Learning}
-      \field{year}{2011}
-      \field{pages}{689\bibrangedash 696}
-      \range{pages}{8}
-    \endentry
-    \entry{IBM2024multimodal}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=cbf44511d041dc6d1dd73cc0c033122c}{%
-           family={IBM},
-           familyi={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{cbf44511d041dc6d1dd73cc0c033122c}
-      \strng{fullhash}{cbf44511d041dc6d1dd73cc0c033122c}
-      \strng{fullhashraw}{cbf44511d041dc6d1dd73cc0c033122c}
-      \strng{bibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
-      \strng{authorbibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
-      \strng{authornamehash}{cbf44511d041dc6d1dd73cc0c033122c}
-      \strng{authorfullhash}{cbf44511d041dc6d1dd73cc0c033122c}
-      \strng{authorfullhashraw}{cbf44511d041dc6d1dd73cc0c033122c}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://www.ibm.com/think/topics/multimodal-ai}}
-      \field{month}{7}
-      \field{note}{Accessed 9 December 2025}
-      \field{title}{What is AI multimodal?}
-      \field{year}{2024}
-    \endentry
-    \entry{jiao2024comprehensive}{article}{}{}
-      \name{author}{5}{}{%
-        {{hash=9e13da54c2f32545ba888eb6ac0fa3ff}{%
-           family={Jiao},
-           familyi={J\bibinitperiod},
-           given={Tianzhe},
-           giveni={T\bibinitperiod}}}%
-        {{hash=583ec76aa3e0c7c582930c509f353ac0}{%
-           family={Guo},
-           familyi={G\bibinitperiod},
-           given={Chaopeng},
-           giveni={C\bibinitperiod}}}%
-        {{hash=70e659fc8d52ec56b36639e3880f6db5}{%
-           family={Feng},
-           familyi={F\bibinitperiod},
-           given={Xiaoyue},
-           giveni={X\bibinitperiod}}}%
-        {{hash=ededec39a245aba909c80a4e9e8fa59a}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Yuming},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=2b23af9d24a98a5912d3b7c941b08ed7}{%
-           family={Morency},
-           familyi={M\bibinitperiod},
-           given={Louis-Philippe},
-           giveni={L\bibinithyphendelim P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Tech Science Press}%
-      }
-      \strng{namehash}{9cdec6b4e4652c686e5c3d4bcaafb86e}
-      \strng{fullhash}{9526720a9697d8be0242fe33a84a95ef}
-      \strng{fullhashraw}{9526720a9697d8be0242fe33a84a95ef}
-      \strng{bibnamehash}{9cdec6b4e4652c686e5c3d4bcaafb86e}
-      \strng{authorbibnamehash}{9cdec6b4e4652c686e5c3d4bcaafb86e}
-      \strng{authornamehash}{9cdec6b4e4652c686e5c3d4bcaafb86e}
-      \strng{authorfullhash}{9526720a9697d8be0242fe33a84a95ef}
-      \strng{authorfullhashraw}{9526720a9697d8be0242fe33a84a95ef}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Computers, Materials \& Continua}
-      \field{number}{1}
-      \field{title}{A Comprehensive Survey on Deep Learning Multi-Modal Fusion: Methods, Technologies and Applications}
-      \field{volume}{80}
-      \field{year}{2024}
-      \field{pages}{1\bibrangedash 35}
-      \range{pages}{35}
-      \verb{doi}
-      \verb 10.32604/cmc.2024.053204
-      \endverb
-    \endentry
-    \entry{baltrusaitis2019multimodal}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=0282f658a8fd598405cc09097bde4040}{%
-           family={Baltrusaitis},
-           familyi={B\bibinitperiod},
-           given={Tadas},
-           giveni={T\bibinitperiod}}}%
-        {{hash=93a92cb2f2018320f5fe203d00ae1cc3}{%
-           family={Ahuja},
-           familyi={A\bibinitperiod},
-           given={Chaitanya},
-           giveni={C\bibinitperiod}}}%
-        {{hash=2b23af9d24a98a5912d3b7c941b08ed7}{%
-           family={Morency},
-           familyi={M\bibinitperiod},
-           given={Louis-Philippe},
-           giveni={L\bibinithyphendelim P\bibinitperiod}}}%
-      }
-      \strng{namehash}{7ad48b26b1be53e6333045ebe3155ec8}
-      \strng{fullhash}{21a1115869ebbea6b8e1ffb436d31759}
-      \strng{fullhashraw}{21a1115869ebbea6b8e1ffb436d31759}
-      \strng{bibnamehash}{21a1115869ebbea6b8e1ffb436d31759}
-      \strng{authorbibnamehash}{21a1115869ebbea6b8e1ffb436d31759}
-      \strng{authornamehash}{7ad48b26b1be53e6333045ebe3155ec8}
-      \strng{authorfullhash}{21a1115869ebbea6b8e1ffb436d31759}
-      \strng{authorfullhashraw}{21a1115869ebbea6b8e1ffb436d31759}
-      \field{extraname}{2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence}
-      \field{number}{2}
-      \field{title}{Multimodal Machine Learning: A Survey and Taxonomy}
-      \field{volume}{41}
-      \field{year}{2019}
-      \field{pages}{423\bibrangedash 443}
-      \range{pages}{21}
-      \verb{doi}
-      \verb 10.1109/TPAMI.2018.2798607
-      \endverb
-    \endentry
-    \entry{sciencedirect_computer_vision_overview}{online}{}{}
-      \list{organization}{1}{%
-        {ScienceDirect Topics}%
-      }
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labeltitlesource}{title}
-      \field{note}{Diakses pada 9 Desember 2025}
-      \field{title}{Computer Vision – an overview}
-      \field{year}{n.d.}
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/topics/computer-science/computer-vision
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/topics/computer-science/computer-vision
-      \endverb
-    \endentry
-    \entry{lecun2015deep}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=6a1aa6b7eab12b931ca7c7e3f927231d}{%
-           family={LeCun},
-           familyi={L\bibinitperiod},
-           given={Yann},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=40a8e4774982146adc2688546f54efb2}{%
-           family={Bengio},
-           familyi={B\bibinitperiod},
-           given={Yoshua},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=9a8750ccdb2a4cf14d2655face1ce016}{%
-           family={Hinton},
-           familyi={H\bibinitperiod},
-           given={Geoffrey},
-           giveni={G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Nature Publishing Group}%
-      }
-      \strng{namehash}{9e4c6012409dc8dd9b2aa198a2059804}
-      \strng{fullhash}{c6c75bd00ce5a488e91a749d8383b3df}
-      \strng{fullhashraw}{c6c75bd00ce5a488e91a749d8383b3df}
-      \strng{bibnamehash}{c6c75bd00ce5a488e91a749d8383b3df}
-      \strng{authorbibnamehash}{c6c75bd00ce5a488e91a749d8383b3df}
-      \strng{authornamehash}{9e4c6012409dc8dd9b2aa198a2059804}
-      \strng{authorfullhash}{c6c75bd00ce5a488e91a749d8383b3df}
-      \strng{authorfullhashraw}{c6c75bd00ce5a488e91a749d8383b3df}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Nature}
-      \field{number}{7553}
-      \field{title}{Deep learning}
-      \field{volume}{521}
-      \field{year}{2015}
-      \field{pages}{436\bibrangedash 444}
-      \range{pages}{9}
-    \endentry
-    \entry{dosovitskiy2020image}{article}{}{}
-      \name{author}{12}{}{%
-        {{hash=72308762399d6ab62bbd9391c64c7bfd}{%
-           family={Dosovitskiy},
-           familyi={D\bibinitperiod},
-           given={Alexey},
-           giveni={A\bibinitperiod}}}%
-        {{hash=836254958eac09b30d45dd67a75ce4fa}{%
-           family={Beyer},
-           familyi={B\bibinitperiod},
-           given={Lucas},
-           giveni={L\bibinitperiod}}}%
-        {{hash=6807e3c00242c6bf6a3179905040471b}{%
-           family={Kolesnikov},
-           familyi={K\bibinitperiod},
-           given={Alexander},
-           giveni={A\bibinitperiod}}}%
-        {{hash=b398fca6879fde89a032b8e7de2f26b5}{%
-           family={Weissenborn},
-           familyi={W\bibinitperiod},
-           given={Dirk},
-           giveni={D\bibinitperiod}}}%
-        {{hash=00b950307c7d096765bb6df00c7c5c3a}{%
-           family={Zhai},
-           familyi={Z\bibinitperiod},
-           given={Xiaohua},
-           giveni={X\bibinitperiod}}}%
-        {{hash=1a47640139e63b9b5969c969dfe95def}{%
-           family={Unterthiner},
-           familyi={U\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-        {{hash=965baf6fa5686a42b1564330c5e11f2f}{%
-           family={Dehghani},
-           familyi={D\bibinitperiod},
-           given={Mostafa},
-           giveni={M\bibinitperiod}}}%
-        {{hash=06829adce8713f0ace444279dcd7328f}{%
-           family={Minderer},
-           familyi={M\bibinitperiod},
-           given={Matthias},
-           giveni={M\bibinitperiod}}}%
-        {{hash=c95269b4a2e23e1e526be521c7ec6ad4}{%
-           family={Heigold},
-           familyi={H\bibinitperiod},
-           given={Georg},
-           giveni={G\bibinitperiod}}}%
-        {{hash=450963f966620925cb8fecd32f7a6ee1}{%
-           family={Gelly},
-           familyi={G\bibinitperiod},
-           given={Sylvain},
-           giveni={S\bibinitperiod}}}%
-        {{hash=831027ee0ebf22375e2a86afc1881909}{%
-           family={Uszkoreit},
-           familyi={U\bibinitperiod},
-           given={Jakob},
-           giveni={J\bibinitperiod}}}%
-        {{hash=493a532418540859dca92cf3b579de2a}{%
-           family={Houlsby},
-           familyi={H\bibinitperiod},
-           given={Neil},
-           giveni={N\bibinitperiod}}}%
-      }
-      \strng{namehash}{d96316bc7578db680aba71d4226354c8}
-      \strng{fullhash}{b8c06eaeb698f61fc96ff3e5570552ec}
-      \strng{fullhashraw}{b8c06eaeb698f61fc96ff3e5570552ec}
-      \strng{bibnamehash}{d96316bc7578db680aba71d4226354c8}
-      \strng{authorbibnamehash}{d96316bc7578db680aba71d4226354c8}
-      \strng{authornamehash}{d96316bc7578db680aba71d4226354c8}
-      \strng{authorfullhash}{b8c06eaeb698f61fc96ff3e5570552ec}
-      \strng{authorfullhashraw}{b8c06eaeb698f61fc96ff3e5570552ec}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:2010.11929}
-      \field{title}{An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale}
-      \field{year}{2020}
-      \verb{doi}
-      \verb 10.48550/arXiv.2010.11929
-      \endverb
-    \endentry
-    \entry{young2017recent}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=f1a5bba8f0be7c2e2940a69ddb51c534}{%
-           family={Young},
-           familyi={Y\bibinitperiod},
-           given={Tom},
-           giveni={T\bibinitperiod}}}%
-        {{hash=14227e7438bb27d316977ef756c347ba}{%
-           family={Hazarika},
-           familyi={H\bibinitperiod},
-           given={Devamanyu},
-           giveni={D\bibinitperiod}}}%
-        {{hash=dcb98c96536530f44ae8cf4f6a8f2d86}{%
-           family={Poria},
-           familyi={P\bibinitperiod},
-           given={Soujanya},
-           giveni={S\bibinitperiod}}}%
-        {{hash=db089768b8819956d932b3c8db18d498}{%
-           family={Cambria},
-           familyi={C\bibinitperiod},
-           given={Erik},
-           giveni={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{6b2f6f8ab5774dc57ead7c134bbe3563}
-      \strng{fullhash}{07ad7efe4ae53866eb2dc6c544fc05d2}
-      \strng{fullhashraw}{07ad7efe4ae53866eb2dc6c544fc05d2}
-      \strng{bibnamehash}{6b2f6f8ab5774dc57ead7c134bbe3563}
-      \strng{authorbibnamehash}{6b2f6f8ab5774dc57ead7c134bbe3563}
-      \strng{authornamehash}{6b2f6f8ab5774dc57ead7c134bbe3563}
-      \strng{authorfullhash}{07ad7efe4ae53866eb2dc6c544fc05d2}
-      \strng{authorfullhashraw}{07ad7efe4ae53866eb2dc6c544fc05d2}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:1708.02709}
-      \field{title}{Recent Trends in Deep Learning Based Natural Language Processing}
-      \field{year}{2017}
-      \verb{doi}
-      \verb 10.48550/arXiv.1708.02709
-      \endverb
-    \endentry
-    \entry{devlin2018bert}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=13202969e372bc82318f9629cbdd199b}{%
-           family={Devlin},
-           familyi={D\bibinitperiod},
-           given={Jacob},
-           giveni={J\bibinitperiod}}}%
-        {{hash=a45784fe7163b45f11d166564f5d24b6}{%
-           family={Chang},
-           familyi={C\bibinitperiod},
-           given={Ming-Wei},
-           giveni={M\bibinithyphendelim W\bibinitperiod}}}%
-        {{hash=8dde73b4194f5bc4230c4808f3fc1534}{%
-           family={Lee},
-           familyi={L\bibinitperiod},
-           given={Kenton},
-           giveni={K\bibinitperiod}}}%
-        {{hash=b92aa283415413bb8d2a1548716d0c7d}{%
-           family={Toutanova},
-           familyi={T\bibinitperiod},
-           given={Kristina},
-           giveni={K\bibinitperiod}}}%
-      }
-      \strng{namehash}{ad8e2e2a80d28ade21e86852b804fc9b}
-      \strng{fullhash}{e8bccd48302a14eeba57d9dce2f49ef4}
-      \strng{fullhashraw}{e8bccd48302a14eeba57d9dce2f49ef4}
-      \strng{bibnamehash}{ad8e2e2a80d28ade21e86852b804fc9b}
-      \strng{authorbibnamehash}{ad8e2e2a80d28ade21e86852b804fc9b}
-      \strng{authornamehash}{ad8e2e2a80d28ade21e86852b804fc9b}
-      \strng{authorfullhash}{e8bccd48302a14eeba57d9dce2f49ef4}
-      \strng{authorfullhashraw}{e8bccd48302a14eeba57d9dce2f49ef4}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:1810.04805}
-      \field{title}{BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding}
-      \field{year}{2018}
-      \verb{doi}
-      \verb 10.48550/arXiv.1810.04805
-      \endverb
-    \endentry
-    \entry{schmidhuber2015deep}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
-           family={Schmidhuber},
-           familyi={S\bibinitperiod},
-           given={Jürgen},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
-      \strng{fullhash}{288bdbcfe1b91ad7484d7a24f74f99ed}
-      \strng{fullhashraw}{288bdbcfe1b91ad7484d7a24f74f99ed}
-      \strng{bibnamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
-      \strng{authorbibnamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
-      \strng{authornamehash}{288bdbcfe1b91ad7484d7a24f74f99ed}
-      \strng{authorfullhash}{288bdbcfe1b91ad7484d7a24f74f99ed}
-      \strng{authorfullhashraw}{288bdbcfe1b91ad7484d7a24f74f99ed}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Neural Networks}
-      \field{title}{Deep learning in neural networks: An overview}
-      \field{volume}{61}
-      \field{year}{2015}
-      \field{pages}{85\bibrangedash 117}
-      \range{pages}{33}
-      \verb{doi}
-      \verb 10.1016/j.neunet.2014.09.003
-      \endverb
-    \endentry
-    \entry{vaswani2017attention}{article}{}{}
-      \name{author}{8}{}{%
-        {{hash=7f28e84700536646dd6620a0db07ad09}{%
-           family={Vaswani},
-           familyi={V\bibinitperiod},
-           given={Ashish},
-           giveni={A\bibinitperiod}}}%
-        {{hash=62efade83d70f0323fe248755e6c90c5}{%
-           family={Shazeer},
-           familyi={S\bibinitperiod},
-           given={Noam},
-           giveni={N\bibinitperiod}}}%
-        {{hash=06649ebab1ea5cac0250746a19764975}{%
-           family={Parmar},
-           familyi={P\bibinitperiod},
-           given={Niki},
-           giveni={N\bibinitperiod}}}%
-        {{hash=831027ee0ebf22375e2a86afc1881909}{%
-           family={Uszkoreit},
-           familyi={U\bibinitperiod},
-           given={Jakob},
-           giveni={J\bibinitperiod}}}%
-        {{hash=2fd2982e30ebcec93ec1cf76e0d797fd}{%
-           family={Jones},
-           familyi={J\bibinitperiod},
-           given={Llion},
-           giveni={L\bibinitperiod}}}%
-        {{hash=27b07e4eacbf4ef7a1438e3badb7dd8d}{%
-           family={Gomez},
-           familyi={G\bibinitperiod},
-           given={Aidan\bibnamedelima N.},
-           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-        {{hash=f2bc899b1160163417da7bf510f15d33}{%
-           family={Kaiser},
-           familyi={K\bibinitperiod},
-           given={Lukasz},
-           giveni={L\bibinitperiod}}}%
-        {{hash=95595a0fefb86187cbc36e551017d332}{%
-           family={Polosukhin},
-           familyi={P\bibinitperiod},
-           given={Illia},
-           giveni={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{ee273ab30cfb889666f8c4d806eb9ce7}
-      \strng{fullhash}{f82970bbd2bdd7a002d2af62b743d5cc}
-      \strng{fullhashraw}{f82970bbd2bdd7a002d2af62b743d5cc}
-      \strng{bibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
-      \strng{authorbibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
-      \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
-      \strng{authorfullhash}{f82970bbd2bdd7a002d2af62b743d5cc}
-      \strng{authorfullhashraw}{f82970bbd2bdd7a002d2af62b743d5cc}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:1706.03762}
-      \field{title}{Attention Is All You Need}
-      \field{year}{2017}
-      \verb{doi}
-      \verb 10.48550/arXiv.1706.03762
-      \endverb
-    \endentry
-    \entry{Pan2022ContrastiveKCLIP}{article}{}{}
-      \name{author}{5}{}{%
-        {{hash=247ef5b64d0cc9e2972cd9688ca7fb79}{%
-           family={Pan},
-           familyi={P\bibinitperiod},
-           given={Xuran},
-           giveni={X\bibinitperiod}}}%
-        {{hash=e582c73366e92daad62c2976cd47c276}{%
-           family={Ye},
-           familyi={Y\bibinitperiod},
-           given={Tianzhu},
-           giveni={T\bibinitperiod}}}%
-        {{hash=8ca6c835232900952c984e6c71401b73}{%
-           family={Han},
-           familyi={H\bibinitperiod},
-           given={Dongchen},
-           giveni={D\bibinitperiod}}}%
-        {{hash=1184f58bd9293ce5d9a8b33fa6c10d9e}{%
-           family={Song},
-           familyi={S\bibinitperiod},
-           given={Shiji},
-           giveni={S\bibinitperiod}}}%
-        {{hash=0d12f90a1d1945cb1b98f583c9dc9572}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Gao},
-           giveni={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{6aa6218e2fdb12d8fe51b9a0d58830fc}
-      \strng{fullhash}{175bed5a065c2226f738d0f105734f69}
-      \strng{fullhashraw}{175bed5a065c2226f738d0f105734f69}
-      \strng{bibnamehash}{6aa6218e2fdb12d8fe51b9a0d58830fc}
-      \strng{authorbibnamehash}{6aa6218e2fdb12d8fe51b9a0d58830fc}
-      \strng{authornamehash}{6aa6218e2fdb12d8fe51b9a0d58830fc}
-      \strng{authorfullhash}{175bed5a065c2226f738d0f105734f69}
-      \strng{authorfullhashraw}{175bed5a065c2226f738d0f105734f69}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:2210.08901}
-      \field{note}{Preprint}
-      \field{title}{Contrastive Language‑Image Pre‑Training with Knowledge Graphs}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://arxiv.org/abs/2210.08901
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/abs/2210.08901
-      \endverb
-    \endentry
-    \entry{sentinet_suicidality}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=af6d6773d4204f666fe29fc771c90584}{%
-           family={Sentinet},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{af6d6773d4204f666fe29fc771c90584}
-      \strng{fullhash}{af6d6773d4204f666fe29fc771c90584}
-      \strng{fullhashraw}{af6d6773d4204f666fe29fc771c90584}
-      \strng{bibnamehash}{af6d6773d4204f666fe29fc771c90584}
-      \strng{authorbibnamehash}{af6d6773d4204f666fe29fc771c90584}
-      \strng{authornamehash}{af6d6773d4204f666fe29fc771c90584}
-      \strng{authorfullhash}{af6d6773d4204f666fe29fc771c90584}
-      \strng{authorfullhashraw}{af6d6773d4204f666fe29fc771c90584}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{ELECTRA model for suicidality detection}
-      \field{year}{2023}
-      \verb{urlraw}
-      \verb https://huggingface.co/sentinet/suicidality
-      \endverb
-      \verb{url}
-      \verb https://huggingface.co/sentinet/suicidality
-      \endverb
-    \endentry
-    \entry{Xu2023ImageAugmentationSurvey}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=4c0ebba2a8e2a0e80d9a07dfb24deec5}{%
-           family={Xu},
-           familyi={X\bibinitperiod},
-           given={Mingle},
-           giveni={M\bibinitperiod}}}%
-        {{hash=518bbfb5d98f734e4790a5606151dfb1}{%
-           family={Yoon},
-           familyi={Y\bibinitperiod},
-           given={Sook},
-           giveni={S\bibinitperiod}}}%
-        {{hash=56d20d0528a48864874235e45fee443d}{%
-           family={Fuentes},
-           familyi={F\bibinitperiod},
-           given={Álvaro},
-           giveni={Á\bibinitperiod}}}%
-        {{hash=67c01633b9c19a747a0e5df3e35fa6ad}{%
-           family={Park},
-           familyi={P\bibinitperiod},
-           given={Dong\bibnamedelima Sun},
-           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \strng{namehash}{edb7d1ea91e86702483aa2b252a7c849}
-      \strng{fullhash}{ea8f8362bed0ad3f5e5311f205c4f3c3}
-      \strng{fullhashraw}{ea8f8362bed0ad3f5e5311f205c4f3c3}
-      \strng{bibnamehash}{edb7d1ea91e86702483aa2b252a7c849}
-      \strng{authorbibnamehash}{edb7d1ea91e86702483aa2b252a7c849}
-      \strng{authornamehash}{edb7d1ea91e86702483aa2b252a7c849}
-      \strng{authorfullhash}{ea8f8362bed0ad3f5e5311f205c4f3c3}
-      \strng{authorfullhashraw}{ea8f8362bed0ad3f5e5311f205c4f3c3}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Pattern Recognition}
-      \field{title}{A Comprehensive Survey of Image Augmentation Techniques for Deep Learning}
-      \field{volume}{137}
-      \field{year}{2023}
-      \field{pages}{109347}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1016/j.patcog.2023.109347
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0031320323000481
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0031320323000481
-      \endverb
-    \endentry
-    \entry{Shorten2019ImageDataAugmentation}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=d49d1c5cbce775054678e29a462ca723}{%
-           family={Shorten},
-           familyi={S\bibinitperiod},
-           given={Connor},
-           giveni={C\bibinitperiod}}}%
-        {{hash=c7e0de384e7d1be2ca29a338e7f5c047}{%
-           family={Khoshgoftaar},
-           familyi={K\bibinitperiod},
-           given={Taghi\bibnamedelima M.},
-           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \strng{namehash}{dae7c2fd5449b2cabfe6d8cea2eebe96}
-      \strng{fullhash}{dae7c2fd5449b2cabfe6d8cea2eebe96}
-      \strng{fullhashraw}{dae7c2fd5449b2cabfe6d8cea2eebe96}
-      \strng{bibnamehash}{dae7c2fd5449b2cabfe6d8cea2eebe96}
-      \strng{authorbibnamehash}{dae7c2fd5449b2cabfe6d8cea2eebe96}
-      \strng{authornamehash}{dae7c2fd5449b2cabfe6d8cea2eebe96}
-      \strng{authorfullhash}{dae7c2fd5449b2cabfe6d8cea2eebe96}
-      \strng{authorfullhashraw}{dae7c2fd5449b2cabfe6d8cea2eebe96}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Big Data}
-      \field{number}{1}
-      \field{title}{A survey on Image Data Augmentation for Deep Learning}
-      \field{volume}{6}
-      \field{year}{2019}
-      \field{pages}{60}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1186/s40537-019-0197-0
-      \endverb
-      \verb{urlraw}
-      \verb https://link.springer.com/article/10.1186/s40537-019-0197-0
-      \endverb
-      \verb{url}
-      \verb https://link.springer.com/article/10.1186/s40537-019-0197-0
-      \endverb
-    \endentry
-    \entry{fawcett2006introduction}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=9c15aa0b2a7683cefeaa12c991d0b1c2}{%
-           family={Fawcett},
-           familyi={F\bibinitperiod},
-           given={Tom},
-           giveni={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{9c15aa0b2a7683cefeaa12c991d0b1c2}
-      \strng{fullhash}{9c15aa0b2a7683cefeaa12c991d0b1c2}
-      \strng{fullhashraw}{9c15aa0b2a7683cefeaa12c991d0b1c2}
-      \strng{bibnamehash}{9c15aa0b2a7683cefeaa12c991d0b1c2}
-      \strng{authorbibnamehash}{9c15aa0b2a7683cefeaa12c991d0b1c2}
-      \strng{authornamehash}{9c15aa0b2a7683cefeaa12c991d0b1c2}
-      \strng{authorfullhash}{9c15aa0b2a7683cefeaa12c991d0b1c2}
-      \strng{authorfullhashraw}{9c15aa0b2a7683cefeaa12c991d0b1c2}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Pattern Recognition Letters}
-      \field{month}{6}
-      \field{number}{8}
-      \field{title}{Introduction to ROC Analysis}
-      \field{volume}{27}
-      \field{year}{2006}
-      \field{pages}{861\bibrangedash 874}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1016/j.patrec.2005.10.010
-      \endverb
-    \endentry
-    \entry{sokolova2009systematic}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=2adefbc8409f58c304df957e60c49341}{%
-           family={Sokolova},
-           familyi={S\bibinitperiod},
-           given={Marina},
-           giveni={M\bibinitperiod}}}%
-        {{hash=2c32da83b97570a90db8231cf70f38ce}{%
-           family={Lapalme},
-           familyi={L\bibinitperiod},
-           given={Guy},
-           giveni={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{7583d9686fbf26bcb2c9608545b6c971}
-      \strng{fullhash}{7583d9686fbf26bcb2c9608545b6c971}
-      \strng{fullhashraw}{7583d9686fbf26bcb2c9608545b6c971}
-      \strng{bibnamehash}{7583d9686fbf26bcb2c9608545b6c971}
-      \strng{authorbibnamehash}{7583d9686fbf26bcb2c9608545b6c971}
-      \strng{authornamehash}{7583d9686fbf26bcb2c9608545b6c971}
-      \strng{authorfullhash}{7583d9686fbf26bcb2c9608545b6c971}
-      \strng{authorfullhashraw}{7583d9686fbf26bcb2c9608545b6c971}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Information Processing \& Management}
-      \field{month}{7}
-      \field{number}{4}
-      \field{title}{A Systematic Analysis of Performance Measures for Classification Tasks}
-      \field{volume}{45}
-      \field{year}{2009}
-      \field{pages}{427\bibrangedash 437}
-      \range{pages}{11}
-      \verb{doi}
-      \verb 10.1016/j.ipm.2009.03.002
-      \endverb
-    \endentry
-    \entry{powers2020evaluationprecisionrecallfmeasure}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=590aed25666f7ee9c7f2009bd208cea8}{%
-           family={Powers},
-           familyi={P\bibinitperiod},
-           given={David\bibnamedelimb M.\bibnamedelimi W.},
-           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-      }
-      \strng{namehash}{590aed25666f7ee9c7f2009bd208cea8}
-      \strng{fullhash}{590aed25666f7ee9c7f2009bd208cea8}
-      \strng{fullhashraw}{590aed25666f7ee9c7f2009bd208cea8}
-      \strng{bibnamehash}{590aed25666f7ee9c7f2009bd208cea8}
-      \strng{authorbibnamehash}{590aed25666f7ee9c7f2009bd208cea8}
-      \strng{authornamehash}{590aed25666f7ee9c7f2009bd208cea8}
-      \strng{authorfullhash}{590aed25666f7ee9c7f2009bd208cea8}
-      \strng{authorfullhashraw}{590aed25666f7ee9c7f2009bd208cea8}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{cs.LG}
-      \field{eprinttype}{arXiv}
-      \field{title}{Evaluation: from precision, recall and F-measure to ROC, informedness, markedness and correlation}
-      \field{year}{2020}
-      \verb{eprint}
-      \verb 2010.16061
-      \endverb
-      \verb{urlraw}
-      \verb https://arxiv.org/abs/2010.16061
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/abs/2010.16061
-      \endverb
-    \endentry
-    \entry{MoraledaEsteban2025SelfHarm}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=ee21b9c8c9fe986d65a3eed9df935449}{%
-           family={Moraleda-Esteban},
-           familyi={M\bibinithyphendelim E\bibinitperiod},
-           given={Raquel},
-           giveni={R\bibinitperiod}}}%
-        {{hash=6e0bbc0cc474e539b1649731d11b8957}{%
-           family={Martínez-Pastor},
-           familyi={M\bibinithyphendelim P\bibinitperiod},
-           given={Esther},
-           giveni={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{5ab7f433704ec5d4c96322c8b7de4d59}
-      \strng{fullhash}{5ab7f433704ec5d4c96322c8b7de4d59}
-      \strng{fullhashraw}{5ab7f433704ec5d4c96322c8b7de4d59}
-      \strng{bibnamehash}{5ab7f433704ec5d4c96322c8b7de4d59}
-      \strng{authorbibnamehash}{5ab7f433704ec5d4c96322c8b7de4d59}
-      \strng{authornamehash}{5ab7f433704ec5d4c96322c8b7de4d59}
-      \strng{authorfullhash}{5ab7f433704ec5d4c96322c8b7de4d59}
-      \strng{authorfullhashraw}{5ab7f433704ec5d4c96322c8b7de4d59}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2014-2242}
-      \field{journaltitle}{Quaderns del CAC}
-      \field{month}{2}
-      \field{number}{51}
-      \field{title}{Self-harm, adolescents and mental health on social media and in the family environment: from the perspective of health professionals}
-      \field{year}{2025}
-      \field{pages}{17\bibrangedash 28}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.60940/qcac51id431940
-      \endverb
-    \endentry
-    \entry{mafi_alam_2023_suicidal_reddit}{data}{}{}
-      \name{author}{2}{}{%
-        {{hash=47ca2ead7478d2b54fa8e16f6821397a}{%
-           family={Mafi},
-           familyi={M\bibinitperiod},
-           given={Md\bibnamedelima Mafiul\bibnamedelimb Hasan\bibnamedelima Matin},
-           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=d87f792a969963f4e9a6c2f75363cb30}{%
-           family={Alam},
-           familyi={A\bibinitperiod},
-           given={Md.\bibnamedelimi Sabbir},
-           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Mendeley Data}%
-      }
-      \strng{namehash}{d19e6bf81d9a76aec8b6c9de059fd1de}
-      \strng{fullhash}{d19e6bf81d9a76aec8b6c9de059fd1de}
-      \strng{fullhashraw}{d19e6bf81d9a76aec8b6c9de059fd1de}
-      \strng{bibnamehash}{d19e6bf81d9a76aec8b6c9de059fd1de}
-      \strng{authorbibnamehash}{d19e6bf81d9a76aec8b6c9de059fd1de}
-      \strng{authornamehash}{d19e6bf81d9a76aec8b6c9de059fd1de}
-      \strng{authorfullhash}{d19e6bf81d9a76aec8b6c9de059fd1de}
-      \strng{authorfullhashraw}{d19e6bf81d9a76aec8b6c9de059fd1de}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Suicidal Ideation Detection Reddit Dataset}
-      \field{version}{2}
-      \field{year}{2023}
-      \verb{doi}
-      \verb 10.17632/z8s6w86tr3.2
-      \endverb
-      \verb{urlraw}
-      \verb https://data.mendeley.com/datasets/z8s6w86tr3/2
-      \endverb
-      \verb{url}
-      \verb https://data.mendeley.com/datasets/z8s6w86tr3/2
-      \endverb
-    \endentry
-    \entry{ali_weapon_knife_2025}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=efb9ff459cb0f17fc66ffca4ddb0bcff}{%
-           family={Ali},
-           familyi={A\bibinitperiod},
-           given={Zain},
-           giveni={Z\bibinitperiod}}}%
-      }
-      \strng{namehash}{efb9ff459cb0f17fc66ffca4ddb0bcff}
-      \strng{fullhash}{efb9ff459cb0f17fc66ffca4ddb0bcff}
-      \strng{fullhashraw}{efb9ff459cb0f17fc66ffca4ddb0bcff}
-      \strng{bibnamehash}{efb9ff459cb0f17fc66ffca4ddb0bcff}
-      \strng{authorbibnamehash}{efb9ff459cb0f17fc66ffca4ddb0bcff}
-      \strng{authornamehash}{efb9ff459cb0f17fc66ffca4ddb0bcff}
-      \strng{authorfullhash}{efb9ff459cb0f17fc66ffca4ddb0bcff}
-      \strng{authorfullhashraw}{efb9ff459cb0f17fc66ffca4ddb0bcff}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://www.kaggle.com/datasets/zinkzsa/weapon-and-knife-detection-137k-images}}
-      \field{note}{Accessed: Dec. 7, 2025}
-      \field{title}{Weapon and Knife Detection (137K Images)}
-      \field{year}{2025}
-    \endentry
-    \entry{Susi2023ViewingSelfHarmImages}{article}{}{}
-      \name{author}{5}{}{%
-        {{hash=efcc3d4021a6f2387b33930e6f57d351}{%
-           family={Susi},
-           familyi={S\bibinitperiod},
-           given={Karima},
-           giveni={K\bibinitperiod}}}%
-        {{hash=e3c1fbb0d4fed1da456d83901cf8edd0}{%
-           family={Glover-Ford},
-           familyi={G\bibinithyphendelim F\bibinitperiod},
-           given={Francesca},
-           giveni={F\bibinitperiod}}}%
-        {{hash=7d68b20fc65e00502891c2f99974944e}{%
-           family={Stewart},
-           familyi={S\bibinitperiod},
-           given={Anne},
-           giveni={A\bibinitperiod}}}%
-        {{hash=08833f1dd11a0ad22d3a12e14b87a493}{%
-           family={Bevis},
-           familyi={B\bibinitperiod},
-           given={Rebecca\bibnamedelima Knowles},
-           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=bf94e3d13b3ca18788e01d3f01e324c0}{%
-           family={Hawton},
-           familyi={H\bibinitperiod},
-           given={Keith},
-           giveni={K\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {John Wiley \& Sons Ltd}%
-      }
-      \strng{namehash}{c5845851b01caa3767ef8de873a1ada5}
-      \strng{fullhash}{09f9085d58878e1d764ee44d45abf6d8}
-      \strng{fullhashraw}{09f9085d58878e1d764ee44d45abf6d8}
-      \strng{bibnamehash}{c5845851b01caa3767ef8de873a1ada5}
-      \strng{authorbibnamehash}{c5845851b01caa3767ef8de873a1ada5}
-      \strng{authornamehash}{c5845851b01caa3767ef8de873a1ada5}
-      \strng{authorfullhash}{09f9085d58878e1d764ee44d45abf6d8}
-      \strng{authorfullhashraw}{09f9085d58878e1d764ee44d45abf6d8}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Child Psychology and Psychiatry}
-      \field{number}{8}
-      \field{title}{Viewing self-harm images on the internet and social media platforms: systematic review of the impact and associated psychological mechanisms}
-      \field{volume}{64}
-      \field{year}{2023}
-      \field{pages}{1115\bibrangedash 1139}
-      \range{pages}{25}
-      \verb{doi}
-      \verb 10.1111/jcpp.13754
-      \endverb
-    \endentry
-    \entry{javaid_6992_meme_images_2023}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=ef7b9117f13f196ac5c5a35dce833b36}{%
-           family={Javaid},
-           familyi={J\bibinitperiod},
-           given={Hammad},
-           giveni={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{ef7b9117f13f196ac5c5a35dce833b36}
-      \strng{fullhash}{ef7b9117f13f196ac5c5a35dce833b36}
-      \strng{fullhashraw}{ef7b9117f13f196ac5c5a35dce833b36}
-      \strng{bibnamehash}{ef7b9117f13f196ac5c5a35dce833b36}
-      \strng{authorbibnamehash}{ef7b9117f13f196ac5c5a35dce833b36}
-      \strng{authornamehash}{ef7b9117f13f196ac5c5a35dce833b36}
-      \strng{authorfullhash}{ef7b9117f13f196ac5c5a35dce833b36}
-      \strng{authorfullhashraw}{ef7b9117f13f196ac5c5a35dce833b36}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://www.kaggle.com/datasets/hammadjavaid/6992-labeled-meme-images-dataset}}
-      \field{note}{Accessed: Dec. 7, 2025}
-      \field{title}{6992 Labeled Meme Images Dataset}
-      \field{year}{2023}
-    \endentry
-    \entry{ratner2019}{inproceedings}{}{}
-      \name{author}{6}{}{%
-        {{hash=4b7fea39f8ec2c45c82e6fc7cb769600}{%
-           family={Ratner},
-           familyi={R\bibinitperiod},
-           given={Alexander},
-           giveni={A\bibinitperiod}}}%
-        {{hash=e281f5b6494b88bd13e75f4b21e9aa39}{%
-           family={Bach},
-           familyi={B\bibinitperiod},
-           given={Stephen\bibnamedelima H.},
-           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=28bc5cfd78ca0c74348c0fbf55828f1d}{%
-           family={Ehrenberg},
-           familyi={E\bibinitperiod},
-           given={Henry},
-           giveni={H\bibinitperiod}}}%
-        {{hash=476d4f38e48b75ef4bb5d4a4e714ace3}{%
-           family={Fries},
-           familyi={F\bibinitperiod},
-           given={Jason},
-           giveni={J\bibinitperiod}}}%
-        {{hash=d391f69afd4ca19c6ef23ac44f186e61}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Sen},
-           giveni={S\bibinitperiod}}}%
-        {{hash=eb1f5a2ba08ea12db36c871fe601f5f1}{%
-           family={Ré},
-           familyi={R\bibinitperiod},
-           given={Christopher},
-           giveni={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{cd64fde1cf98106b9e427382330e9c01}
-      \strng{fullhash}{2fcb26fcb527516f5a56b7b39c9a9abc}
-      \strng{fullhashraw}{2fcb26fcb527516f5a56b7b39c9a9abc}
-      \strng{bibnamehash}{cd64fde1cf98106b9e427382330e9c01}
-      \strng{authorbibnamehash}{cd64fde1cf98106b9e427382330e9c01}
-      \strng{authornamehash}{cd64fde1cf98106b9e427382330e9c01}
-      \strng{authorfullhash}{2fcb26fcb527516f5a56b7b39c9a9abc}
-      \strng{authorfullhashraw}{2fcb26fcb527516f5a56b7b39c9a9abc}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Advances in Neural Information Processing Systems (NeurIPS)}
-      \field{title}{Data Programming: Creating Large Training Sets, Quickly}
-      \field{year}{2019}
-    \endentry
-    \entry{Jiang2024RapGuard}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=0185a45934092ae09693fb6768c49e0b}{%
-           family={Jiang},
-           familyi={J\bibinitperiod},
-           given={Yilei},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=a1515a43d1ba6c90b45bc07f60088a11}{%
-           family={Tan},
-           familyi={T\bibinitperiod},
-           given={Yingshui},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=e34b8f9224cf2d8d930b1543bf103703}{%
-           family={Yue},
-           familyi={Y\bibinitperiod},
-           given={Xiangyu},
-           giveni={X\bibinitperiod}}}%
-      }
-      \strng{namehash}{0f182f0d1bd8a718de89c3d41cfca723}
-      \strng{fullhash}{428b1d5e03ec41e3b4bdcd9a66fde52c}
-      \strng{fullhashraw}{428b1d5e03ec41e3b4bdcd9a66fde52c}
-      \strng{bibnamehash}{428b1d5e03ec41e3b4bdcd9a66fde52c}
-      \strng{authorbibnamehash}{428b1d5e03ec41e3b4bdcd9a66fde52c}
-      \strng{authornamehash}{0f182f0d1bd8a718de89c3d41cfca723}
-      \strng{authorfullhash}{428b1d5e03ec41e3b4bdcd9a66fde52c}
-      \strng{authorfullhashraw}{428b1d5e03ec41e3b4bdcd9a66fde52c}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv preprint arXiv:2412.18826}
-      \field{title}{RapGuard: Safeguarding Multimodal Large Language Models via Rationale-aware Defensive Prompting}
-      \field{year}{2024}
-    \endentry
-    \entry{Dus2022SuicidalElectra}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=05953815e64f2f38be9702a4db5f80f8}{%
-           family={Dus},
-           familyi={D\bibinitperiod},
-           given={Yasin},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=f5d9d400fc2d315e91df4926997ae87b}{%
-           family={Nefedov},
-           familyi={N\bibinitperiod},
-           given={Georgiy},
-           giveni={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{97117f8a3d18a5a6194537b1678dd5b1}
-      \strng{fullhash}{97117f8a3d18a5a6194537b1678dd5b1}
-      \strng{fullhashraw}{97117f8a3d18a5a6194537b1678dd5b1}
-      \strng{bibnamehash}{97117f8a3d18a5a6194537b1678dd5b1}
-      \strng{authorbibnamehash}{97117f8a3d18a5a6194537b1678dd5b1}
-      \strng{authornamehash}{97117f8a3d18a5a6194537b1678dd5b1}
-      \strng{authorfullhash}{97117f8a3d18a5a6194537b1678dd5b1}
-      \strng{authorfullhashraw}{97117f8a3d18a5a6194537b1678dd5b1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Suicidal Text Detection Report}
-      \field{note}{Accessed: 2025-12-10}
-      \field{title}{An Automated Tool to Detect Suicidal Susceptibility from Social Media Posts}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://github.com/gohjiayi/suicidal-text-detection/blob/main/docs/Suicidal-Text-Detection_Report.pdf
-      \endverb
-      \verb{url}
-      \verb https://github.com/gohjiayi/suicidal-text-detection/blob/main/docs/Suicidal-Text-Detection_Report.pdf
-      \endverb
-    \endentry
-  \enddatalist
-  \missing{ibm_nlp}
-\endrefsection
+  \entry{datareportal2024_global}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={DataReportal},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://datareportal.com/reports/digital-2024-global-overview-report}}
+    \field{note}{[Online; accessed 2024]}
+    \field{title}{Digital 2024: Global Overview Report}
+    \field{year}{2024}
+  \endentry
+
+  \entry{datareportal2024_5billion}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={DataReportal},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://datareportal.com/reports/digital-2024-deep-dive-5-billion-social-media-users}}
+    \field{note}{[Online; accessed 2024]}
+    \field{title}{5 Billion Social Media Users – Global Digital Insights}
+    \field{year}{2024}
+  \endentry
+
+  \entry{shifman2013memes}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=SL}{%
+         family={Shifman},
+         familyi={S\bibinitperiod},
+         given={Limor},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SL1}
+    \strng{fullhash}{SL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1111/jcc4.12013
+    \endverb
+    \field{pages}{n/a\bibrangedash n/a}
+    \field{title}{Memes in a Digital World: Reconciling with a Conceptual
+  Troublemaker}
+    \field{volume}{18}
+    \field{journaltitle}{Journal of Computer-Mediated Communication}
+    \field{month}{04}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Sharma2022HarmfulMemes}{misc}{}{}
+    \name{author}{10}{}{%
+      {{hash=SS}{%
+         family={Sharma},
+         familyi={S\bibinitperiod},
+         given={Shivam},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AF}{%
+         family={Alam},
+         familyi={A\bibinitperiod},
+         given={Firoj},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=AMS}{%
+         family={Akhtar},
+         familyi={A\bibinitperiod},
+         given={Md.\bibnamedelima Shad},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=DD}{%
+         family={Dimitrov},
+         familyi={D\bibinitperiod},
+         given={Dimitar},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MGDS}{%
+         family={Martino},
+         familyi={M\bibinitperiod},
+         given={Giovanni Da\bibnamedelima San},
+         giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  S\bibinitperiod},
+      }}%
+      {{hash=FH}{%
+         family={Firooz},
+         familyi={F\bibinitperiod},
+         given={Hamed},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HAY}{%
+         family={Halevy},
+         familyi={H\bibinitperiod},
+         given={Alon\bibnamedelima Y.},
+         giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Silvestri},
+         familyi={S\bibinitperiod},
+         given={Fabrizio},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=NP}{%
+         family={Nakov},
+         familyi={N\bibinitperiod},
+         given={Preslav},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={Chakraborty},
+         familyi={C\bibinitperiod},
+         given={Tanmoy},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SS+1}
+    \strng{fullhash}{SSAFAMSDDMGDSFHHAYSFNPCT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.48550/arXiv.2205.04274
+    \endverb
+    \verb{eprint}
+    \verb 2205.04274
+    \endverb
+    \field{title}{Detecting and Understanding Harmful Memes: A Survey}
+    \verb{url}
+    \verb https://arxiv.org/abs/2205.04274
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CL}
+    \field{year}{2022}
+  \endentry
+
+  \entry{NICE_NG225_2022}{manual}{}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={{National Institute for Health and Care Excellence (NICE)}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \list{organization}{2}{%
+      {National Institute for Health}%
+      {Care Excellence}%
+    }
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{Online guideline}
+    \field{note}{Guideline NG225}
+    \field{title}{Self-harm: assessment, management and preventing recurrence}
+    \verb{url}
+    \verb https://www.nice.org.uk/guidance/ng225
+    \endverb
+    \field{month}{09}
+    \field{year}{2022}
+  \endentry
+
+  \entry{who_iris_82c0b4812026}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={{World Health Organization}},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{W1}
+    \strng{fullhash}{W1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed via WHO IRIS digital repository}
+    \field{title}{Title Unknown — IRIS Document
+  82c0b481-3d64-48bc-b403-a3e43300f6ef}
+    \verb{url}
+    \verb https://iris.who.int/server/api/core/bitstreams/82c0b481-3d64-48bc-b4
+    \verb 03-a3e43300f6ef/content
+    \endverb
+    \list{institution}{1}{%
+      {World Health Organization}%
+    }
+    \field{year}{2026}
+  \endentry
+
+  \entry{Marchant2017}{article}{}{}
+    \name{author}{9}{}{%
+      {{hash=MA}{%
+         family={Marchant},
+         familyi={M\bibinitperiod},
+         given={Amanda},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Hawton},
+         familyi={H\bibinitperiod},
+         given={Keith},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Stewart},
+         familyi={S\bibinitperiod},
+         given={Ann},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Montgomery},
+         familyi={M\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SV}{%
+         family={Singaravelu},
+         familyi={S\bibinitperiod},
+         given={Vinod},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Lloyd},
+         familyi={L\bibinitperiod},
+         given={Keith},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=PN}{%
+         family={Purdy},
+         familyi={P\bibinitperiod},
+         given={Nicola},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=DK}{%
+         family={Daine},
+         familyi={D\bibinitperiod},
+         given={Kate},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=JA}{%
+         family={John},
+         familyi={J\bibinitperiod},
+         given={Ann},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MA+1}
+    \strng{fullhash}{MAHKSAMPSVLKPNDKJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1371/journal.pone.0181722
+    \endverb
+    \field{number}{8}
+    \field{pages}{e0181722}
+    \field{title}{A systematic review of the relationship between internet use,
+  self-harm and suicidal behaviour in young people: The good, the bad and the
+  unknown}
+    \verb{url}
+    \verb https://doi.org/10.1371/journal.pone.0181722
+    \endverb
+    \field{volume}{12}
+    \field{journaltitle}{PLOS ONE}
+    \field{year}{2017}
+  \endentry
+
+  \entry{seko2015creative}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=SY}{%
+         family={Seko},
+         familyi={S\bibinitperiod},
+         given={Yukari},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=KSA}{%
+         family={Kidd},
+         familyi={K\bibinitperiod},
+         given={Sean\bibnamedelima A.},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Wiljer},
+         familyi={W\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MKJ}{%
+         family={McKenzie},
+         familyi={M\bibinitperiod},
+         given={Kwame\bibnamedelima J.},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SY+1}
+    \strng{fullhash}{SYKSAWDMKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1177/1049732315570134
+    \endverb
+    \field{number}{10}
+    \field{pages}{1334\bibrangedash 1346}
+    \field{title}{On the Creative Edge: Exploring Motivations for Creating
+  Non‑Suicidal Self‑Injury Content Online}
+    \verb{url}
+    \verb https://pubmed.ncbi.nlm.nih.gov/25662942/
+    \endverb
+    \field{volume}{25}
+    \field{journaltitle}{Qualitative Health Research}
+    \field{year}{2015}
+  \endentry
+
+  \entry{zhang2025social}{article}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{3}{}{%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=WH}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZY+1}
+    \strng{fullhash}{ZYLXWH+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.smhl.2025.100023
+    \endverb
+    \field{issn}{2949-7329}
+    \field{title}{The impact of social media on self-harm behaviors: A review
+  and future directions}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S2949732925000237
+    \endverb
+    \field{journaltitle}{Smart Health}
+    \field{year}{2025}
+  \endentry
+
+  \entry{samaritans2022social}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Samaritans}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://www.samaritans.org/news/samaritans-report-reveals-dangers-of-social-medias-self-harm-content/}}
+    \field{note}{Press Release. [Online; accessed November 2025]}
+    \field{title}{Samaritans report reveals dangers of social media's self-harm
+  content}
+    \field{month}{11}
+    \field{year}{2022}
+  \endentry
+
+  \entry{WHO2025AdolescentMentalHealth}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={{World Health Organization}},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{W1}
+    \strng{fullhash}{W1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health}}
+    \field{note}{Diakses: 29 November 2025}
+    \field{title}{Adolescent mental health}
+    \field{year}{2025}
+  \endentry
+
+  \entry{baltrusaitis2018multimodal}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=BT}{%
+         family={Baltrusaitis},
+         familyi={B\bibinitperiod},
+         given={Tadas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=AC}{%
+         family={Ahuja},
+         familyi={A\bibinitperiod},
+         given={Chaitanya},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MLP}{%
+         family={Morency},
+         familyi={M\bibinitperiod},
+         given={Louis-Philippe},
+         giveni={L\bibinithyphendelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BT+1}
+    \strng{fullhash}{BTACMLP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Multimodal Machine Learning: A Survey and Taxonomy}
+    \verb{url}
+    \verb https://arxiv.org/abs/1705.09406
+    \endverb
+    \field{volume}{abs/1705.09406}
+    \field{journaltitle}{arXiv}
+    \field{year}{2018}
+  \endentry
+
+  \entry{kiela2020hateful}{misc}{}{}
+    \name{author}{7}{}{%
+      {{hash=KD}{%
+         family={Kiela},
+         familyi={K\bibinitperiod},
+         given={Douwe},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=FH}{%
+         family={Firooz},
+         familyi={F\bibinitperiod},
+         given={Hamed},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mohan},
+         familyi={M\bibinitperiod},
+         given={Aravind},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GV}{%
+         family={Goswami},
+         familyi={G\bibinitperiod},
+         given={Vedanuj},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Amanpreet},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RP}{%
+         family={Ringshia},
+         familyi={R\bibinitperiod},
+         given={Pratik},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=TD}{%
+         family={Testuggine},
+         familyi={T\bibinitperiod},
+         given={Davide},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KD+1}
+    \strng{fullhash}{KDFHMAGVSARPTD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.48550/arXiv.2005.04790
+    \endverb
+    \verb{eprint}
+    \verb 2005.04790
+    \endverb
+    \field{title}{The Hateful Memes Challenge: Detecting Hate Speech in
+  Multimodal Memes}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.AI}
+    \field{year}{2020}
+  \endentry
+
+  \entry{shah2024memeclip}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=SP}{%
+         family={Shah},
+         familyi={S\bibinitperiod},
+         given={Pranav},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Shiwakoti},
+         familyi={S\bibinitperiod},
+         given={Satish},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Chaudhary},
+         familyi={C\bibinitperiod},
+         given={Apoorv},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Shu},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SP+1}
+    \strng{fullhash}{SPSSCAWS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{MemeCLIP: Leveraging CLIP Representations for Multimodal Meme
+  Classification}
+    \field{journaltitle}{arXiv preprint arXiv:2403.11245}
+    \field{year}{2024}
+  \endentry
+
+  \entry{lee_pseudo2013}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=LDH}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Dong-Hyun},
+         giveni={D\bibinithyphendelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LDH1}
+    \strng{fullhash}{LDH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Pseudo-Label : The Simple and Efficient Semi-Supervised
+  Learning Method for Deep Neural Networks}
+    \field{journaltitle}{ICML 2013 Workshop : Challenges in Representation
+  Learning (WREPL)}
+    \field{month}{07}
+    \field{year}{2013}
+  \endentry
+
+  \entry{zhang2025impact}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=WH}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ea}{%
+         prefix={et},
+         prefixi={e\bibinitperiod},
+         family={al.},
+         familyi={a\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{ZY+1}
+    \strng{fullhash}{ZYLXWHae1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.jaacop.2025.100023
+    \endverb
+    \field{issn}{2949-7329}
+    \field{number}{1}
+    \field{pages}{100023}
+    \field{title}{The impact of social media on self-harm behaviors: A review
+  and future directions}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S2949732925000237
+    \endverb
+    \field{volume}{1}
+    \field{journaltitle}{JAACAP Open}
+    \field{year}{2025}
+  \endentry
+
+  \entry{radford2021clip}{misc}{}{}
+    \name{author}{12}{}{%
+      {{hash=RA}{%
+         family={Radford},
+         familyi={R\bibinitperiod},
+         given={Alec},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KJW}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Jong\bibnamedelima Wook},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Hallacy},
+         familyi={H\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Ramesh},
+         familyi={R\bibinitperiod},
+         given={Aditya},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GG}{%
+         family={Goh},
+         familyi={G\bibinitperiod},
+         given={Gabriel},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Agarwal},
+         familyi={A\bibinitperiod},
+         given={Sandhini},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Sastry},
+         familyi={S\bibinitperiod},
+         given={Girish},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Askell},
+         familyi={A\bibinitperiod},
+         given={Amanda},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Mishkin},
+         familyi={M\bibinitperiod},
+         given={Pamela},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Clark},
+         familyi={C\bibinitperiod},
+         given={Jack},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Krueger},
+         familyi={K\bibinitperiod},
+         given={Gretchen},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Sutskever},
+         familyi={S\bibinitperiod},
+         given={Ilya},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RA+1}
+    \strng{fullhash}{RAKJWHCRAGGASSGAAMPCJKGSI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.48550/arXiv.2103.00020
+    \endverb
+    \verb{eprint}
+    \verb 2103.00020
+    \endverb
+    \field{title}{Learning Transferable Visual Models from Natural Language
+  Supervision}
+    \verb{url}
+    \verb https://arxiv.org/abs/2103.00020
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CV}
+    \field{year}{2021}
+  \endentry
+
+  \entry{clark2020electra}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=CK}{%
+         family={Clark},
+         familyi={C\bibinitperiod},
+         given={Kevin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LMT}{%
+         family={Luong},
+         familyi={L\bibinitperiod},
+         given={Minh-Thang},
+         giveni={M\bibinithyphendelim T\bibinitperiod},
+      }}%
+      {{hash=LQV}{%
+         family={Le},
+         familyi={L\bibinitperiod},
+         given={Quoc\bibnamedelima V.},
+         giveni={Q\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=MCD}{%
+         family={Manning},
+         familyi={M\bibinitperiod},
+         given={Christopher\bibnamedelima D.},
+         giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CK+1}
+    \strng{fullhash}{CKLMTLQVMCD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.48550/arXiv.2003.10555
+    \endverb
+    \field{title}{ELECTRA: Pre-training Text Encoders as Discriminators Rather
+  Than Generators}
+    \field{journaltitle}{arXiv preprint arXiv:2003.10555}
+    \field{year}{2020}
+  \endentry
+
+  \entry{boulahia2021fusion}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=BSY}{%
+         family={Boulahia},
+         familyi={B\bibinitperiod},
+         given={Said\bibnamedelima Yacine},
+         giveni={S\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Amamra},
+         familyi={A\bibinitperiod},
+         given={Abdenour},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MMR}{%
+         family={Madi},
+         familyi={M\bibinitperiod},
+         given={Mohamed\bibnamedelima Ridha},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Daikh},
+         familyi={D\bibinitperiod},
+         given={Said},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{BSY+1}
+    \strng{fullhash}{BSYAAMMRDS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1007/s00138-021-01249-8
+    \endverb
+    \field{number}{6}
+    \field{pages}{121}
+    \field{title}{Early, intermediate and late fusion strategies for robust
+  deep learning-based multimodal action recognition}
+    \verb{url}
+    \verb https://doi.org/10.1007/s00138-021-01249-8
+    \endverb
+    \field{volume}{32}
+    \field{journaltitle}{Machine Vision and Applications}
+    \field{month}{09}
+    \field{year}{2021}
+  \endentry
+
+  \entry{lee2013pseudo}{inproceedings}{}{}
+    \name{author}{1}{}{%
+      {{hash=LDH}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Dong-Hyun},
+         giveni={D\bibinithyphendelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LDH1}
+    \strng{fullhash}{LDH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{ICML Workshop on Challenges in Representation Learning
+  (WREPL)}
+    \field{title}{Pseudo-Label: The Simple and Efficient Semi-Supervised
+  Learning Method for Deep Neural Networks}
+    \verb{url}
+    \verb https://www.researchgate.net/publication/280581078_Pseudo-Label_The_S
+    \verb imple_and_Efficient_Semi-Supervised_Learning_Method_for_Deep_Neural_N
+    \verb etworks
+    \endverb
+    \list{location}{1}{%
+      {Atlanta, Georgia, USA}%
+    }
+    \field{year}{2013}
+  \endentry
+
+  \entry{pramanick2021momenta}{inproceedings}{}{}
+    \name{author}{4}{}{%
+      {{hash=PS}{%
+         family={Pramanick},
+         familyi={P\bibinitperiod},
+         given={Shubham},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Sharma},
+         familyi={S\bibinitperiod},
+         given={Shubham},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LT}{%
+         family={Le},
+         familyi={L\bibinitperiod},
+         given={Thai},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=FE}{%
+         family={Ferrara},
+         familyi={F\bibinitperiod},
+         given={Emilio},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PS+1}
+    \strng{fullhash}{PSSSLTFE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 2021 Conference on Empirical Methods
+  in Natural Language Processing (EMNLP)}
+    \field{pages}{10374\bibrangedash 10388}
+    \field{title}{MOMENTA: A Multimodal Framework for Detecting Harmful Memes
+  and Their Targets}
+    \field{year}{2021}
+  \endentry
+
+  \entry{kumar2022hateclipper}{inproceedings}{}{}
+    \name{author}{2}{}{%
+      {{hash=KA}{%
+         family={Kumar},
+         familyi={K\bibinitperiod},
+         given={Anup},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NK}{%
+         family={Nandakumar},
+         familyi={N\bibinitperiod},
+         given={Karthik},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KANK1}
+    \strng{fullhash}{KANK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR) Workshops}
+    \field{title}{Hate-CLIPper: Multimodal Hateful Meme Classification based on
+  Cross-modal Interaction of CLIP Features}
+    \field{year}{2022}
+  \endentry
+
+  \entry{lian2023gpt4v}{article}{}{}
+    \name{author}{8}{}{%
+      {{hash=LZ}{%
+         family={Lian},
+         familyi={L\bibinitperiod},
+         given={Zheng},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Licai},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Haiyang},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CK}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Kang},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wen},
+         familyi={W\bibinitperiod},
+         given={Zhuofan},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=GH}{%
+         family={Gu},
+         familyi={G\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LB}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Bin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Tao},
+         familyi={T\bibinitperiod},
+         given={Jianhua},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LZ+1}
+    \strng{fullhash}{LZSLSHCKWZGHLBTJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.48550/arXiv.2312.04293
+    \endverb
+    \field{title}{GPT-4V with Emotion: A Zero-shot Benchmark for Generalized
+  Emotion Recognition}
+    \verb{url}
+    \verb https://arxiv.org/abs/2312.04293
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:2312.04293}
+    \field{year}{2023}
+  \endentry
+
+  \entry{WHO2014PreventingSuicide}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={{World Health Organization}},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {World Health Organization}%
+    }
+    \strng{namehash}{W1}
+    \strng{fullhash}{W1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-92-4-156477-9}
+    \field{title}{Preventing suicide: A global imperative}
+    \verb{url}
+    \verb https://www.who.int/publications/i/item/9789241564779
+    \endverb
+    \list{location}{1}{%
+      {Geneva, Switzerland}%
+    }
+    \field{year}{2014}
+  \endentry
+
+  \entry{APA2022_DSM5TR}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=AAP}{%
+         family={Association},
+         familyi={A\bibinitperiod},
+         given={American\bibnamedelima Psychiatric},
+         giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Psychiatric Association}%
+    }
+    \strng{namehash}{AAP1}
+    \strng{fullhash}{AAP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1176/appi.books.9780890425787
+    \endverb
+    \field{title}{Diagnostic and Statistical Manual of Mental Disorders (5th
+  ed., text rev.)}
+    \verb{url}
+    \verb https://doi.org/10.1176/appi.books.9780890425787
+    \endverb
+    \field{year}{2022}
+  \endentry
+
+  \entry{arendt2019effects}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=AF}{%
+         family={Arendt},
+         familyi={A\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Scherr},
+         familyi={S\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RD}{%
+         family={Romer},
+         familyi={R\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AF+1}
+    \strng{fullhash}{AFSSRD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1177/1461444819850106
+    \endverb
+    \field{number}{11-12}
+    \field{title}{Effects of exposure to self-harm on social media: Evidence
+  from a two-wave panel study among young adults}
+    \verb{url}
+    \verb https://journals.sagepub.com/doi/10.1177/1461444819850106
+    \endverb
+    \field{volume}{21}
+    \field{journaltitle}{New Media \& Society}
+    \field{year}{2019}
+  \endentry
+
+  \entry{ngiam2011multimodal}{inproceedings}{}{}
+    \name{author}{6}{}{%
+      {{hash=NJ}{%
+         family={Ngiam},
+         familyi={N\bibinitperiod},
+         given={Jiquan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Khosla},
+         familyi={K\bibinitperiod},
+         given={Aditya},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Mingyu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NJ}{%
+         family={Nam},
+         familyi={N\bibinitperiod},
+         given={Juhan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Honglak},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=NAY}{%
+         family={Ng},
+         familyi={N\bibinitperiod},
+         given={Andrew\bibnamedelima Y.},
+         giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NJ+1}
+    \strng{fullhash}{NJKAKMNJLHNAY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 28th International Conference on
+  Machine Learning (ICML 2011)}
+    \field{pages}{689\bibrangedash 696}
+    \field{title}{Multimodal Deep Learning}
+    \field{year}{2011}
+  \endentry
+
+  \entry{IBM2024multimodal}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={IBM},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://www.ibm.com/think/topics/multimodal-ai}}
+    \field{note}{Accessed 9 December 2025}
+    \field{title}{What is AI multimodal?}
+    \field{year}{2024}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{jiao2024comprehensive}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=JT}{%
+         family={Jiao},
+         familyi={J\bibinitperiod},
+         given={Tianzhe},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=GC}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={Chaopeng},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=FX}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Xiaoyue},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=CY}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Yuming},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=MLP}{%
+         family={Morency},
+         familyi={M\bibinitperiod},
+         given={Louis-Philippe},
+         giveni={L\bibinithyphendelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Tech Science Press}%
+    }
+    \strng{namehash}{JT+1}
+    \strng{fullhash}{JTGCFXCYMLP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.32604/cmc.2024.053204
+    \endverb
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 35}
+    \field{title}{A Comprehensive Survey on Deep Learning Multi-Modal Fusion:
+  Methods, Technologies and Applications}
+    \field{volume}{80}
+    \field{journaltitle}{Computers, Materials \& Continua}
+    \field{year}{2024}
+  \endentry
+
+  \entry{baltrusaitis2019multimodal}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=BT}{%
+         family={Baltrusaitis},
+         familyi={B\bibinitperiod},
+         given={Tadas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=AC}{%
+         family={Ahuja},
+         familyi={A\bibinitperiod},
+         given={Chaitanya},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MLP}{%
+         family={Morency},
+         familyi={M\bibinitperiod},
+         given={Louis-Philippe},
+         giveni={L\bibinithyphendelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BT+1}
+    \strng{fullhash}{BTACMLP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/TPAMI.2018.2798607
+    \endverb
+    \field{number}{2}
+    \field{pages}{423\bibrangedash 443}
+    \field{title}{Multimodal Machine Learning: A Survey and Taxonomy}
+    \field{volume}{41}
+    \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}
+    \field{year}{2019}
+  \endentry
+
+  \entry{sciencedirect_computer_vision_overview}{online}{}{}
+    \list{organization}{1}{%
+      {ScienceDirect Topics}%
+    }
+    \field{labeltitlesource}{title}
+    \field{note}{Diakses pada 9 Desember 2025}
+    \field{title}{Computer Vision – an overview}
+    \verb{url}
+    \verb https://www.sciencedirect.com/topics/computer-science/computer-vision
+    \endverb
+    \field{year}{n.d.}
+  \endentry
+
+  \entry{lecun2015deep}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=LY}{%
+         family={LeCun},
+         familyi={L\bibinitperiod},
+         given={Yann},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{LY+1}
+    \strng{fullhash}{LYBYHG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{7553}
+    \field{pages}{436\bibrangedash 444}
+    \field{title}{Deep learning}
+    \field{volume}{521}
+    \field{journaltitle}{Nature}
+    \field{year}{2015}
+  \endentry
+
+  \entry{dosovitskiy2020image}{article}{}{}
+    \name{author}{12}{}{%
+      {{hash=DA}{%
+         family={Dosovitskiy},
+         familyi={D\bibinitperiod},
+         given={Alexey},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Beyer},
+         familyi={B\bibinitperiod},
+         given={Lucas},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kolesnikov},
+         familyi={K\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Weissenborn},
+         familyi={W\bibinitperiod},
+         given={Dirk},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhai},
+         familyi={Z\bibinitperiod},
+         given={Xiaohua},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=UT}{%
+         family={Unterthiner},
+         familyi={U\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Dehghani},
+         familyi={D\bibinitperiod},
+         given={Mostafa},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Minderer},
+         familyi={M\bibinitperiod},
+         given={Matthias},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Heigold},
+         familyi={H\bibinitperiod},
+         given={Georg},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gelly},
+         familyi={G\bibinitperiod},
+         given={Sylvain},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=UJ}{%
+         family={Uszkoreit},
+         familyi={U\bibinitperiod},
+         given={Jakob},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HN}{%
+         family={Houlsby},
+         familyi={H\bibinitperiod},
+         given={Neil},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DA+1}
+    \strng{fullhash}{DABLKAWDZXUTDMMMHGGSUJHN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.48550/arXiv.2010.11929
+    \endverb
+    \field{title}{An Image is Worth 16x16 Words: Transformers for Image
+  Recognition at Scale}
+    \field{journaltitle}{arXiv preprint arXiv:2010.11929}
+    \field{year}{2020}
+  \endentry
+
+  \entry{jurafsky2026slp}{book}{}{}
+    \name{author}{2}{}{%
+      {{hash=JD}{%
+         family={Jurafsky},
+         familyi={J\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MJH}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={James\bibnamedelima H.},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JDMJH1}
+    \strng{fullhash}{JDMJH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{3rd}
+    \field{note}{Online manuscript, January 6, 2026}
+    \field{title}{Speech and Language Processing: An Introduction to Natural
+  Language Processing, Computational Linguistics, and Speech Recognition with
+  Language Models}
+    \verb{url}
+    \verb https://web.stanford.edu/~jurafsky/slp3/ed3book.pdf
+    \endverb
+    \field{year}{2026}
+  \endentry
+
+  \entry{liu2018neural}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=LY}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Yang},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ZM}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Meng},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT Press}%
+    }
+    \strng{namehash}{LYZM1}
+    \strng{fullhash}{LYZM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1162/
+    \endverb
+    \field{number}{1}
+    \field{pages}{193\bibrangedash 195}
+    \field{title}{Neural Network Methods for Natural Language Processing by
+  Yoav Goldberg}
+    \verb{url}
+    \verb https://aclanthology.org/J18-1008/
+    \endverb
+    \field{volume}{44}
+    \field{journaltitle}{Computational Linguistics}
+    \field{year}{2018}
+  \endentry
+
+  \entry{young2017recent}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=YT}{%
+         family={Young},
+         familyi={Y\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Hazarika},
+         familyi={H\bibinitperiod},
+         given={Devamanyu},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Poria},
+         familyi={P\bibinitperiod},
+         given={Soujanya},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CE}{%
+         family={Cambria},
+         familyi={C\bibinitperiod},
+         given={Erik},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YT+1}
+    \strng{fullhash}{YTHDPSCE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.48550/arXiv.1708.02709
+    \endverb
+    \field{title}{Recent Trends in Deep Learning Based Natural Language
+  Processing}
+    \field{journaltitle}{arXiv preprint arXiv:1708.02709}
+    \field{year}{2017}
+  \endentry
+
+  \entry{devlin2018bert}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=DJ}{%
+         family={Devlin},
+         familyi={D\bibinitperiod},
+         given={Jacob},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CMW}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Ming-Wei},
+         giveni={M\bibinithyphendelim W\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Kenton},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=TK}{%
+         family={Toutanova},
+         familyi={T\bibinitperiod},
+         given={Kristina},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DJ+1}
+    \strng{fullhash}{DJCMWLKTK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.48550/arXiv.1810.04805
+    \endverb
+    \field{title}{BERT: Pre-training of Deep Bidirectional Transformers for
+  Language Understanding}
+    \field{journaltitle}{arXiv preprint arXiv:1810.04805}
+    \field{year}{2018}
+  \endentry
+
+  \entry{schmidhuber2015deep}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=SJ}{%
+         family={Schmidhuber},
+         familyi={S\bibinitperiod},
+         given={J{\"u}rgen},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SJ1}
+    \strng{fullhash}{SJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.neunet.2014.09.003
+    \endverb
+    \field{pages}{85\bibrangedash 117}
+    \field{title}{Deep learning in neural networks: An overview}
+    \field{volume}{61}
+    \field{journaltitle}{Neural Networks}
+    \field{year}{2015}
+  \endentry
+
+  \entry{vaswani2017attention}{article}{}{}
+    \name{author}{8}{}{%
+      {{hash=VA}{%
+         family={Vaswani},
+         familyi={V\bibinitperiod},
+         given={Ashish},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Shazeer},
+         familyi={S\bibinitperiod},
+         given={Noam},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=PN}{%
+         family={Parmar},
+         familyi={P\bibinitperiod},
+         given={Niki},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=UJ}{%
+         family={Uszkoreit},
+         familyi={U\bibinitperiod},
+         given={Jakob},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=JL}{%
+         family={Jones},
+         familyi={J\bibinitperiod},
+         given={Llion},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=GAN}{%
+         family={Gomez},
+         familyi={G\bibinitperiod},
+         given={Aidan\bibnamedelima N.},
+         giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=KL}{%
+         family={Kaiser},
+         familyi={K\bibinitperiod},
+         given={Lukasz},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=PI}{%
+         family={Polosukhin},
+         familyi={P\bibinitperiod},
+         given={Illia},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VA+1}
+    \strng{fullhash}{VASNPNUJJLGANKLPI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.48550/arXiv.1706.03762
+    \endverb
+    \field{title}{Attention Is All You Need}
+    \field{journaltitle}{arXiv preprint arXiv:1706.03762}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Pan2022ContrastiveKCLIP}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=PX}{%
+         family={Pan},
+         familyi={P\bibinitperiod},
+         given={Xuran},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=YT}{%
+         family={Ye},
+         familyi={Y\bibinitperiod},
+         given={Tianzhu},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Han},
+         familyi={H\bibinitperiod},
+         given={Dongchen},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Song},
+         familyi={S\bibinitperiod},
+         given={Shiji},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Gao},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PX+1}
+    \strng{fullhash}{PXYTHDSSHG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Preprint}
+    \field{title}{Contrastive Language‑Image Pre‑Training with Knowledge
+  Graphs}
+    \verb{url}
+    \verb https://arxiv.org/abs/2210.08901
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:2210.08901}
+    \field{year}{2022}
+  \endentry
+
+  \entry{sentinet_suicidality}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={Sentinet},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S2}
+    \strng{fullhash}{S2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{ELECTRA model for suicidality detection}
+    \verb{url}
+    \verb https://huggingface.co/sentinet/suicidality
+    \endverb
+    \field{year}{2023}
+  \endentry
+
+  \entry{Xu2023ImageAugmentationSurvey}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=XM}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Mingle},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yoon},
+         familyi={Y\bibinitperiod},
+         given={Sook},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=F�}{%
+         family={Fuentes},
+         familyi={F\bibinitperiod},
+         given={Álvaro},
+         giveni={�\bibinitperiod},
+      }}%
+      {{hash=PDS}{%
+         family={Park},
+         familyi={P\bibinitperiod},
+         given={Dong\bibnamedelima Sun},
+         giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{XM+1}
+    \strng{fullhash}{XMYSF�PDS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.patcog.2023.109347
+    \endverb
+    \field{pages}{109347}
+    \field{title}{A Comprehensive Survey of Image Augmentation Techniques for
+  Deep Learning}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0031320323000481
+    \endverb
+    \field{volume}{137}
+    \field{journaltitle}{Pattern Recognition}
+    \field{year}{2023}
+  \endentry
+
+  \entry{Shorten2019ImageDataAugmentation}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=SC}{%
+         family={Shorten},
+         familyi={S\bibinitperiod},
+         given={Connor},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KTM}{%
+         family={Khoshgoftaar},
+         familyi={K\bibinitperiod},
+         given={Taghi\bibnamedelima M.},
+         giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SCKTM1}
+    \strng{fullhash}{SCKTM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1186/s40537-019-0197-0
+    \endverb
+    \field{number}{1}
+    \field{pages}{60}
+    \field{title}{A survey on Image Data Augmentation for Deep Learning}
+    \verb{url}
+    \verb https://link.springer.com/article/10.1186/s40537-019-0197-0
+    \endverb
+    \field{volume}{6}
+    \field{journaltitle}{Journal of Big Data}
+    \field{year}{2019}
+  \endentry
+
+  \entry{fawcett2006introduction}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=FT}{%
+         family={Fawcett},
+         familyi={F\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FT1}
+    \strng{fullhash}{FT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.patrec.2005.10.010
+    \endverb
+    \field{number}{8}
+    \field{pages}{861\bibrangedash 874}
+    \field{title}{Introduction to ROC Analysis}
+    \field{volume}{27}
+    \field{journaltitle}{Pattern Recognition Letters}
+    \field{month}{06}
+    \field{year}{2006}
+  \endentry
+
+  \entry{sokolova2009systematic}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=SM}{%
+         family={Sokolova},
+         familyi={S\bibinitperiod},
+         given={Marina},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LG}{%
+         family={Lapalme},
+         familyi={L\bibinitperiod},
+         given={Guy},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SMLG1}
+    \strng{fullhash}{SMLG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.ipm.2009.03.002
+    \endverb
+    \field{number}{4}
+    \field{pages}{427\bibrangedash 437}
+    \field{title}{A Systematic Analysis of Performance Measures for
+  Classification Tasks}
+    \field{volume}{45}
+    \field{journaltitle}{Information Processing \& Management}
+    \field{month}{07}
+    \field{year}{2009}
+  \endentry
+
+  \entry{powers2020evaluationprecisionrecallfmeasure}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=PDMW}{%
+         family={Powers},
+         familyi={P\bibinitperiod},
+         given={David M.\bibnamedelima W.},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PDMW1}
+    \strng{fullhash}{PDMW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{eprint}
+    \verb 2010.16061
+    \endverb
+    \field{title}{Evaluation: from precision, recall and F-measure to ROC,
+  informedness, markedness and correlation}
+    \verb{url}
+    \verb https://arxiv.org/abs/2010.16061
+    \endverb
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.LG}
+    \field{year}{2020}
+  \endentry
+
+  \entry{MoraledaEsteban2025SelfHarm}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=MER}{%
+         family={Moraleda-Esteban},
+         familyi={M\bibinithyphendelim E\bibinitperiod},
+         given={Raquel},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MPE}{%
+         family={Martínez-Pastor},
+         familyi={M\bibinithyphendelim P\bibinitperiod},
+         given={Esther},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MERMPE1}
+    \strng{fullhash}{MERMPE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.60940/qcac51id431940
+    \endverb
+    \field{issn}{2014-2242}
+    \field{number}{51}
+    \field{pages}{17\bibrangedash 28}
+    \field{title}{Self-harm, adolescents and mental health on social media and
+  in the family environment: from the perspective of health professionals}
+    \field{journaltitle}{Quaderns del CAC}
+    \field{year}{2025}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{mafi_alam_2023_suicidal_reddit}{misc}{}{}
+    \name{author}{2}{}{%
+      {{hash=MMMHM}{%
+         family={Mafi},
+         familyi={M\bibinitperiod},
+         given={Md\bibnamedelima Mafiul Hasan\bibnamedelima Matin},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  H\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=AMS}{%
+         family={Alam},
+         familyi={A\bibinitperiod},
+         given={Md.\bibnamedelima Sabbir},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Mendeley Data}%
+    }
+    \strng{namehash}{MMMHMAMS1}
+    \strng{fullhash}{MMMHMAMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.17632/z8s6w86tr3.2
+    \endverb
+    \field{title}{Suicidal Ideation Detection Reddit Dataset}
+    \verb{url}
+    \verb https://data.mendeley.com/datasets/z8s6w86tr3/2
+    \endverb
+    \field{version}{2}
+    \field{year}{2023}
+  \endentry
+
+  \entry{ali_weapon_knife_2025}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=AZ}{%
+         family={Ali},
+         familyi={A\bibinitperiod},
+         given={Zain},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AZ1}
+    \strng{fullhash}{AZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://www.kaggle.com/datasets/zinkzsa/weapon-and-knife-detection-137k-images}}
+    \field{note}{Accessed: Dec. 7, 2025}
+    \field{title}{Weapon and Knife Detection (137K Images)}
+    \field{year}{2025}
+  \endentry
+
+  \entry{Susi2023ViewingSelfHarmImages}{article}{}{}
+    \name{author}{5}{}{%
+      {{hash=SK}{%
+         family={Susi},
+         familyi={S\bibinitperiod},
+         given={Karima},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=GFF}{%
+         family={Glover-Ford},
+         familyi={G\bibinithyphendelim F\bibinitperiod},
+         given={Francesca},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Stewart},
+         familyi={S\bibinitperiod},
+         given={Anne},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BRK}{%
+         family={Bevis},
+         familyi={B\bibinitperiod},
+         given={Rebecca\bibnamedelima Knowles},
+         giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Hawton},
+         familyi={H\bibinitperiod},
+         given={Keith},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley \& Sons Ltd}%
+    }
+    \strng{namehash}{SK+1}
+    \strng{fullhash}{SKGFFSABRKHK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1111/jcpp.13754
+    \endverb
+    \field{number}{8}
+    \field{pages}{1115\bibrangedash 1139}
+    \field{title}{Viewing self-harm images on the internet and social media
+  platforms: systematic review of the impact and associated psychological
+  mechanisms}
+    \field{volume}{64}
+    \field{journaltitle}{Journal of Child Psychology and Psychiatry}
+    \field{year}{2023}
+  \endentry
+
+  \entry{javaid_6992_meme_images_2023}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=JH}{%
+         family={Javaid},
+         familyi={J\bibinitperiod},
+         given={Hammad},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JH1}
+    \strng{fullhash}{JH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://www.kaggle.com/datasets/hammadjavaid/6992-labeled-meme-images-dataset}}
+    \field{note}{Accessed: Dec. 7, 2025}
+    \field{title}{6992 Labeled Meme Images Dataset}
+    \field{year}{2023}
+  \endentry
+
+  \entry{ratner2019}{inproceedings}{}{}
+    \name{author}{6}{}{%
+      {{hash=RA}{%
+         family={Ratner},
+         familyi={R\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BSH}{%
+         family={Bach},
+         familyi={B\bibinitperiod},
+         given={Stephen\bibnamedelima H.},
+         giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=EH}{%
+         family={Ehrenberg},
+         familyi={E\bibinitperiod},
+         given={Henry},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=FJ}{%
+         family={Fries},
+         familyi={F\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Sen},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RC}{%
+         family={R{\'e}},
+         familyi={R\bibinitperiod},
+         given={Christopher},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RA+2}
+    \strng{fullhash}{RABSHEHFJWSRC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Advances in Neural Information Processing Systems
+  (NeurIPS)}
+    \field{title}{Data Programming: Creating Large Training Sets, Quickly}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Jiang2024RapGuard}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=JY}{%
+         family={Jiang},
+         familyi={J\bibinitperiod},
+         given={Yilei},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=TY}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Yingshui},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=YX}{%
+         family={Yue},
+         familyi={Y\bibinitperiod},
+         given={Xiangyu},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JY+1}
+    \strng{fullhash}{JYTYYX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{RapGuard: Safeguarding Multimodal Large Language Models via
+  Rationale-aware Defensive Prompting}
+    \field{journaltitle}{arXiv preprint arXiv:2412.18826}
+    \field{year}{2024}
+  \endentry
+
+  \entry{gao2021clipadapter}{article}{}{}
+    \name{author}{8}{}{%
+      {{hash=GP}{%
+         family={Gao},
+         familyi={G\bibinitperiod},
+         given={Peng},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Geng},
+         familyi={G\bibinitperiod},
+         given={Shijie},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ZR}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Renrui},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Teli},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=FR}{%
+         family={Fang},
+         familyi={F\bibinitperiod},
+         given={Rongyao},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yongfeng},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Hongsheng},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=QY}{%
+         family={Qiao},
+         familyi={Q\bibinitperiod},
+         given={Yu},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GP+1}
+    \strng{fullhash}{GPGSZRMTFRZYLHQY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{CLIP-Adapter: Better Vision-Language Models with Feature
+  Adapters}
+    \verb{url}
+    \verb https://arxiv.org/abs/2110.04544
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:2110.04544}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Dus2022SuicidalElectra}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=DY}{%
+         family={Dus},
+         familyi={D\bibinitperiod},
+         given={Yasin},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=NG}{%
+         family={Nefedov},
+         familyi={N\bibinitperiod},
+         given={Georgiy},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DYNG1}
+    \strng{fullhash}{DYNG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Accessed: 2025-12-10}
+    \field{title}{An Automated Tool to Detect Suicidal Susceptibility from
+  Social Media Posts}
+    \verb{url}
+    \verb https://github.com/gohjiayi/suicidal-text-detection/blob/main/docs/Su
+    \verb icidal-Text-Detection_Report.pdf
+    \endverb
+    \field{journaltitle}{Suicidal Text Detection Report}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Sokolova2009Performance}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=SM}{%
+         family={Sokolova},
+         familyi={S\bibinitperiod},
+         given={Marina},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LG}{%
+         family={Lapalme},
+         familyi={L\bibinitperiod},
+         given={Guy},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SMLG1}
+    \strng{fullhash}{SMLG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.ipm.2009.03.002
+    \endverb
+    \field{title}{A systematic analysis of performance measures for
+  classification tasks}
+    \field{journaltitle}{Information Processing \& Management}
+    \field{year}{2009}
+  \endentry
+\enddatalist
 \endinput
-

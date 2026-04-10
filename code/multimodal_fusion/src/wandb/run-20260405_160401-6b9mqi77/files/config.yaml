@@ -1,0 +1,101 @@
+_wandb:
+    value:
+        cli_version: 0.23.0
+        e:
+            r37afh84vy7mkbgatzo74vvm6pycpp26:
+                args:
+                    - --wandb_name
+                    - cobamultimodaltransformer
+                    - --imbalance_strategy
+                    - focal
+                    - --focal_gamma
+                    - "2.0"
+                codePath: code\multimodal_fusion\src\main.py
+                codePathLocal: main.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "495550722048"
+                        used: "429580599296"
+                email: elsa.122140135@student.itera.ac.id
+                executable: C:\Users\elsae\miniconda3\envs\tugasakhir\python.exe
+                git:
+                    commit: 7a96647426dbd695bf829426a74c54a1eb9ec64c
+                    remote: https://github.com/elsaelisa09/Tugas-Akhir.git
+                host: ELSA
+                memory:
+                    total: "16867508224"
+                os: Windows-10-10.0.26200-SP0
+                program: C:\Users\elsae\.vscode\Documents\Tugas Akhir\ta_if_mct\code\multimodal_fusion\src\main.py
+                python: CPython 3.10.18
+                root: C:\Users\elsae\.vscode\Documents\Tugas Akhir\ta_if_mct\code\multimodal_fusion\src
+                startedAt: "2026-04-05T09:04:01.925665Z"
+                writerId: r37afh84vy7mkbgatzo74vvm6pycpp26
+        m: []
+        python_version: 3.10.18
+        t:
+            "1":
+                - 1
+                - 2
+                - 3
+                - 5
+                - 11
+                - 12
+                - 41
+                - 49
+                - 53
+                - 71
+            "2":
+                - 1
+                - 2
+                - 3
+                - 5
+                - 11
+                - 12
+                - 41
+                - 49
+                - 53
+                - 71
+            "3":
+                - 13
+                - 16
+            "4": 3.10.18
+            "5": 0.23.0
+            "6": 4.44.0
+            "8":
+                - 3
+            "12": 0.23.0
+            "13": windows-amd64
+batch_size:
+    value: 16
+clip_model:
+    value: openai/clip-vit-base-patch32
+electra_model:
+    value: sentinet/suicidality
+epochs:
+    value: 24
+focal_gamma:
+    value: 2
+fusion_image_dim:
+    value: 256
+fusion_method:
+    value: concatenate
+fusion_text_dim:
+    value: 256
+image_size:
+    value: 224
+imbalance_strategy:
+    value: focal
+learning_rate:
+    value: 0.0001
+max_len:
+    value: 128
+model_name:
+    value: mlB-text-imagee
+num_classes:
+    value: 2
+patience:
+    value: 5
+seed:
+    value: 42

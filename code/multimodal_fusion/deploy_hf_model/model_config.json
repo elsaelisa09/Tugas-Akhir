@@ -1,0 +1,21 @@
+{
+  "checkpoint_filename": "bestmodel_mlA-class-imbalance-FL.pth",
+  "checkpoint_format": "pth",
+  "imbalance_strategy": "focal",
+  "focal_gamma": 2.0,
+  "clip_model_name": "openai/clip-vit-base-patch32",
+  "electra_model_name": "sentinet/suicidality",
+  "fusion_img_dim": 256,
+  "fusion_text_dim": 256,
+  "fusion_method": "concatenate",
+  "num_classes": 2,
+  "max_len": 128,
+  "id2label": {
+    "0": "NON-SELF-HARM",
+    "1": "SELF-HARM"
+  },
+  "label2id": {
+    "NON-SELF-HARM": 0,
+    "SELF-HARM": 1
+  }
+}

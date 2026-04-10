@@ -1,0 +1,36 @@
+{
+  "os": "Windows-10-10.0.26200-SP0",
+  "python": "CPython 3.10.18",
+  "startedAt": "2026-04-05T15:06:59.570011Z",
+  "args": [
+    "--wandb_name",
+    "cobaaimgtext",
+    "--imbalance_strategy",
+    "focal",
+    "--focal_gamma",
+    "2.0"
+  ],
+  "program": "C:\\Users\\elsae\\.vscode\\Documents\\Tugas Akhir\\ta_if_mct\\code\\multimodal_fusion\\src\\main.py",
+  "codePath": "code\\multimodal_fusion\\src\\main.py",
+  "codePathLocal": "main.py",
+  "git": {
+    "remote": "https://github.com/elsaelisa09/Tugas-Akhir.git",
+    "commit": "7a96647426dbd695bf829426a74c54a1eb9ec64c"
+  },
+  "email": "elsa.122140135@student.itera.ac.id",
+  "root": "C:\\Users\\elsae\\.vscode\\Documents\\Tugas Akhir\\ta_if_mct\\code\\multimodal_fusion\\src",
+  "host": "ELSA",
+  "executable": "C:\\Users\\elsae\\miniconda3\\envs\\tugasakhir\\python.exe",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "495550722048",
+      "used": "405813190656"
+    }
+  },
+  "memory": {
+    "total": "16867508224"
+  },
+  "writerId": "vcpf5qq7mip2sqdx0lqitpnuebzc7mo6"
+}

@@ -1,22 +1,69 @@
-[0] Config.pm:328> INFO - This is Biber 2.21
-[0] Config.pm:331> INFO - Logfile is 'thesis.blg'
-[189] biber-MSWIN64:342> INFO - === 
-[247] Biber.pm:421> INFO - Reading 'thesis.bcf'
-[448] Biber.pm:1002> INFO - Found 53 citekeys in bib section 0
-[494] Biber.pm:4487> INFO - Processing section 0
-[517] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
-[620] bibtex.pm:1713> INFO - LaTeX decoding ...
-[836] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[1414] UCollate.pm:68> INFO - Overriding locale 'id-ID' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1414] UCollate.pm:68> INFO - Overriding locale 'id-ID' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1414] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'id-ID'
-[1414] Biber.pm:4313> INFO - No sort tailoring available for locale 'id-ID'
-[1498] bbl.pm:676> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[1567] bbl.pm:779> INFO - Output to thesis.bbl
-[1568] Biber.pm:132> WARN - Duplicate entry key: 'shifman2013memes' in file 'references.bib', skipping ...
-[1568] Biber.pm:132> WARN - legacy month field 'Dec' in entry 'SyakhraniWidijatmoko2024' is not an integer - this will probably not sort properly.
-[1568] Biber.pm:132> WARN - legacy month field 'Jul' in entry 'IBM2024multimodal' is not an integer - this will probably not sort properly.
-[1568] Biber.pm:132> WARN - legacy year field 'n.d.' in entry 'sciencedirect_computer_vision_overview' is not an integer - this will probably not sort properly.
-[1568] Biber.pm:132> WARN - legacy month field 'February' in entry 'MoraledaEsteban2025SelfHarm' is not an integer - this will probably not sort properly.
-[1568] Biber.pm:132> WARN - I didn't find a database entry for 'ibm_nlp' (section 0)
-[1568] Biber.pm:134> INFO - WARNINGS: 6
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'field_info' (item size: 4) to 13120 items.
+Database file #1: thesis-blx.bib
+Database file #2: references.bib
+Biblatex version: 3.21
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 58 entries,
+            6402 wiz_defined-function locations,
+            1572 strings with 22477 characters,
+and the built_in function-call counts, 514249 in all, are:
+= -- 44021
+> -- 5942
+< -- 1312
++ -- 16365
+- -- 2258
+* -- 35372
+:= -- 62180
+add.period$ -- 0
+call.type$ -- 58
+change.case$ -- 701
+chr.to.int$ -- 87
+cite$ -- 114
+duplicate$ -- 55910
+empty$ -- 43797
+format.name$ -- 4145
+if$ -- 101118
+int.to.chr$ -- 0
+int.to.str$ -- 144
+missing$ -- 0
+newline$ -- 2148
+num.names$ -- 2512
+pop$ -- 21703
+preamble$ -- 1
+purify$ -- 1153
+quote$ -- 0
+skip$ -- 9842
+stack$ -- 0
+substring$ -- 81798
+swap$ -- 8505
+text.length$ -- 1216
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 1960
+warning$ -- 0
+while$ -- 7795
+width$ -- 0
+write$ -- 2091

@@ -1,0 +1,6 @@
+gradio==5.23.3
+torch==2.2.2
+transformers==4.40.2
+huggingface_hub==0.30.2
+Pillow==10.3.0
+numpy==1.26.4
